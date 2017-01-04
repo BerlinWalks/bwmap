@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.1"
+  creator="GPSBabel - http://www.gpsbabel.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<metadata>
+<time>2015-03-09T09:54:22Z</time>
+<bounds minlat="52.396776300" minlon="13.739320000" maxlat="52.428910300" maxlon="13.782244200"/>
+</metadata>
+<trk>
+  <name>2014-12-14 12:00</name>
+  <desc>&lt;h1&gt;OruxMaps&lt;/h1&gt;&lt;br /&gt;&lt;hr align=&quot;center&quot; width=&quot;480&quot; style=&quot;height: 2px; width: 517px&quot;/&gt;&lt;h2&gt;Name: 2014-12-14 12:00&lt;/h2&gt;&lt;br /&gt;&lt;p&gt;Start time: 12/14/2014 12:00&lt;/p&gt;&lt;p&gt;Finish time: 12/14/2014 15:36&lt;/p&gt;&lt;p&gt;Distance: 30.9km (03:35)&lt;/p&gt;&lt;p&gt;Moving time: 02:49&lt;/p&gt;&lt;p&gt;Average speed: 8.6km/h&lt;/p&gt;&lt;p&gt;Avg. Speed Mov.: 11km/h&lt;/p&gt;&lt;p&gt;Max. Speed: 91.4km/h&lt;/p&gt;&lt;p&gt;Minimum altitude: 9m&lt;/p&gt;&lt;p&gt;Maximum altitude: 67m&lt;/p&gt;&lt;p&gt;Ascent speed: 349.6m/h&lt;/p&gt;&lt;p&gt;Descent speed: -359.6m/h&lt;/p&gt;&lt;p&gt;Elevation gain: 538m&lt;/p&gt;&lt;p&gt;Elevation loss: -565m&lt;/p&gt;&lt;p&gt;Ascent time: 01:32&lt;/p&gt;&lt;p&gt;Descent time: 01:34&lt;/p&gt;&lt;hr align=&quot;center&quot; width=&quot;480&quot; style=&quot;height: 2px; width: 517px&quot;/&gt;</desc>
+<type>Undefined</type>
+<extensions>
+            <om:oruxmapsextensions xmlns:om="http://www.oruxmaps.com/oruxmapsextensions/1/0" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+                <om:ext subtype="0" type="TYPE">0</om:ext>
+
+</om:oruxmapsextensions>
+
+        </extensions>
+<trkseg>
+<trkpt lat="52.426959600" lon="13.752479400">
+  <ele>67.100000</ele>
+  <time>2014-12-14T11:00:17Z</time>
+  <name>Position 1</name>
+</trkpt>
+<trkpt lat="52.427139800" lon="13.752492500">
+  <ele>45.100000</ele>
+  <time>2014-12-14T11:00:35Z</time>
+  <name>Position 2</name>
+</trkpt>
+<trkpt lat="52.427303000" lon="13.752340200">
+  <ele>41.500000</ele>
+  <time>2014-12-14T11:00:58Z</time>
+  <name>Position 3</name>
+</trkpt>
+<trkpt lat="52.427475200" lon="13.752254600">
+  <ele>40.900000</ele>
+  <time>2014-12-14T11:01:24Z</time>
+  <name>Position 4</name>
+</trkpt>
+<trkpt lat="52.427664600" lon="13.752255800">
+  <ele>29.600000</ele>
+  <time>2014-12-14T11:01:47Z</time>
+  <name>Position 5</name>
+</trkpt>
+<trkpt lat="52.427809700" lon="13.752444500">
+  <ele>33.400000</ele>
+  <time>2014-12-14T11:02:07Z</time>
+  <name>Position 6</name>
+</trkpt>
+<trkpt lat="52.427985400" lon="13.752336900">
+  <ele>31.900000</ele>
+  <time>2014-12-14T11:02:29Z</time>
+  <name>Position 7</name>
+</trkpt>
+<trkpt lat="52.427843800" lon="13.752151000">
+  <ele>31.100000</ele>
+  <time>2014-12-14T11:04:16Z</time>
+  <name>Position 8</name>
+</trkpt>
+<trkpt lat="52.427671400" lon="13.752052500">
+  <ele>31.000000</ele>
+  <time>2014-12-14T11:04:33Z</time>
+  <name>Position 9</name>
+</trkpt>
+<trkpt lat="52.427385800" lon="13.751644700">
+  <ele>29.200000</ele>
+  <time>2014-12-14T11:05:00Z</time>
+  <name>Position 11</name>
+</trkpt>
+<trkpt lat="52.427258700" lon="13.751420100">
+  <ele>31.900000</ele>
+  <time>2014-12-14T11:05:21Z</time>
+  <name>Position 12</name>
+</trkpt>
+<trkpt lat="52.426985800" lon="13.751018900">
+  <ele>32.500000</ele>
+  <time>2014-12-14T11:05:53Z</time>
+  <name>Position 14</name>
+</trkpt>
+<trkpt lat="52.426808400" lon="13.750933500">
+  <ele>30.600000</ele>
+  <time>2014-12-14T11:06:14Z</time>
+  <name>Position 15</name>
+</trkpt>
+<trkpt lat="52.426634000" lon="13.750815900">
+  <ele>30.700000</ele>
+  <time>2014-12-14T11:06:31Z</time>
+  <name>Position 16</name>
+</trkpt>
+<trkpt lat="52.426475600" lon="13.750674700">
+  <ele>33.000000</ele>
+  <time>2014-12-14T11:06:45Z</time>
+  <name>Position 17</name>
+</trkpt>
+<trkpt lat="52.426098300" lon="13.750752300">
+  <ele>34.700000</ele>
+  <time>2014-12-14T11:07:16Z</time>
+  <name>Position 19</name>
+</trkpt>
+<trkpt lat="52.425931200" lon="13.750890600">
+  <ele>33.600000</ele>
+  <time>2014-12-14T11:07:32Z</time>
+  <name>Position 20</name>
+</trkpt>
+<trkpt lat="52.425801900" lon="13.751096400">
+  <ele>33.800000</ele>
+  <time>2014-12-14T11:07:49Z</time>
+  <name>Position 21</name>
+</trkpt>
+<trkpt lat="52.425642000" lon="13.751252000">
+  <ele>37.100000</ele>
+  <time>2014-12-14T11:08:04Z</time>
+  <name>Position 22</name>
+</trkpt>
+<trkpt lat="52.425452500" lon="13.751237200">
+  <ele>36.700000</ele>
+  <time>2014-12-14T11:08:24Z</time>
+  <name>Position 23</name>
+</trkpt>
+<trkpt lat="52.425271400" lon="13.751288700">
+  <ele>30.500000</ele>
+  <time>2014-12-14T11:08:45Z</time>
+  <name>Position 24</name>
+</trkpt>
+<trkpt lat="52.425401000" lon="13.751081100">
+  <ele>33.400000</ele>
+  <time>2014-12-14T11:09:11Z</time>
+  <name>Position 25</name>
+</trkpt>
+<trkpt lat="52.425301700" lon="13.750821100">
+  <ele>28.500000</ele>
+  <time>2014-12-14T11:09:54Z</time>
+  <name>Position 26</name>
+</trkpt>
+<trkpt lat="52.425133700" lon="13.750684700">
+  <ele>30.500000</ele>
+  <time>2014-12-14T11:10:12Z</time>
+  <name>Position 27</name>
+</trkpt>
+<trkpt lat="52.424407300" lon="13.750434300">
+  <ele>33.900000</ele>
+  <time>2014-12-14T11:11:14Z</time>
+  <name>Position 31</name>
+</trkpt>
+<trkpt lat="52.424034600" lon="13.750440300">
+  <ele>33.600000</ele>
+  <time>2014-12-14T11:11:49Z</time>
+  <name>Position 33</name>
+</trkpt>
+<trkpt lat="52.423849500" lon="13.750403600">
+  <ele>34.700000</ele>
+  <time>2014-12-14T11:12:06Z</time>
+  <name>Position 34</name>
+</trkpt>
+<trkpt lat="52.423667000" lon="13.750429800">
+  <ele>35.600000</ele>
+  <time>2014-12-14T11:12:26Z</time>
+  <name>Position 35</name>
+</trkpt>
+<trkpt lat="52.423488700" lon="13.750369000">
+  <ele>31.300000</ele>
+  <time>2014-12-14T11:12:43Z</time>
+  <name>Position 36</name>
+</trkpt>
+<trkpt lat="52.423325100" lon="13.750209800">
+  <ele>28.700000</ele>
+  <time>2014-12-14T11:12:58Z</time>
+  <name>Position 37</name>
+</trkpt>
+<trkpt lat="52.423258400" lon="13.749924200">
+  <ele>32.400000</ele>
+  <time>2014-12-14T11:13:19Z</time>
+  <name>Position 38</name>
+</trkpt>
+<trkpt lat="52.423145500" lon="13.749686900">
+  <ele>24.400000</ele>
+  <time>2014-12-14T11:13:33Z</time>
+  <name>Position 39</name>
+</trkpt>
+<trkpt lat="52.422977000" lon="13.749553500">
+  <ele>19.700000</ele>
+  <time>2014-12-14T11:13:48Z</time>
+  <name>Position 40</name>
+</trkpt>
+<trkpt lat="52.422626900" lon="13.749369900">
+  <ele>24.500000</ele>
+  <time>2014-12-14T11:14:21Z</time>
+  <name>Position 42</name>
+</trkpt>
+<trkpt lat="52.422442600" lon="13.749380900">
+  <ele>29.200000</ele>
+  <time>2014-12-14T11:14:34Z</time>
+  <name>Position 43</name>
+</trkpt>
+<trkpt lat="52.422270700" lon="13.749488200">
+  <ele>20.200000</ele>
+  <time>2014-12-14T11:14:56Z</time>
+  <name>Position 44</name>
+</trkpt>
+<trkpt lat="52.422089800" lon="13.749503700">
+  <ele>25.100000</ele>
+  <time>2014-12-14T11:15:10Z</time>
+  <name>Position 45</name>
+</trkpt>
+<trkpt lat="52.421906900" lon="13.749482200">
+  <ele>24.900000</ele>
+  <time>2014-12-14T11:15:24Z</time>
+  <name>Position 46</name>
+</trkpt>
+<trkpt lat="52.421717200" lon="13.749504100">
+  <ele>26.400000</ele>
+  <time>2014-12-14T11:15:41Z</time>
+  <name>Position 47</name>
+</trkpt>
+<trkpt lat="52.421373700" lon="13.749275600">
+  <ele>25.100000</ele>
+  <time>2014-12-14T11:16:10Z</time>
+  <name>Position 49</name>
+</trkpt>
+<trkpt lat="52.421228300" lon="13.749073900">
+  <ele>32.000000</ele>
+  <time>2014-12-14T11:16:50Z</time>
+  <name>Position 50</name>
+</trkpt>
+<trkpt lat="52.421233200" lon="13.748475100">
+  <ele>34.400000</ele>
+  <time>2014-12-14T11:17:23Z</time>
+  <name>Position 52</name>
+</trkpt>
+<trkpt lat="52.421274200" lon="13.747861700">
+  <ele>27.400000</ele>
+  <time>2014-12-14T11:17:54Z</time>
+  <name>Position 54</name>
+</trkpt>
+<trkpt lat="52.421311800" lon="13.747572500">
+  <ele>28.700000</ele>
+  <time>2014-12-14T11:18:12Z</time>
+  <name>Position 55</name>
+</trkpt>
+<trkpt lat="52.421144900" lon="13.747436200">
+  <ele>26.700000</ele>
+  <time>2014-12-14T11:18:34Z</time>
+  <name>Position 56</name>
+</trkpt>
+<trkpt lat="52.420789900" lon="13.747283200">
+  <ele>28.900000</ele>
+  <time>2014-12-14T11:19:06Z</time>
+  <name>Position 58</name>
+</trkpt>
+<trkpt lat="52.420618000" lon="13.747161200">
+  <ele>28.800000</ele>
+  <time>2014-12-14T11:19:20Z</time>
+  <name>Position 59</name>
+</trkpt>
+<trkpt lat="52.420476100" lon="13.746610200">
+  <ele>25.700000</ele>
+  <time>2014-12-14T11:20:22Z</time>
+  <name>Position 61</name>
+</trkpt>
+<trkpt lat="52.420342600" lon="13.746408300">
+  <ele>22.100000</ele>
+  <time>2014-12-14T11:20:41Z</time>
+  <name>Position 62</name>
+</trkpt>
+<trkpt lat="52.420280000" lon="13.746121300">
+  <ele>27.100000</ele>
+  <time>2014-12-14T11:21:05Z</time>
+  <name>Position 63</name>
+</trkpt>
+<trkpt lat="52.420179000" lon="13.745867100">
+  <ele>24.100000</ele>
+  <time>2014-12-14T11:21:24Z</time>
+  <name>Position 64</name>
+</trkpt>
+<trkpt lat="52.420038200" lon="13.745651800">
+  <ele>24.700000</ele>
+  <time>2014-12-14T11:21:36Z</time>
+  <name>Position 65</name>
+</trkpt>
+<trkpt lat="52.419755500" lon="13.745282000">
+  <ele>28.700000</ele>
+  <time>2014-12-14T11:22:01Z</time>
+  <name>Position 67</name>
+</trkpt>
+<trkpt lat="52.419276800" lon="13.744820400">
+  <ele>20.000000</ele>
+  <time>2014-12-14T11:22:48Z</time>
+  <name>Position 70</name>
+</trkpt>
+<trkpt lat="52.419108800" lon="13.744704100">
+  <ele>19.500000</ele>
+  <time>2014-12-14T11:23:03Z</time>
+  <name>Position 71</name>
+</trkpt>
+<trkpt lat="52.418748200" lon="13.744645000">
+  <ele>21.100000</ele>
+  <time>2014-12-14T11:24:10Z</time>
+  <name>Position 73</name>
+</trkpt>
+<trkpt lat="52.418571400" lon="13.744572800">
+  <ele>25.100000</ele>
+  <time>2014-12-14T11:24:33Z</time>
+  <name>Position 74</name>
+</trkpt>
+<trkpt lat="52.418434700" lon="13.744378800">
+  <ele>28.600000</ele>
+  <time>2014-12-14T11:24:48Z</time>
+  <name>Position 75</name>
+</trkpt>
+<trkpt lat="52.418379900" lon="13.744094000">
+  <ele>29.500000</ele>
+  <time>2014-12-14T11:25:07Z</time>
+  <name>Position 76</name>
+</trkpt>
+<trkpt lat="52.418149300" lon="13.743253000">
+  <ele>31.000000</ele>
+  <time>2014-12-14T11:26:01Z</time>
+  <name>Position 79</name>
+</trkpt>
+<trkpt lat="52.417999700" lon="13.743085300">
+  <ele>24.700000</ele>
+  <time>2014-12-14T11:26:13Z</time>
+  <name>Position 80</name>
+</trkpt>
+<trkpt lat="52.417893600" lon="13.742837100">
+  <ele>19.400000</ele>
+  <time>2014-12-14T11:26:31Z</time>
+  <name>Position 81</name>
+</trkpt>
+<trkpt lat="52.417541500" lon="13.742598500">
+  <ele>14.600000</ele>
+  <time>2014-12-14T11:27:07Z</time>
+  <name>Position 83</name>
+</trkpt>
+<trkpt lat="52.417354900" lon="13.742540900">
+  <ele>23.100000</ele>
+  <time>2014-12-14T11:27:20Z</time>
+  <name>Position 84</name>
+</trkpt>
+<trkpt lat="52.416997600" lon="13.742619200">
+  <ele>25.200000</ele>
+  <time>2014-12-14T11:27:46Z</time>
+  <name>Position 86</name>
+</trkpt>
+<trkpt lat="52.416633600" lon="13.742774600">
+  <ele>26.500000</ele>
+  <time>2014-12-14T11:28:18Z</time>
+  <name>Position 88</name>
+</trkpt>
+<trkpt lat="52.416445100" lon="13.742745500">
+  <ele>24.400000</ele>
+  <time>2014-12-14T11:28:33Z</time>
+  <name>Position 89</name>
+</trkpt>
+<trkpt lat="52.416256600" lon="13.742672400">
+  <ele>25.800000</ele>
+  <time>2014-12-14T11:28:48Z</time>
+  <name>Position 90</name>
+</trkpt>
+<trkpt lat="52.416077900" lon="13.742637600">
+  <ele>23.200000</ele>
+  <time>2014-12-14T11:29:04Z</time>
+  <name>Position 91</name>
+</trkpt>
+<trkpt lat="52.415891000" lon="13.742654300">
+  <ele>25.200000</ele>
+  <time>2014-12-14T11:29:20Z</time>
+  <name>Position 92</name>
+</trkpt>
+<trkpt lat="52.415715000" lon="13.742718700">
+  <ele>24.900000</ele>
+  <time>2014-12-14T11:29:35Z</time>
+  <name>Position 93</name>
+</trkpt>
+<trkpt lat="52.415373900" lon="13.742952100">
+  <ele>26.500000</ele>
+  <time>2014-12-14T11:30:07Z</time>
+  <name>Position 95</name>
+</trkpt>
+<trkpt lat="52.415295100" lon="13.743237600">
+  <ele>26.100000</ele>
+  <time>2014-12-14T11:30:42Z</time>
+  <name>Position 96</name>
+</trkpt>
+<trkpt lat="52.414830200" lon="13.743741200">
+  <ele>24.900000</ele>
+  <time>2014-12-14T11:31:29Z</time>
+  <name>Position 99</name>
+</trkpt>
+<trkpt lat="52.414461600" lon="13.743749400">
+  <ele>24.200000</ele>
+  <time>2014-12-14T11:32:07Z</time>
+  <name>Position 101</name>
+</trkpt>
+<trkpt lat="52.414271100" lon="13.743694100">
+  <ele>17.100000</ele>
+  <time>2014-12-14T11:32:23Z</time>
+  <name>Position 102</name>
+</trkpt>
+<trkpt lat="52.413522900" lon="13.743626900">
+  <ele>13.300000</ele>
+  <time>2014-12-14T11:33:28Z</time>
+  <name>Position 106</name>
+</trkpt>
+<trkpt lat="52.413344300" lon="13.743525100">
+  <ele>10.000000</ele>
+  <time>2014-12-14T11:33:45Z</time>
+  <name>Position 107</name>
+</trkpt>
+<trkpt lat="52.413175500" lon="13.743384300">
+  <ele>15.700000</ele>
+  <time>2014-12-14T11:34:00Z</time>
+  <name>Position 108</name>
+</trkpt>
+<trkpt lat="52.413018100" lon="13.743218800">
+  <ele>15.400000</ele>
+  <time>2014-12-14T11:34:15Z</time>
+  <name>Position 109</name>
+</trkpt>
+<trkpt lat="52.412879400" lon="13.743028000">
+  <ele>17.800000</ele>
+  <time>2014-12-14T11:34:31Z</time>
+  <name>Position 110</name>
+</trkpt>
+<trkpt lat="52.412728200" lon="13.742862800">
+  <ele>18.000000</ele>
+  <time>2014-12-14T11:34:48Z</time>
+  <name>Position 111</name>
+</trkpt>
+<trkpt lat="52.412591800" lon="13.742646000">
+  <ele>17.600000</ele>
+  <time>2014-12-14T11:35:03Z</time>
+  <name>Position 112</name>
+</trkpt>
+<trkpt lat="52.412420000" lon="13.742502800">
+  <ele>23.000000</ele>
+  <time>2014-12-14T11:35:17Z</time>
+  <name>Position 113</name>
+</trkpt>
+<trkpt lat="52.412108100" lon="13.742169400">
+  <ele>17.100000</ele>
+  <time>2014-12-14T11:35:51Z</time>
+  <name>Position 115</name>
+</trkpt>
+<trkpt lat="52.411961800" lon="13.741976600">
+  <ele>16.900000</ele>
+  <time>2014-12-14T11:36:07Z</time>
+  <name>Position 116</name>
+</trkpt>
+<trkpt lat="52.411806700" lon="13.741816800">
+  <ele>17.300000</ele>
+  <time>2014-12-14T11:36:22Z</time>
+  <name>Position 117</name>
+</trkpt>
+<trkpt lat="52.411662700" lon="13.741616800">
+  <ele>22.000000</ele>
+  <time>2014-12-14T11:36:37Z</time>
+  <name>Position 118</name>
+</trkpt>
+<trkpt lat="52.411197100" lon="13.741136900">
+  <ele>22.400000</ele>
+  <time>2014-12-14T11:37:25Z</time>
+  <name>Position 121</name>
+</trkpt>
+<trkpt lat="52.411060200" lon="13.740928300">
+  <ele>22.700000</ele>
+  <time>2014-12-14T11:37:41Z</time>
+  <name>Position 122</name>
+</trkpt>
+<trkpt lat="52.410912100" lon="13.740751800">
+  <ele>21.600000</ele>
+  <time>2014-12-14T11:37:57Z</time>
+  <name>Position 123</name>
+</trkpt>
+<trkpt lat="52.410586300" lon="13.740491400">
+  <ele>20.600000</ele>
+  <time>2014-12-14T11:38:33Z</time>
+  <name>Position 125</name>
+</trkpt>
+<trkpt lat="52.410243200" lon="13.740255500">
+  <ele>20.900000</ele>
+  <time>2014-12-14T11:39:06Z</time>
+  <name>Position 127</name>
+</trkpt>
+<trkpt lat="52.410066300" lon="13.740169200">
+  <ele>22.700000</ele>
+  <time>2014-12-14T11:39:22Z</time>
+  <name>Position 128</name>
+</trkpt>
+<trkpt lat="52.409571400" lon="13.739784400">
+  <ele>13.400000</ele>
+  <time>2014-12-14T11:40:15Z</time>
+  <name>Position 131</name>
+</trkpt>
+<trkpt lat="52.409227800" lon="13.739571200">
+  <ele>21.100000</ele>
+  <time>2014-12-14T11:40:44Z</time>
+  <name>Position 133</name>
+</trkpt>
+<trkpt lat="52.409041800" lon="13.739536400">
+  <ele>19.600000</ele>
+  <time>2014-12-14T11:41:03Z</time>
+  <name>Position 134</name>
+</trkpt>
+<trkpt lat="52.408497700" lon="13.739328600">
+  <ele>19.000000</ele>
+  <time>2014-12-14T11:42:02Z</time>
+  <name>Position 137</name>
+</trkpt>
+<trkpt lat="52.408129300" lon="13.739385300">
+  <ele>22.900000</ele>
+  <time>2014-12-14T11:42:36Z</time>
+  <name>Position 139</name>
+</trkpt>
+<trkpt lat="52.407941500" lon="13.739320000">
+  <ele>26.300000</ele>
+  <time>2014-12-14T11:42:59Z</time>
+  <name>Position 140</name>
+</trkpt>
+<trkpt lat="52.407768200" lon="13.739420500">
+  <ele>22.400000</ele>
+  <time>2014-12-14T11:43:51Z</time>
+  <name>Position 141</name>
+</trkpt>
+<trkpt lat="52.407615100" lon="13.739966000">
+  <ele>22.400000</ele>
+  <time>2014-12-14T11:45:24Z</time>
+  <name>Position 143</name>
+</trkpt>
+<trkpt lat="52.407507200" lon="13.740536000">
+  <ele>24.100000</ele>
+  <time>2014-12-14T11:45:55Z</time>
+  <name>Position 145</name>
+</trkpt>
+<trkpt lat="52.407296700" lon="13.741365400">
+  <ele>25.100000</ele>
+  <time>2014-12-14T11:46:41Z</time>
+  <name>Position 148</name>
+</trkpt>
+<trkpt lat="52.407204400" lon="13.741631600">
+  <ele>25.000000</ele>
+  <time>2014-12-14T11:46:58Z</time>
+  <name>Position 149</name>
+</trkpt>
+<trkpt lat="52.407136700" lon="13.741911300">
+  <ele>25.700000</ele>
+  <time>2014-12-14T11:47:15Z</time>
+  <name>Position 150</name>
+</trkpt>
+<trkpt lat="52.407047400" lon="13.742175200">
+  <ele>28.500000</ele>
+  <time>2014-12-14T11:47:28Z</time>
+  <name>Position 151</name>
+</trkpt>
+<trkpt lat="52.406988600" lon="13.742469300">
+  <ele>27.500000</ele>
+  <time>2014-12-14T11:47:46Z</time>
+  <name>Position 152</name>
+</trkpt>
+<trkpt lat="52.406898800" lon="13.742737400">
+  <ele>31.000000</ele>
+  <time>2014-12-14T11:48:01Z</time>
+  <name>Position 153</name>
+</trkpt>
+<trkpt lat="52.406858400" lon="13.743027600">
+  <ele>26.200000</ele>
+  <time>2014-12-14T11:48:18Z</time>
+  <name>Position 154</name>
+</trkpt>
+<trkpt lat="52.406619500" lon="13.743833700">
+  <ele>19.900000</ele>
+  <time>2014-12-14T11:49:13Z</time>
+  <name>Position 157</name>
+</trkpt>
+<trkpt lat="52.406552100" lon="13.744114800">
+  <ele>23.400000</ele>
+  <time>2014-12-14T11:49:27Z</time>
+  <name>Position 158</name>
+</trkpt>
+<trkpt lat="52.406458200" lon="13.744373700">
+  <ele>23.300000</ele>
+  <time>2014-12-14T11:49:44Z</time>
+  <name>Position 159</name>
+</trkpt>
+<trkpt lat="52.406274700" lon="13.744332000">
+  <ele>27.400000</ele>
+  <time>2014-12-14T11:49:59Z</time>
+  <name>Position 160</name>
+</trkpt>
+<trkpt lat="52.405539600" lon="13.744088900">
+  <ele>28.600000</ele>
+  <time>2014-12-14T11:51:05Z</time>
+  <name>Position 164</name>
+</trkpt>
+<trkpt lat="52.405369100" lon="13.744213300">
+  <ele>32.600000</ele>
+  <time>2014-12-14T11:51:33Z</time>
+  <name>Position 165</name>
+</trkpt>
+<trkpt lat="52.405310500" lon="13.744499600">
+  <ele>23.300000</ele>
+  <time>2014-12-14T11:51:53Z</time>
+  <name>Position 166</name>
+</trkpt>
+<trkpt lat="52.405229400" lon="13.745094600">
+  <ele>23.900000</ele>
+  <time>2014-12-14T11:52:40Z</time>
+  <name>Position 168</name>
+</trkpt>
+<trkpt lat="52.405159900" lon="13.745379400">
+  <ele>27.900000</ele>
+  <time>2014-12-14T11:53:00Z</time>
+  <name>Position 169</name>
+</trkpt>
+<trkpt lat="52.404805700" lon="13.746086200">
+  <ele>26.200000</ele>
+  <time>2014-12-14T11:53:48Z</time>
+  <name>Position 172</name>
+</trkpt>
+<trkpt lat="52.404671300" lon="13.746301100">
+  <ele>19.600000</ele>
+  <time>2014-12-14T11:54:05Z</time>
+  <name>Position 173</name>
+</trkpt>
+<trkpt lat="52.404551200" lon="13.746534500">
+  <ele>22.700000</ele>
+  <time>2014-12-14T11:54:22Z</time>
+  <name>Position 174</name>
+</trkpt>
+<trkpt lat="52.404488100" lon="13.746821800">
+  <ele>28.300000</ele>
+  <time>2014-12-14T11:55:04Z</time>
+  <name>Position 175</name>
+</trkpt>
+<trkpt lat="52.404381300" lon="13.747077700">
+  <ele>29.700000</ele>
+  <time>2014-12-14T11:55:19Z</time>
+  <name>Position 176</name>
+</trkpt>
+<trkpt lat="52.404097300" lon="13.747453100">
+  <ele>33.000000</ele>
+  <time>2014-12-14T11:55:52Z</time>
+  <name>Position 178</name>
+</trkpt>
+<trkpt lat="52.403931100" lon="13.747610700">
+  <ele>34.600000</ele>
+  <time>2014-12-14T11:56:08Z</time>
+  <name>Position 179</name>
+</trkpt>
+<trkpt lat="52.403558100" lon="13.747692000">
+  <ele>31.600000</ele>
+  <time>2014-12-14T11:56:42Z</time>
+  <name>Position 181</name>
+</trkpt>
+<trkpt lat="52.403440000" lon="13.747919400">
+  <ele>27.900000</ele>
+  <time>2014-12-14T11:57:03Z</time>
+  <name>Position 182</name>
+</trkpt>
+<trkpt lat="52.403442500" lon="13.748216800">
+  <ele>28.000000</ele>
+  <time>2014-12-14T11:59:48Z</time>
+  <name>Position 183</name>
+</trkpt>
+<trkpt lat="52.403260900" lon="13.749077200">
+  <ele>23.200000</ele>
+  <time>2014-12-14T12:00:41Z</time>
+  <name>Position 186</name>
+</trkpt>
+<trkpt lat="52.403106400" lon="13.749630900">
+  <ele>22.100000</ele>
+  <time>2014-12-14T12:01:07Z</time>
+  <name>Position 188</name>
+</trkpt>
+<trkpt lat="52.403004800" lon="13.749885500">
+  <ele>23.000000</ele>
+  <time>2014-12-14T12:01:22Z</time>
+  <name>Position 189</name>
+</trkpt>
+<trkpt lat="52.402933200" lon="13.750163000">
+  <ele>24.100000</ele>
+  <time>2014-12-14T12:01:39Z</time>
+  <name>Position 190</name>
+</trkpt>
+<trkpt lat="52.402883700" lon="13.750463400">
+  <ele>26.600000</ele>
+  <time>2014-12-14T12:01:55Z</time>
+  <name>Position 191</name>
+</trkpt>
+<trkpt lat="52.402867600" lon="13.750761000">
+  <ele>25.600000</ele>
+  <time>2014-12-14T12:02:10Z</time>
+  <name>Position 192</name>
+</trkpt>
+<trkpt lat="52.402875300" lon="13.751361200">
+  <ele>23.700000</ele>
+  <time>2014-12-14T12:02:47Z</time>
+  <name>Position 194</name>
+</trkpt>
+<trkpt lat="52.402801600" lon="13.751635400">
+  <ele>23.100000</ele>
+  <time>2014-12-14T12:03:05Z</time>
+  <name>Position 195</name>
+</trkpt>
+<trkpt lat="52.402671600" lon="13.751848400">
+  <ele>24.100000</ele>
+  <time>2014-12-14T12:03:21Z</time>
+  <name>Position 196</name>
+</trkpt>
+<trkpt lat="52.402504400" lon="13.751984300">
+  <ele>24.900000</ele>
+  <time>2014-12-14T12:03:39Z</time>
+  <name>Position 197</name>
+</trkpt>
+<trkpt lat="52.402322000" lon="13.751998200">
+  <ele>24.300000</ele>
+  <time>2014-12-14T12:03:54Z</time>
+  <name>Position 198</name>
+</trkpt>
+<trkpt lat="52.401984200" lon="13.752227400">
+  <ele>25.200000</ele>
+  <time>2014-12-14T12:04:27Z</time>
+  <name>Position 200</name>
+</trkpt>
+<trkpt lat="52.401625200" lon="13.752378400">
+  <ele>25.400000</ele>
+  <time>2014-12-14T12:05:01Z</time>
+  <name>Position 202</name>
+</trkpt>
+<trkpt lat="52.401069800" lon="13.752460700">
+  <ele>26.100000</ele>
+  <time>2014-12-14T12:05:55Z</time>
+  <name>Position 205</name>
+</trkpt>
+<trkpt lat="52.400888500" lon="13.752530000">
+  <ele>27.100000</ele>
+  <time>2014-12-14T12:06:13Z</time>
+  <name>Position 206</name>
+</trkpt>
+<trkpt lat="52.400760300" lon="13.752758300">
+  <ele>26.800000</ele>
+  <time>2014-12-14T12:06:29Z</time>
+  <name>Position 207</name>
+</trkpt>
+<trkpt lat="52.400671300" lon="13.753031600">
+  <ele>27.100000</ele>
+  <time>2014-12-14T12:06:47Z</time>
+  <name>Position 208</name>
+</trkpt>
+<trkpt lat="52.400565000" lon="13.753275000">
+  <ele>26.100000</ele>
+  <time>2014-12-14T12:07:03Z</time>
+  <name>Position 209</name>
+</trkpt>
+<trkpt lat="52.400399100" lon="13.753811000">
+  <ele>25.100000</ele>
+  <time>2014-12-14T12:07:37Z</time>
+  <name>Position 211</name>
+</trkpt>
+<trkpt lat="52.400292300" lon="13.754063100">
+  <ele>26.000000</ele>
+  <time>2014-12-14T12:07:53Z</time>
+  <name>Position 212</name>
+</trkpt>
+<trkpt lat="52.400055400" lon="13.754871600">
+  <ele>29.600000</ele>
+  <time>2014-12-14T12:10:53Z</time>
+  <name>Position 215</name>
+</trkpt>
+<trkpt lat="52.399917200" lon="13.755073200">
+  <ele>28.600000</ele>
+  <time>2014-12-14T12:11:13Z</time>
+  <name>Position 216</name>
+</trkpt>
+<trkpt lat="52.399757500" lon="13.755209100">
+  <ele>31.300000</ele>
+  <time>2014-12-14T12:11:28Z</time>
+  <name>Position 217</name>
+</trkpt>
+<trkpt lat="52.399644000" lon="13.755451500">
+  <ele>32.500000</ele>
+  <time>2014-12-14T12:11:44Z</time>
+  <name>Position 218</name>
+</trkpt>
+<trkpt lat="52.399410300" lon="13.756273400">
+  <ele>35.900000</ele>
+  <time>2014-12-14T12:12:33Z</time>
+  <name>Position 221</name>
+</trkpt>
+<trkpt lat="52.399314200" lon="13.756529300">
+  <ele>33.600000</ele>
+  <time>2014-12-14T12:12:51Z</time>
+  <name>Position 222</name>
+</trkpt>
+<trkpt lat="52.399002600" lon="13.756857100">
+  <ele>33.800000</ele>
+  <time>2014-12-14T12:13:23Z</time>
+  <name>Position 224</name>
+</trkpt>
+<trkpt lat="52.398870400" lon="13.757078700">
+  <ele>31.900000</ele>
+  <time>2014-12-14T12:13:39Z</time>
+  <name>Position 225</name>
+</trkpt>
+<trkpt lat="52.398793200" lon="13.757357000">
+  <ele>29.300000</ele>
+  <time>2014-12-14T12:14:15Z</time>
+  <name>Position 226</name>
+</trkpt>
+<trkpt lat="52.398638000" lon="13.757516800">
+  <ele>29.600000</ele>
+  <time>2014-12-14T12:14:34Z</time>
+  <name>Position 227</name>
+</trkpt>
+<trkpt lat="52.398352400" lon="13.757898900">
+  <ele>29.000000</ele>
+  <time>2014-12-14T12:15:14Z</time>
+  <name>Position 229</name>
+</trkpt>
+<trkpt lat="52.398227600" lon="13.758115500">
+  <ele>31.300000</ele>
+  <time>2014-12-14T12:15:31Z</time>
+  <name>Position 230</name>
+</trkpt>
+<trkpt lat="52.398021800" lon="13.758609400">
+  <ele>32.000000</ele>
+  <time>2014-12-14T12:16:07Z</time>
+  <name>Position 232</name>
+</trkpt>
+<trkpt lat="52.397857200" lon="13.759160600">
+  <ele>35.400000</ele>
+  <time>2014-12-14T12:16:44Z</time>
+  <name>Position 234</name>
+</trkpt>
+<trkpt lat="52.397745300" lon="13.759411800">
+  <ele>34.200000</ele>
+  <time>2014-12-14T12:17:05Z</time>
+  <name>Position 235</name>
+</trkpt>
+<trkpt lat="52.397652800" lon="13.759672900">
+  <ele>31.700000</ele>
+  <time>2014-12-14T12:17:24Z</time>
+  <name>Position 236</name>
+</trkpt>
+<trkpt lat="52.397199400" lon="13.760213200">
+  <ele>33.000000</ele>
+  <time>2014-12-14T12:18:16Z</time>
+  <name>Position 239</name>
+</trkpt>
+<trkpt lat="52.396868600" lon="13.760468500">
+  <ele>32.800000</ele>
+  <time>2014-12-14T12:18:50Z</time>
+  <name>Position 241</name>
+</trkpt>
+<trkpt lat="52.396776300" lon="13.760736400">
+  <ele>34.600000</ele>
+  <time>2014-12-14T12:19:09Z</time>
+  <name>Position 242</name>
+</trkpt>
+<trkpt lat="52.396778500" lon="13.761047000">
+  <ele>37.900000</ele>
+  <time>2014-12-14T12:19:27Z</time>
+  <name>Position 243</name>
+</trkpt>
+<trkpt lat="52.396854600" lon="13.761325600">
+  <ele>37.800000</ele>
+  <time>2014-12-14T12:19:45Z</time>
+  <name>Position 244</name>
+</trkpt>
+<trkpt lat="52.396851200" lon="13.761628300">
+  <ele>34.700000</ele>
+  <time>2014-12-14T12:20:05Z</time>
+  <name>Position 245</name>
+</trkpt>
+<trkpt lat="52.396979700" lon="13.762202900">
+  <ele>32.500000</ele>
+  <time>2014-12-14T12:20:38Z</time>
+  <name>Position 247</name>
+</trkpt>
+<trkpt lat="52.397145900" lon="13.762342000">
+  <ele>36.200000</ele>
+  <time>2014-12-14T12:21:44Z</time>
+  <name>Position 248</name>
+</trkpt>
+<trkpt lat="52.397327900" lon="13.762445300">
+  <ele>36.500000</ele>
+  <time>2014-12-14T12:22:01Z</time>
+  <name>Position 249</name>
+</trkpt>
+<trkpt lat="52.397694500" lon="13.762408200">
+  <ele>38.300000</ele>
+  <time>2014-12-14T12:22:36Z</time>
+  <name>Position 251</name>
+</trkpt>
+<trkpt lat="52.397877800" lon="13.762443000">
+  <ele>33.700000</ele>
+  <time>2014-12-14T12:22:55Z</time>
+  <name>Position 252</name>
+</trkpt>
+<trkpt lat="52.398054500" lon="13.762508100">
+  <ele>31.900000</ele>
+  <time>2014-12-14T12:23:12Z</time>
+  <name>Position 253</name>
+</trkpt>
+<trkpt lat="52.398617200" lon="13.762541500">
+  <ele>35.800000</ele>
+  <time>2014-12-14T12:24:19Z</time>
+  <name>Position 256</name>
+</trkpt>
+<trkpt lat="52.398707400" lon="13.762801900">
+  <ele>34.600000</ele>
+  <time>2014-12-14T12:24:44Z</time>
+  <name>Position 257</name>
+</trkpt>
+<trkpt lat="52.398406900" lon="13.763569400">
+  <ele>31.000000</ele>
+  <time>2014-12-14T12:25:40Z</time>
+  <name>Position 260</name>
+</trkpt>
+<trkpt lat="52.398324400" lon="13.763853500">
+  <ele>34.100000</ele>
+  <time>2014-12-14T12:25:58Z</time>
+  <name>Position 261</name>
+</trkpt>
+<trkpt lat="52.398290400" lon="13.764153400">
+  <ele>40.100000</ele>
+  <time>2014-12-14T12:26:16Z</time>
+  <name>Position 262</name>
+</trkpt>
+<trkpt lat="52.398355000" lon="13.764438000">
+  <ele>36.900000</ele>
+  <time>2014-12-14T12:26:33Z</time>
+  <name>Position 263</name>
+</trkpt>
+<trkpt lat="52.398441500" lon="13.764702600">
+  <ele>34.900000</ele>
+  <time>2014-12-14T12:26:51Z</time>
+  <name>Position 264</name>
+</trkpt>
+<trkpt lat="52.398539000" lon="13.765277800">
+  <ele>33.100000</ele>
+  <time>2014-12-14T12:27:23Z</time>
+  <name>Position 266</name>
+</trkpt>
+<trkpt lat="52.398646600" lon="13.765534900">
+  <ele>32.000000</ele>
+  <time>2014-12-14T12:27:41Z</time>
+  <name>Position 267</name>
+</trkpt>
+<trkpt lat="52.398685100" lon="13.765828900">
+  <ele>31.700000</ele>
+  <time>2014-12-14T12:27:57Z</time>
+  <name>Position 268</name>
+</trkpt>
+<trkpt lat="52.398813200" lon="13.766401100">
+  <ele>35.700000</ele>
+  <time>2014-12-14T12:28:29Z</time>
+  <name>Position 270</name>
+</trkpt>
+<trkpt lat="52.398815200" lon="13.766698100">
+  <ele>31.200000</ele>
+  <time>2014-12-14T12:28:49Z</time>
+  <name>Position 271</name>
+</trkpt>
+<trkpt lat="52.398958700" lon="13.767249300">
+  <ele>24.400000</ele>
+  <time>2014-12-14T12:29:23Z</time>
+  <name>Position 273</name>
+</trkpt>
+<trkpt lat="52.399017400" lon="13.767538800">
+  <ele>26.400000</ele>
+  <time>2014-12-14T12:29:39Z</time>
+  <name>Position 274</name>
+</trkpt>
+<trkpt lat="52.399107800" lon="13.767807500">
+  <ele>28.300000</ele>
+  <time>2014-12-14T12:29:56Z</time>
+  <name>Position 275</name>
+</trkpt>
+<trkpt lat="52.399044600" lon="13.768108000">
+  <ele>33.500000</ele>
+  <time>2014-12-14T12:30:12Z</time>
+  <name>Position 276</name>
+</trkpt>
+<trkpt lat="52.399135300" lon="13.768385600">
+  <ele>28.000000</ele>
+  <time>2014-12-14T12:32:00Z</time>
+  <name>Position 277</name>
+</trkpt>
+<trkpt lat="52.399264300" lon="13.768602600">
+  <ele>18.100000</ele>
+  <time>2014-12-14T12:32:10Z</time>
+  <name>Position 278</name>
+</trkpt>
+<trkpt lat="52.399352000" lon="13.768878700">
+  <ele>15.400000</ele>
+  <time>2014-12-14T12:32:20Z</time>
+  <name>Position 279</name>
+</trkpt>
+<trkpt lat="52.399409600" lon="13.769198400">
+  <ele>16.100000</ele>
+  <time>2014-12-14T12:32:28Z</time>
+  <name>Position 280</name>
+</trkpt>
+<trkpt lat="52.399482600" lon="13.769484600">
+  <ele>20.800000</ele>
+  <time>2014-12-14T12:32:38Z</time>
+  <name>Position 281</name>
+</trkpt>
+<trkpt lat="52.399578400" lon="13.770096400">
+  <ele>28.400000</ele>
+  <time>2014-12-14T12:33:03Z</time>
+  <name>Position 283</name>
+</trkpt>
+<trkpt lat="52.399698800" lon="13.770662500">
+  <ele>36.700000</ele>
+  <time>2014-12-14T12:33:26Z</time>
+  <name>Position 285</name>
+</trkpt>
+<trkpt lat="52.399724600" lon="13.771260800">
+  <ele>43.400000</ele>
+  <time>2014-12-14T12:33:54Z</time>
+  <name>Position 287</name>
+</trkpt>
+<trkpt lat="52.399809600" lon="13.771529300">
+  <ele>36.500000</ele>
+  <time>2014-12-14T12:34:09Z</time>
+  <name>Position 288</name>
+</trkpt>
+<trkpt lat="52.399858500" lon="13.771815800">
+  <ele>36.100000</ele>
+  <time>2014-12-14T12:34:22Z</time>
+  <name>Position 289</name>
+</trkpt>
+<trkpt lat="52.399929900" lon="13.772400600">
+  <ele>44.800000</ele>
+  <time>2014-12-14T12:34:45Z</time>
+  <name>Position 291</name>
+</trkpt>
+<trkpt lat="52.400045900" lon="13.772971200">
+  <ele>39.900000</ele>
+  <time>2014-12-14T12:35:21Z</time>
+  <name>Position 293</name>
+</trkpt>
+<trkpt lat="52.400150000" lon="13.773224600">
+  <ele>34.000000</ele>
+  <time>2014-12-14T12:35:39Z</time>
+  <name>Position 294</name>
+</trkpt>
+<trkpt lat="52.400195700" lon="13.773511700">
+  <ele>33.600000</ele>
+  <time>2014-12-14T12:35:57Z</time>
+  <name>Position 295</name>
+</trkpt>
+<trkpt lat="52.400359100" lon="13.774051400">
+  <ele>30.900000</ele>
+  <time>2014-12-14T12:36:31Z</time>
+  <name>Position 297</name>
+</trkpt>
+<trkpt lat="52.400366000" lon="13.774359000">
+  <ele>36.000000</ele>
+  <time>2014-12-14T12:36:46Z</time>
+  <name>Position 298</name>
+</trkpt>
+<trkpt lat="52.400394700" lon="13.774652400">
+  <ele>37.600000</ele>
+  <time>2014-12-14T12:37:06Z</time>
+  <name>Position 299</name>
+</trkpt>
+<trkpt lat="52.400444600" lon="13.774936700">
+  <ele>44.800000</ele>
+  <time>2014-12-14T12:37:20Z</time>
+  <name>Position 300</name>
+</trkpt>
+<trkpt lat="52.400473600" lon="13.775247300">
+  <ele>44.600000</ele>
+  <time>2014-12-14T12:37:36Z</time>
+  <name>Position 301</name>
+</trkpt>
+<trkpt lat="52.400593200" lon="13.775469800">
+  <ele>33.200000</ele>
+  <time>2014-12-14T12:37:53Z</time>
+  <name>Position 302</name>
+</trkpt>
+<trkpt lat="52.400678800" lon="13.775735800">
+  <ele>27.400000</ele>
+  <time>2014-12-14T12:38:15Z</time>
+  <name>Position 303</name>
+</trkpt>
+<trkpt lat="52.400678600" lon="13.776043400">
+  <ele>30.100000</ele>
+  <time>2014-12-14T12:38:28Z</time>
+  <name>Position 304</name>
+</trkpt>
+<trkpt lat="52.400759400" lon="13.776324800">
+  <ele>29.000000</ele>
+  <time>2014-12-14T12:38:45Z</time>
+  <name>Position 305</name>
+</trkpt>
+<trkpt lat="52.400853100" lon="13.777218600">
+  <ele>38.200000</ele>
+  <time>2014-12-14T12:39:32Z</time>
+  <name>Position 308</name>
+</trkpt>
+<trkpt lat="52.400961900" lon="13.777473300">
+  <ele>37.600000</ele>
+  <time>2014-12-14T12:39:48Z</time>
+  <name>Position 309</name>
+</trkpt>
+<trkpt lat="52.400978800" lon="13.777773300">
+  <ele>35.300000</ele>
+  <time>2014-12-14T12:40:01Z</time>
+  <name>Position 310</name>
+</trkpt>
+<trkpt lat="52.401102900" lon="13.778351300">
+  <ele>33.000000</ele>
+  <time>2014-12-14T12:40:36Z</time>
+  <name>Position 312</name>
+</trkpt>
+<trkpt lat="52.401141500" lon="13.778652300">
+  <ele>37.300000</ele>
+  <time>2014-12-14T12:40:49Z</time>
+  <name>Position 313</name>
+</trkpt>
+<trkpt lat="52.401216000" lon="13.778923000">
+  <ele>39.200000</ele>
+  <time>2014-12-14T12:41:05Z</time>
+  <name>Position 314</name>
+</trkpt>
+<trkpt lat="52.401306900" lon="13.779181200">
+  <ele>33.900000</ele>
+  <time>2014-12-14T12:41:21Z</time>
+  <name>Position 315</name>
+</trkpt>
+<trkpt lat="52.401408700" lon="13.779773500">
+  <ele>30.900000</ele>
+  <time>2014-12-14T12:41:54Z</time>
+  <name>Position 317</name>
+</trkpt>
+<trkpt lat="52.401430800" lon="13.780075900">
+  <ele>36.600000</ele>
+  <time>2014-12-14T12:42:07Z</time>
+  <name>Position 318</name>
+</trkpt>
+<trkpt lat="52.401507300" lon="13.780351100">
+  <ele>36.500000</ele>
+  <time>2014-12-14T12:42:24Z</time>
+  <name>Position 319</name>
+</trkpt>
+<trkpt lat="52.401546800" lon="13.780650000">
+  <ele>37.500000</ele>
+  <time>2014-12-14T12:42:40Z</time>
+  <name>Position 320</name>
+</trkpt>
+<trkpt lat="52.401546700" lon="13.780957200">
+  <ele>40.900000</ele>
+  <time>2014-12-14T12:42:54Z</time>
+  <name>Position 321</name>
+</trkpt>
+<trkpt lat="52.401585700" lon="13.781261800">
+  <ele>41.700000</ele>
+  <time>2014-12-14T12:43:11Z</time>
+  <name>Position 322</name>
+</trkpt>
+<trkpt lat="52.401718000" lon="13.781485300">
+  <ele>42.700000</ele>
+  <time>2014-12-14T12:43:29Z</time>
+  <name>Position 323</name>
+</trkpt>
+<trkpt lat="52.401782400" lon="13.781771400">
+  <ele>33.100000</ele>
+  <time>2014-12-14T12:43:52Z</time>
+  <name>Position 324</name>
+</trkpt>
+<trkpt lat="52.401871200" lon="13.782047300">
+  <ele>31.500000</ele>
+  <time>2014-12-14T12:44:08Z</time>
+  <name>Position 325</name>
+</trkpt>
+<trkpt lat="52.402007000" lon="13.782244200">
+  <ele>28.100000</ele>
+  <time>2014-12-14T12:44:22Z</time>
+  <name>Position 326</name>
+</trkpt>
+<trkpt lat="52.402197900" lon="13.782221800">
+  <ele>34.400000</ele>
+  <time>2014-12-14T12:46:00Z</time>
+  <name>Position 327</name>
+</trkpt>
+<trkpt lat="52.402342400" lon="13.782027000">
+  <ele>26.000000</ele>
+  <time>2014-12-14T12:47:23Z</time>
+  <name>Position 328</name>
+</trkpt>
+<trkpt lat="52.402584300" lon="13.781551100">
+  <ele>37.300000</ele>
+  <time>2014-12-14T12:47:49Z</time>
+  <name>Position 330</name>
+</trkpt>
+<trkpt lat="52.402761000" lon="13.781018100">
+  <ele>37.000000</ele>
+  <time>2014-12-14T12:48:27Z</time>
+  <name>Position 332</name>
+</trkpt>
+<trkpt lat="52.402911900" lon="13.780823900">
+  <ele>40.000000</ele>
+  <time>2014-12-14T12:48:40Z</time>
+  <name>Position 333</name>
+</trkpt>
+<trkpt lat="52.403342200" lon="13.779846400">
+  <ele>37.500000</ele>
+  <time>2014-12-14T12:49:49Z</time>
+  <name>Position 337</name>
+</trkpt>
+<trkpt lat="52.403583700" lon="13.779376100">
+  <ele>34.000000</ele>
+  <time>2014-12-14T12:50:25Z</time>
+  <name>Position 339</name>
+</trkpt>
+<trkpt lat="52.403680800" lon="13.779125200">
+  <ele>35.500000</ele>
+  <time>2014-12-14T12:50:41Z</time>
+  <name>Position 340</name>
+</trkpt>
+<trkpt lat="52.403824000" lon="13.778925800">
+  <ele>38.200000</ele>
+  <time>2014-12-14T12:50:57Z</time>
+  <name>Position 341</name>
+</trkpt>
+<trkpt lat="52.403938300" lon="13.778684200">
+  <ele>35.100000</ele>
+  <time>2014-12-14T12:51:13Z</time>
+  <name>Position 342</name>
+</trkpt>
+<trkpt lat="52.404142300" lon="13.778145700">
+  <ele>35.300000</ele>
+  <time>2014-12-14T12:51:48Z</time>
+  <name>Position 344</name>
+</trkpt>
+<trkpt lat="52.404418700" lon="13.777733400">
+  <ele>27.700000</ele>
+  <time>2014-12-14T12:52:23Z</time>
+  <name>Position 346</name>
+</trkpt>
+<trkpt lat="52.404531800" lon="13.777492400">
+  <ele>34.700000</ele>
+  <time>2014-12-14T12:52:37Z</time>
+  <name>Position 347</name>
+</trkpt>
+<trkpt lat="52.404663400" lon="13.777274200">
+  <ele>35.900000</ele>
+  <time>2014-12-14T12:52:53Z</time>
+  <name>Position 348</name>
+</trkpt>
+<trkpt lat="52.404774300" lon="13.777040400">
+  <ele>42.800000</ele>
+  <time>2014-12-14T12:53:07Z</time>
+  <name>Position 349</name>
+</trkpt>
+<trkpt lat="52.405028400" lon="13.776617800">
+  <ele>39.300000</ele>
+  <time>2014-12-14T12:53:56Z</time>
+  <name>Position 351</name>
+</trkpt>
+<trkpt lat="52.405241200" lon="13.776121400">
+  <ele>35.100000</ele>
+  <time>2014-12-14T12:54:32Z</time>
+  <name>Position 353</name>
+</trkpt>
+<trkpt lat="52.405477200" lon="13.775662200">
+  <ele>33.100000</ele>
+  <time>2014-12-14T12:55:09Z</time>
+  <name>Position 355</name>
+</trkpt>
+<trkpt lat="52.405614800" lon="13.775454800">
+  <ele>34.900000</ele>
+  <time>2014-12-14T12:55:26Z</time>
+  <name>Position 356</name>
+</trkpt>
+<trkpt lat="52.405762100" lon="13.775277500">
+  <ele>36.300000</ele>
+  <time>2014-12-14T12:55:42Z</time>
+  <name>Position 357</name>
+</trkpt>
+<trkpt lat="52.405853200" lon="13.774997400">
+  <ele>34.600000</ele>
+  <time>2014-12-14T12:56:24Z</time>
+  <name>Position 358</name>
+</trkpt>
+<trkpt lat="52.405990700" lon="13.774801000">
+  <ele>34.600000</ele>
+  <time>2014-12-14T12:56:43Z</time>
+  <name>Position 359</name>
+</trkpt>
+<trkpt lat="52.406156200" lon="13.774650800">
+  <ele>32.700000</ele>
+  <time>2014-12-14T12:56:59Z</time>
+  <name>Position 360</name>
+</trkpt>
+<trkpt lat="52.406403300" lon="13.774205900">
+  <ele>42.200000</ele>
+  <time>2014-12-14T12:57:33Z</time>
+  <name>Position 362</name>
+</trkpt>
+<trkpt lat="52.406599700" lon="13.773702100">
+  <ele>41.900000</ele>
+  <time>2014-12-14T12:58:31Z</time>
+  <name>Position 364</name>
+</trkpt>
+<trkpt lat="52.406724700" lon="13.773489000">
+  <ele>48.800000</ele>
+  <time>2014-12-14T12:58:48Z</time>
+  <name>Position 365</name>
+</trkpt>
+<trkpt lat="52.406940100" lon="13.772989900">
+  <ele>40.200000</ele>
+  <time>2014-12-14T12:59:23Z</time>
+  <name>Position 367</name>
+</trkpt>
+<trkpt lat="52.407097300" lon="13.772840800">
+  <ele>38.100000</ele>
+  <time>2014-12-14T12:59:41Z</time>
+  <name>Position 368</name>
+</trkpt>
+<trkpt lat="52.407248000" lon="13.772646100">
+  <ele>40.100000</ele>
+  <time>2014-12-14T12:59:58Z</time>
+  <name>Position 369</name>
+</trkpt>
+<trkpt lat="52.407510000" lon="13.772215400">
+  <ele>40.900000</ele>
+  <time>2014-12-14T13:00:25Z</time>
+  <name>Position 371</name>
+</trkpt>
+<trkpt lat="52.407647800" lon="13.772024500">
+  <ele>40.700000</ele>
+  <time>2014-12-14T13:00:42Z</time>
+  <name>Position 372</name>
+</trkpt>
+<trkpt lat="52.407895400" lon="13.771565800">
+  <ele>40.400000</ele>
+  <time>2014-12-14T13:01:17Z</time>
+  <name>Position 374</name>
+</trkpt>
+<trkpt lat="52.408183700" lon="13.771178100">
+  <ele>40.900000</ele>
+  <time>2014-12-14T13:01:53Z</time>
+  <name>Position 376</name>
+</trkpt>
+<trkpt lat="52.408416800" lon="13.770698400">
+  <ele>40.600000</ele>
+  <time>2014-12-14T13:02:28Z</time>
+  <name>Position 378</name>
+</trkpt>
+<trkpt lat="52.408596000" lon="13.770166700">
+  <ele>34.800000</ele>
+  <time>2014-12-14T13:03:04Z</time>
+  <name>Position 380</name>
+</trkpt>
+<trkpt lat="52.408988200" lon="13.769513400">
+  <ele>28.900000</ele>
+  <time>2014-12-14T13:03:53Z</time>
+  <name>Position 383</name>
+</trkpt>
+<trkpt lat="52.409219800" lon="13.769043500">
+  <ele>33.400000</ele>
+  <time>2014-12-14T13:04:23Z</time>
+  <name>Position 385</name>
+</trkpt>
+<trkpt lat="52.409637400" lon="13.768464800">
+  <ele>35.500000</ele>
+  <time>2014-12-14T13:05:07Z</time>
+  <name>Position 388</name>
+</trkpt>
+<trkpt lat="52.409751900" lon="13.768237200">
+  <ele>35.700000</ele>
+  <time>2014-12-14T13:05:22Z</time>
+  <name>Position 389</name>
+</trkpt>
+<trkpt lat="52.409907100" lon="13.768063000">
+  <ele>35.400000</ele>
+  <time>2014-12-14T13:05:37Z</time>
+  <name>Position 390</name>
+</trkpt>
+<trkpt lat="52.410148900" lon="13.767587600">
+  <ele>35.200000</ele>
+  <time>2014-12-14T13:06:10Z</time>
+  <name>Position 392</name>
+</trkpt>
+<trkpt lat="52.410311800" lon="13.767436000">
+  <ele>34.400000</ele>
+  <time>2014-12-14T13:06:25Z</time>
+  <name>Position 393</name>
+</trkpt>
+<trkpt lat="52.410441800" lon="13.767208300">
+  <ele>36.300000</ele>
+  <time>2014-12-14T13:06:41Z</time>
+  <name>Position 394</name>
+</trkpt>
+<trkpt lat="52.410734900" lon="13.766834800">
+  <ele>31.300000</ele>
+  <time>2014-12-14T13:07:14Z</time>
+  <name>Position 396</name>
+</trkpt>
+<trkpt lat="52.410905200" lon="13.766705900">
+  <ele>31.300000</ele>
+  <time>2014-12-14T13:07:27Z</time>
+  <name>Position 397</name>
+</trkpt>
+<trkpt lat="52.411032400" lon="13.766477800">
+  <ele>33.200000</ele>
+  <time>2014-12-14T13:07:46Z</time>
+  <name>Position 398</name>
+</trkpt>
+<trkpt lat="52.411077000" lon="13.765865200">
+  <ele>32.400000</ele>
+  <time>2014-12-14T13:08:18Z</time>
+  <name>Position 400</name>
+</trkpt>
+<trkpt lat="52.411047400" lon="13.765554400">
+  <ele>34.800000</ele>
+  <time>2014-12-14T13:08:31Z</time>
+  <name>Position 401</name>
+</trkpt>
+<trkpt lat="52.410974500" lon="13.765275700">
+  <ele>38.600000</ele>
+  <time>2014-12-14T13:08:46Z</time>
+  <name>Position 402</name>
+</trkpt>
+<trkpt lat="52.410961300" lon="13.764978100">
+  <ele>38.000000</ele>
+  <time>2014-12-14T13:09:01Z</time>
+  <name>Position 403</name>
+</trkpt>
+<trkpt lat="52.410911400" lon="13.764691200">
+  <ele>36.400000</ele>
+  <time>2014-12-14T13:09:15Z</time>
+  <name>Position 404</name>
+</trkpt>
+<trkpt lat="52.410839000" lon="13.764102700">
+  <ele>35.700000</ele>
+  <time>2014-12-14T13:09:45Z</time>
+  <name>Position 406</name>
+</trkpt>
+<trkpt lat="52.410829900" lon="13.763792600">
+  <ele>34.300000</ele>
+  <time>2014-12-14T13:10:02Z</time>
+  <name>Position 407</name>
+</trkpt>
+<trkpt lat="52.410754300" lon="13.763208700">
+  <ele>35.100000</ele>
+  <time>2014-12-14T13:10:46Z</time>
+  <name>Position 409</name>
+</trkpt>
+<trkpt lat="52.410762200" lon="13.762896900">
+  <ele>34.500000</ele>
+  <time>2014-12-14T13:11:03Z</time>
+  <name>Position 410</name>
+</trkpt>
+<trkpt lat="52.410818000" lon="13.762615400">
+  <ele>34.600000</ele>
+  <time>2014-12-14T13:11:16Z</time>
+  <name>Position 411</name>
+</trkpt>
+<trkpt lat="52.410923400" lon="13.762360300">
+  <ele>31.100000</ele>
+  <time>2014-12-14T13:11:36Z</time>
+  <name>Position 412</name>
+</trkpt>
+<trkpt lat="52.411085700" lon="13.762186100">
+  <ele>24.000000</ele>
+  <time>2014-12-14T13:25:34Z</time>
+  <name>Position 413</name>
+</trkpt>
+<trkpt lat="52.411267300" lon="13.762250200">
+  <ele>29.100000</ele>
+  <time>2014-12-14T13:25:50Z</time>
+  <name>Position 414</name>
+</trkpt>
+<trkpt lat="52.411791900" lon="13.761919000">
+  <ele>30.400000</ele>
+  <time>2014-12-14T13:26:35Z</time>
+  <name>Position 417</name>
+</trkpt>
+<trkpt lat="52.411969300" lon="13.761859900">
+  <ele>30.100000</ele>
+  <time>2014-12-14T13:26:45Z</time>
+  <name>Position 418</name>
+</trkpt>
+<trkpt lat="52.412134000" lon="13.761705000">
+  <ele>30.600000</ele>
+  <time>2014-12-14T13:26:59Z</time>
+  <name>Position 419</name>
+</trkpt>
+<trkpt lat="52.412514600" lon="13.761043800">
+  <ele>31.200000</ele>
+  <time>2014-12-14T13:27:55Z</time>
+  <name>Position 422</name>
+</trkpt>
+<trkpt lat="52.412641600" lon="13.760471900">
+  <ele>35.900000</ele>
+  <time>2014-12-14T13:28:27Z</time>
+  <name>Position 424</name>
+</trkpt>
+<trkpt lat="52.412601300" lon="13.760175100">
+  <ele>27.500000</ele>
+  <time>2014-12-14T13:28:53Z</time>
+  <name>Position 425</name>
+</trkpt>
+<trkpt lat="52.412478000" lon="13.759928000">
+  <ele>28.500000</ele>
+  <time>2014-12-14T13:29:10Z</time>
+  <name>Position 426</name>
+</trkpt>
+<trkpt lat="52.412441100" lon="13.759631800">
+  <ele>31.300000</ele>
+  <time>2014-12-14T13:29:24Z</time>
+  <name>Position 427</name>
+</trkpt>
+<trkpt lat="52.412311900" lon="13.759040100">
+  <ele>37.900000</ele>
+  <time>2014-12-14T13:29:58Z</time>
+  <name>Position 429</name>
+</trkpt>
+<trkpt lat="52.412263100" lon="13.758738200">
+  <ele>34.800000</ele>
+  <time>2014-12-14T13:30:12Z</time>
+  <name>Position 430</name>
+</trkpt>
+<trkpt lat="52.412263300" lon="13.758440500">
+  <ele>33.700000</ele>
+  <time>2014-12-14T13:30:29Z</time>
+  <name>Position 431</name>
+</trkpt>
+<trkpt lat="52.412352500" lon="13.758176800">
+  <ele>31.600000</ele>
+  <time>2014-12-14T13:30:51Z</time>
+  <name>Position 432</name>
+</trkpt>
+<trkpt lat="52.412476000" lon="13.757620600">
+  <ele>29.400000</ele>
+  <time>2014-12-14T13:31:24Z</time>
+  <name>Position 434</name>
+</trkpt>
+<trkpt lat="52.412579300" lon="13.757358100">
+  <ele>31.300000</ele>
+  <time>2014-12-14T13:31:39Z</time>
+  <name>Position 435</name>
+</trkpt>
+<trkpt lat="52.412760700" lon="13.757289700">
+  <ele>36.200000</ele>
+  <time>2014-12-14T13:32:14Z</time>
+  <name>Position 436</name>
+</trkpt>
+<trkpt lat="52.412954800" lon="13.757381900">
+  <ele>38.500000</ele>
+  <time>2014-12-14T13:32:36Z</time>
+  <name>Position 437</name>
+</trkpt>
+<trkpt lat="52.413285100" lon="13.757645900">
+  <ele>37.800000</ele>
+  <time>2014-12-14T13:33:05Z</time>
+  <name>Position 439</name>
+</trkpt>
+<trkpt lat="52.413448600" lon="13.757805100">
+  <ele>38.000000</ele>
+  <time>2014-12-14T13:33:27Z</time>
+  <name>Position 440</name>
+</trkpt>
+<trkpt lat="52.413630700" lon="13.757929600">
+  <ele>33.500000</ele>
+  <time>2014-12-14T13:33:38Z</time>
+  <name>Position 441</name>
+</trkpt>
+<trkpt lat="52.414158100" lon="13.758217600">
+  <ele>30.600000</ele>
+  <time>2014-12-14T13:34:17Z</time>
+  <name>Position 444</name>
+</trkpt>
+<trkpt lat="52.414324800" lon="13.758370100">
+  <ele>36.700000</ele>
+  <time>2014-12-14T13:34:31Z</time>
+  <name>Position 445</name>
+</trkpt>
+<trkpt lat="52.414471500" lon="13.758549700">
+  <ele>32.000000</ele>
+  <time>2014-12-14T13:34:46Z</time>
+  <name>Position 446</name>
+</trkpt>
+<trkpt lat="52.414576800" lon="13.758806300">
+  <ele>30.700000</ele>
+  <time>2014-12-14T13:35:09Z</time>
+  <name>Position 447</name>
+</trkpt>
+<trkpt lat="52.414744400" lon="13.758922800">
+  <ele>31.200000</ele>
+  <time>2014-12-14T13:35:25Z</time>
+  <name>Position 448</name>
+</trkpt>
+<trkpt lat="52.414899600" lon="13.759092700">
+  <ele>31.700000</ele>
+  <time>2014-12-14T13:35:42Z</time>
+  <name>Position 449</name>
+</trkpt>
+<trkpt lat="52.415139400" lon="13.759586200">
+  <ele>33.800000</ele>
+  <time>2014-12-14T13:36:08Z</time>
+  <name>Position 451</name>
+</trkpt>
+<trkpt lat="52.415275800" lon="13.759794700">
+  <ele>38.500000</ele>
+  <time>2014-12-14T13:36:22Z</time>
+  <name>Position 452</name>
+</trkpt>
+<trkpt lat="52.415459400" lon="13.759902000">
+  <ele>37.500000</ele>
+  <time>2014-12-14T13:36:38Z</time>
+  <name>Position 453</name>
+</trkpt>
+<trkpt lat="52.415621400" lon="13.760055400">
+  <ele>35.100000</ele>
+  <time>2014-12-14T13:36:59Z</time>
+  <name>Position 454</name>
+</trkpt>
+<trkpt lat="52.415804500" lon="13.760072000">
+  <ele>32.800000</ele>
+  <time>2014-12-14T13:38:39Z</time>
+  <name>Position 455</name>
+</trkpt>
+<trkpt lat="52.415985300" lon="13.760050200">
+  <ele>32.600000</ele>
+  <time>2014-12-14T13:38:52Z</time>
+  <name>Position 456</name>
+</trkpt>
+<trkpt lat="52.416297400" lon="13.759733200">
+  <ele>32.100000</ele>
+  <time>2014-12-14T13:39:28Z</time>
+  <name>Position 458</name>
+</trkpt>
+<trkpt lat="52.416415000" lon="13.759498100">
+  <ele>30.000000</ele>
+  <time>2014-12-14T13:39:40Z</time>
+  <name>Position 459</name>
+</trkpt>
+<trkpt lat="52.416726200" lon="13.759151200">
+  <ele>30.700000</ele>
+  <time>2014-12-14T13:40:08Z</time>
+  <name>Position 461</name>
+</trkpt>
+<trkpt lat="52.417097000" lon="13.759199800">
+  <ele>33.300000</ele>
+  <time>2014-12-14T13:40:39Z</time>
+  <name>Position 463</name>
+</trkpt>
+<trkpt lat="52.417268100" lon="13.759099400">
+  <ele>34.300000</ele>
+  <time>2014-12-14T13:40:54Z</time>
+  <name>Position 464</name>
+</trkpt>
+<trkpt lat="52.417426900" lon="13.758952000">
+  <ele>32.400000</ele>
+  <time>2014-12-14T13:41:10Z</time>
+  <name>Position 465</name>
+</trkpt>
+<trkpt lat="52.417601100" lon="13.758825100">
+  <ele>29.000000</ele>
+  <time>2014-12-14T13:41:24Z</time>
+  <name>Position 466</name>
+</trkpt>
+<trkpt lat="52.417934000" lon="13.758534500">
+  <ele>31.900000</ele>
+  <time>2014-12-14T13:41:53Z</time>
+  <name>Position 468</name>
+</trkpt>
+<trkpt lat="52.418082000" lon="13.758341700">
+  <ele>30.100000</ele>
+  <time>2014-12-14T13:42:09Z</time>
+  <name>Position 469</name>
+</trkpt>
+<trkpt lat="52.418254000" lon="13.758252500">
+  <ele>30.000000</ele>
+  <time>2014-12-14T13:42:22Z</time>
+  <name>Position 470</name>
+</trkpt>
+<trkpt lat="52.418617700" lon="13.758195500">
+  <ele>31.600000</ele>
+  <time>2014-12-14T13:43:32Z</time>
+  <name>Position 472</name>
+</trkpt>
+<trkpt lat="52.418798700" lon="13.758106700">
+  <ele>35.300000</ele>
+  <time>2014-12-14T13:43:48Z</time>
+  <name>Position 473</name>
+</trkpt>
+<trkpt lat="52.418978800" lon="13.758050700">
+  <ele>29.300000</ele>
+  <time>2014-12-14T13:44:03Z</time>
+  <name>Position 474</name>
+</trkpt>
+<trkpt lat="52.419153200" lon="13.757958400">
+  <ele>28.300000</ele>
+  <time>2014-12-14T13:44:22Z</time>
+  <name>Position 475</name>
+</trkpt>
+<trkpt lat="52.419336400" lon="13.757903100">
+  <ele>27.700000</ele>
+  <time>2014-12-14T13:44:40Z</time>
+  <name>Position 476</name>
+</trkpt>
+<trkpt lat="52.419515500" lon="13.757807500">
+  <ele>27.900000</ele>
+  <time>2014-12-14T13:44:55Z</time>
+  <name>Position 477</name>
+</trkpt>
+<trkpt lat="52.419703200" lon="13.757790800">
+  <ele>29.500000</ele>
+  <time>2014-12-14T13:45:14Z</time>
+  <name>Position 478</name>
+</trkpt>
+<trkpt lat="52.419883200" lon="13.757694600">
+  <ele>29.000000</ele>
+  <time>2014-12-14T13:45:32Z</time>
+  <name>Position 479</name>
+</trkpt>
+<trkpt lat="52.420202300" lon="13.757417700">
+  <ele>30.200000</ele>
+  <time>2014-12-14T13:46:08Z</time>
+  <name>Position 481</name>
+</trkpt>
+<trkpt lat="52.420384300" lon="13.757373600">
+  <ele>30.600000</ele>
+  <time>2014-12-14T13:46:33Z</time>
+  <name>Position 482</name>
+</trkpt>
+<trkpt lat="52.420544600" lon="13.757209400">
+  <ele>31.100000</ele>
+  <time>2014-12-14T13:47:14Z</time>
+  <name>Position 483</name>
+</trkpt>
+<trkpt lat="52.420826700" lon="13.756810600">
+  <ele>29.200000</ele>
+  <time>2014-12-14T13:47:45Z</time>
+  <name>Position 485</name>
+</trkpt>
+<trkpt lat="52.420987400" lon="13.756627700">
+  <ele>31.100000</ele>
+  <time>2014-12-14T13:48:02Z</time>
+  <name>Position 486</name>
+</trkpt>
+<trkpt lat="52.421265000" lon="13.756193300">
+  <ele>36.800000</ele>
+  <time>2014-12-14T13:48:35Z</time>
+  <name>Position 488</name>
+</trkpt>
+<trkpt lat="52.421559800" lon="13.755821100">
+  <ele>34.700000</ele>
+  <time>2014-12-14T13:49:06Z</time>
+  <name>Position 490</name>
+</trkpt>
+<trkpt lat="52.422167600" lon="13.755120100">
+  <ele>29.800000</ele>
+  <time>2014-12-14T13:50:13Z</time>
+  <name>Position 494</name>
+</trkpt>
+<trkpt lat="52.422352400" lon="13.755047200">
+  <ele>30.700000</ele>
+  <time>2014-12-14T13:50:26Z</time>
+  <name>Position 495</name>
+</trkpt>
+<trkpt lat="52.422697600" lon="13.754849400">
+  <ele>35.900000</ele>
+  <time>2014-12-14T13:50:54Z</time>
+  <name>Position 497</name>
+</trkpt>
+<trkpt lat="52.423054900" lon="13.754677800">
+  <ele>32.200000</ele>
+  <time>2014-12-14T13:51:23Z</time>
+  <name>Position 499</name>
+</trkpt>
+<trkpt lat="52.423403800" lon="13.754474200">
+  <ele>36.000000</ele>
+  <time>2014-12-14T13:51:52Z</time>
+  <name>Position 501</name>
+</trkpt>
+<trkpt lat="52.423588700" lon="13.754391500">
+  <ele>38.300000</ele>
+  <time>2014-12-14T13:52:07Z</time>
+  <name>Position 502</name>
+</trkpt>
+<trkpt lat="52.423919300" lon="13.754136300">
+  <ele>35.100000</ele>
+  <time>2014-12-14T13:52:41Z</time>
+  <name>Position 504</name>
+</trkpt>
+<trkpt lat="52.424461600" lon="13.753826200">
+  <ele>35.700000</ele>
+  <time>2014-12-14T13:53:28Z</time>
+  <name>Position 507</name>
+</trkpt>
+<trkpt lat="52.424636600" lon="13.753704400">
+  <ele>36.300000</ele>
+  <time>2014-12-14T13:53:48Z</time>
+  <name>Position 508</name>
+</trkpt>
+<trkpt lat="52.424826600" lon="13.753656200">
+  <ele>30.100000</ele>
+  <time>2014-12-14T13:54:02Z</time>
+  <name>Position 509</name>
+</trkpt>
+<trkpt lat="52.425001600" lon="13.753533400">
+  <ele>29.600000</ele>
+  <time>2014-12-14T13:54:17Z</time>
+  <name>Position 510</name>
+</trkpt>
+<trkpt lat="52.425140800" lon="13.753345100">
+  <ele>38.200000</ele>
+  <time>2014-12-14T13:56:13Z</time>
+  <name>Position 511</name>
+</trkpt>
+<trkpt lat="52.425137500" lon="13.753034200">
+  <ele>37.300000</ele>
+  <time>2014-12-14T13:56:30Z</time>
+  <name>Position 512</name>
+</trkpt>
+<trkpt lat="52.425169400" lon="13.752732800">
+  <ele>36.900000</ele>
+  <time>2014-12-14T13:56:47Z</time>
+  <name>Position 513</name>
+</trkpt>
+<trkpt lat="52.425160200" lon="13.752421400">
+  <ele>36.600000</ele>
+  <time>2014-12-14T13:57:03Z</time>
+  <name>Position 514</name>
+</trkpt>
+<trkpt lat="52.425123400" lon="13.752118100">
+  <ele>24.900000</ele>
+  <time>2014-12-14T13:57:20Z</time>
+  <name>Position 515</name>
+</trkpt>
+<trkpt lat="52.425181900" lon="13.751828300">
+  <ele>27.500000</ele>
+  <time>2014-12-14T13:57:39Z</time>
+  <name>Position 516</name>
+</trkpt>
+<trkpt lat="52.425317200" lon="13.751630800">
+  <ele>28.600000</ele>
+  <time>2014-12-14T13:57:58Z</time>
+  <name>Position 517</name>
+</trkpt>
+<trkpt lat="52.425622000" lon="13.751301500">
+  <ele>36.600000</ele>
+  <time>2014-12-14T13:58:27Z</time>
+  <name>Position 519</name>
+</trkpt>
+<trkpt lat="52.426098300" lon="13.750844700">
+  <ele>41.000000</ele>
+  <time>2014-12-14T13:59:10Z</time>
+  <name>Position 522</name>
+</trkpt>
+<trkpt lat="52.426457000" lon="13.750702800">
+  <ele>32.200000</ele>
+  <time>2014-12-14T13:59:47Z</time>
+  <name>Position 524</name>
+</trkpt>
+<trkpt lat="52.426786500" lon="13.751003300">
+  <ele>34.900000</ele>
+  <time>2014-12-14T14:00:20Z</time>
+  <name>Position 526</name>
+</trkpt>
+<trkpt lat="52.426967300" lon="13.751019800">
+  <ele>34.100000</ele>
+  <time>2014-12-14T14:00:37Z</time>
+  <name>Position 527</name>
+</trkpt>
+<trkpt lat="52.427109400" lon="13.751216900">
+  <ele>31.500000</ele>
+  <time>2014-12-14T14:00:56Z</time>
+  <name>Position 528</name>
+</trkpt>
+<trkpt lat="52.427266800" lon="13.751369100">
+  <ele>25.700000</ele>
+  <time>2014-12-14T14:01:14Z</time>
+  <name>Position 529</name>
+</trkpt>
+<trkpt lat="52.427408200" lon="13.751559200">
+  <ele>21.400000</ele>
+  <time>2014-12-14T14:01:33Z</time>
+  <name>Position 530</name>
+</trkpt>
+<trkpt lat="52.427525200" lon="13.751794300">
+  <ele>27.500000</ele>
+  <time>2014-12-14T14:01:44Z</time>
+  <name>Position 531</name>
+</trkpt>
+<trkpt lat="52.427672400" lon="13.751987700">
+  <ele>29.600000</ele>
+  <time>2014-12-14T14:02:00Z</time>
+  <name>Position 532</name>
+</trkpt>
+<trkpt lat="52.427853100" lon="13.751989200">
+  <ele>27.600000</ele>
+  <time>2014-12-14T14:02:34Z</time>
+  <name>Position 533</name>
+</trkpt>
+<trkpt lat="52.428026300" lon="13.751903900">
+  <ele>37.600000</ele>
+  <time>2014-12-14T14:06:06Z</time>
+  <name>Position 534</name>
+</trkpt>
+<trkpt lat="52.428209300" lon="13.751887100">
+  <ele>36.100000</ele>
+  <time>2014-12-14T14:06:29Z</time>
+  <name>Position 535</name>
+</trkpt>
+<trkpt lat="52.428382800" lon="13.751770000">
+  <ele>35.300000</ele>
+  <time>2014-12-14T14:06:49Z</time>
+  <name>Position 536</name>
+</trkpt>
+<trkpt lat="52.428561100" lon="13.751715700">
+  <ele>33.200000</ele>
+  <time>2014-12-14T14:07:09Z</time>
+  <name>Position 537</name>
+</trkpt>
+<trkpt lat="52.428910300" lon="13.751872000">
+  <ele>38.100000</ele>
+  <time>2014-12-14T14:08:08Z</time>
+  <name>Position 539</name>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

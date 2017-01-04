@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.1"
+  creator="GPSBabel - http://www.gpsbabel.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<time>2015-09-26T14:11:54Z</time>
+<bounds minlat="52.251880000" minlon="13.921170000" maxlat="52.299340000" maxlon="14.064610000"/>
+</metadata>
+<trk>
+  <name>Gmaps Pedometer Route</name>
+  <desc>Generated from route Gmaps Pedometer Route</desc>
+<trkseg>
+<trkpt lat="52.293110000" lon="14.064550000">
+  <name>Start</name>
+</trkpt>
+<trkpt lat="52.292920000" lon="14.064610000">
+  <name>Turn 1</name>
+</trkpt>
+<trkpt lat="52.292860000" lon="14.064570000">
+  <name>Turn 2</name>
+</trkpt>
+<trkpt lat="52.292810000" lon="14.064480000">
+  <name>Turn 3</name>
+</trkpt>
+<trkpt lat="52.292790000" lon="14.064390000">
+  <name>Turn 4</name>
+</trkpt>
+<trkpt lat="52.292730000" lon="14.063650000">
+  <name>Turn 5</name>
+</trkpt>
+<trkpt lat="52.291860000" lon="14.063440000">
+  <name>Turn 7</name>
+</trkpt>
+<trkpt lat="52.291930000" lon="14.059430000">
+  <name>Turn 10</name>
+</trkpt>
+<trkpt lat="52.291470000" lon="14.059380000">
+  <name>Turn 11</name>
+</trkpt>
+<trkpt lat="52.291210000" lon="14.059270000">
+  <name>Turn 12</name>
+</trkpt>
+<trkpt lat="52.291200000" lon="14.058900000">
+  <name>Turn 14</name>
+</trkpt>
+<trkpt lat="52.291100000" lon="14.058960000">
+  <name>Turn 15</name>
+</trkpt>
+<trkpt lat="52.291000000" lon="14.058980000">
+  <name>Turn 16</name>
+</trkpt>
+<trkpt lat="52.290890000" lon="14.058960000">
+  <name>Turn 17</name>
+</trkpt>
+<trkpt lat="52.290850000" lon="14.058870000">
+  <name>Turn 18</name>
+</trkpt>
+<trkpt lat="52.290830000" lon="14.058690000">
+  <name>Turn 19</name>
+</trkpt>
+<trkpt lat="52.290910000" lon="14.058180000">
+  <name>Turn 20</name>
+</trkpt>
+<trkpt lat="52.290910000" lon="14.057980000">
+  <name>Turn 21</name>
+</trkpt>
+<trkpt lat="52.290870000" lon="14.057830000">
+  <name>Turn 22</name>
+</trkpt>
+<trkpt lat="52.290820000" lon="14.057730000">
+  <name>Turn 23</name>
+</trkpt>
+<trkpt lat="52.290760000" lon="14.057670000">
+  <name>Turn 24</name>
+</trkpt>
+<trkpt lat="52.290660000" lon="14.057630000">
+  <name>Turn 25</name>
+</trkpt>
+<trkpt lat="52.290480000" lon="14.057770000">
+  <name>Turn 27</name>
+</trkpt>
+<trkpt lat="52.290480000" lon="14.057520000">
+  <name>Turn 29</name>
+</trkpt>
+<trkpt lat="52.290630000" lon="14.056720000">
+  <name>Turn 31</name>
+</trkpt>
+<trkpt lat="52.290660000" lon="14.056460000">
+  <name>Turn 32</name>
+</trkpt>
+<trkpt lat="52.290650000" lon="14.056150000">
+  <name>Turn 33</name>
+</trkpt>
+<trkpt lat="52.290700000" lon="14.055830000">
+  <name>Turn 34</name>
+</trkpt>
+<trkpt lat="52.290620000" lon="14.055360000">
+  <name>Turn 35</name>
+</trkpt>
+<trkpt lat="52.290620000" lon="14.055250000">
+  <name>Turn 36</name>
+</trkpt>
+<trkpt lat="52.290650000" lon="14.055160000">
+  <name>Turn 37</name>
+</trkpt>
+<trkpt lat="52.290700000" lon="14.054860000">
+  <name>Turn 38</name>
+</trkpt>
+<trkpt lat="52.290690000" lon="14.054320000">
+  <name>Turn 39</name>
+</trkpt>
+<trkpt lat="52.290750000" lon="14.054170000">
+  <name>Turn 40</name>
+</trkpt>
+<trkpt lat="52.290850000" lon="14.053530000">
+  <name>Turn 42</name>
+</trkpt>
+<trkpt lat="52.290850000" lon="14.053400000">
+  <name>Turn 43</name>
+</trkpt>
+<trkpt lat="52.290930000" lon="14.053180000">
+  <name>Turn 44</name>
+</trkpt>
+<trkpt lat="52.290940000" lon="14.052860000">
+  <name>Turn 46</name>
+</trkpt>
+<trkpt lat="52.291040000" lon="14.052040000">
+  <name>Turn 49</name>
+</trkpt>
+<trkpt lat="52.291030000" lon="14.051430000">
+  <name>Turn 51</name>
+</trkpt>
+<trkpt lat="52.291070000" lon="14.051160000">
+  <name>Turn 52</name>
+</trkpt>
+<trkpt lat="52.291090000" lon="14.050750000">
+  <name>Turn 53</name>
+</trkpt>
+<trkpt lat="52.291120000" lon="14.050710000">
+  <name>Turn 54</name>
+</trkpt>
+<trkpt lat="52.291380000" lon="14.050790000">
+  <name>Turn 55</name>
+</trkpt>
+<trkpt lat="52.291430000" lon="14.049710000">
+  <name>Turn 56</name>
+</trkpt>
+<trkpt lat="52.291280000" lon="14.049620000">
+  <name>Turn 57</name>
+</trkpt>
+<trkpt lat="52.291380000" lon="14.048400000">
+  <name>Turn 58</name>
+</trkpt>
+<trkpt lat="52.291360000" lon="14.047900000">
+  <name>Turn 59</name>
+</trkpt>
+<trkpt lat="52.291190000" lon="14.047320000">
+  <name>Turn 60</name>
+</trkpt>
+<trkpt lat="52.290560000" lon="14.046200000">
+  <name>Turn 61</name>
+</trkpt>
+<trkpt lat="52.289830000" lon="14.045610000">
+  <name>Turn 64</name>
+</trkpt>
+<trkpt lat="52.289030000" lon="14.044890000">
+  <name>Turn 67</name>
+</trkpt>
+<trkpt lat="52.288730000" lon="14.044710000">
+  <name>Turn 69</name>
+</trkpt>
+<trkpt lat="52.288580000" lon="14.044560000">
+  <name>Turn 70</name>
+</trkpt>
+<trkpt lat="52.288450000" lon="14.044370000">
+  <name>Turn 71</name>
+</trkpt>
+<trkpt lat="52.288270000" lon="14.044250000">
+  <name>Turn 73</name>
+</trkpt>
+<trkpt lat="52.287470000" lon="14.043940000">
+  <name>Turn 75</name>
+</trkpt>
+<trkpt lat="52.287070000" lon="14.043740000">
+  <name>Turn 76</name>
+</trkpt>
+<trkpt lat="52.286480000" lon="14.043400000">
+  <name>Turn 77</name>
+</trkpt>
+<trkpt lat="52.285290000" lon="14.042600000">
+  <name>Turn 80</name>
+</trkpt>
+<trkpt lat="52.285330000" lon="14.042500000">
+  <name>Turn 81</name>
+</trkpt>
+<trkpt lat="52.285770000" lon="14.040480000">
+  <name>Turn 82</name>
+</trkpt>
+<trkpt lat="52.285940000" lon="14.039870000">
+  <name>Turn 83</name>
+</trkpt>
+<trkpt lat="52.286190000" lon="14.039450000">
+  <name>Turn 84</name>
+</trkpt>
+<trkpt lat="52.287110000" lon="14.038310000">
+  <name>Turn 87</name>
+</trkpt>
+<trkpt lat="52.286570000" lon="14.037550000">
+  <name>Turn 88</name>
+</trkpt>
+<trkpt lat="52.286870000" lon="14.034300000">
+  <name>Turn 89</name>
+</trkpt>
+<trkpt lat="52.287010000" lon="14.034170000">
+  <name>Turn 90</name>
+</trkpt>
+<trkpt lat="52.287070000" lon="14.032480000">
+  <name>Turn 91</name>
+</trkpt>
+<trkpt lat="52.287660000" lon="14.031490000">
+  <name>Turn 92</name>
+</trkpt>
+<trkpt lat="52.287840000" lon="14.030560000">
+  <name>Turn 93</name>
+</trkpt>
+<trkpt lat="52.287880000" lon="14.030580000">
+  <name>Turn 94</name>
+</trkpt>
+<trkpt lat="52.288090000" lon="14.029630000">
+  <name>Turn 95</name>
+</trkpt>
+<trkpt lat="52.287930000" lon="14.029250000">
+  <name>Turn 96</name>
+</trkpt>
+<trkpt lat="52.287940000" lon="14.028230000">
+  <name>Turn 97</name>
+</trkpt>
+<trkpt lat="52.288050000" lon="14.027710000">
+  <name>Turn 98</name>
+</trkpt>
+<trkpt lat="52.287830000" lon="14.027370000">
+  <name>Turn 99</name>
+</trkpt>
+<trkpt lat="52.287660000" lon="14.026570000">
+  <name>Turn 100</name>
+</trkpt>
+<trkpt lat="52.287360000" lon="14.025930000">
+  <name>Turn 101</name>
+</trkpt>
+<trkpt lat="52.287440000" lon="14.025570000">
+  <name>Turn 102</name>
+</trkpt>
+<trkpt lat="52.286990000" lon="14.025290000">
+  <name>Turn 103</name>
+</trkpt>
+<trkpt lat="52.287860000" lon="14.021250000">
+  <name>Turn 104</name>
+</trkpt>
+<trkpt lat="52.288790000" lon="14.020370000">
+  <name>Turn 105</name>
+</trkpt>
+<trkpt lat="52.289470000" lon="14.015550000">
+  <name>Turn 106</name>
+</trkpt>
+<trkpt lat="52.295300000" lon="14.014340000">
+  <name>Turn 107</name>
+</trkpt>
+<trkpt lat="52.294880000" lon="14.013360000">
+  <name>Turn 108</name>
+</trkpt>
+<trkpt lat="52.294510000" lon="14.012970000">
+  <name>Turn 109</name>
+</trkpt>
+<trkpt lat="52.293440000" lon="14.011000000">
+  <name>Turn 110</name>
+</trkpt>
+<trkpt lat="52.292860000" lon="14.009790000">
+  <name>Turn 111</name>
+</trkpt>
+<trkpt lat="52.292650000" lon="14.007010000">
+  <name>Turn 112</name>
+</trkpt>
+<trkpt lat="52.292660000" lon="14.007290000">
+  <name>Turn 113</name>
+</trkpt>
+<trkpt lat="52.294060000" lon="14.007360000">
+  <name>Turn 115</name>
+</trkpt>
+<trkpt lat="52.294590000" lon="14.007210000">
+  <name>Turn 116</name>
+</trkpt>
+<trkpt lat="52.294870000" lon="14.007160000">
+  <name>Turn 117</name>
+</trkpt>
+<trkpt lat="52.295010000" lon="14.007100000">
+  <name>Turn 118</name>
+</trkpt>
+<trkpt lat="52.295270000" lon="14.006860000">
+  <name>Turn 120</name>
+</trkpt>
+<trkpt lat="52.295470000" lon="14.006620000">
+  <name>Turn 121</name>
+</trkpt>
+<trkpt lat="52.295930000" lon="14.005770000">
+  <name>Turn 123</name>
+</trkpt>
+<trkpt lat="52.296250000" lon="14.005310000">
+  <name>Turn 124</name>
+</trkpt>
+<trkpt lat="52.296900000" lon="14.004310000">
+  <name>Turn 125</name>
+</trkpt>
+<trkpt lat="52.296970000" lon="14.003970000">
+  <name>Turn 126</name>
+</trkpt>
+<trkpt lat="52.297070000" lon="14.003200000">
+  <name>Turn 127</name>
+</trkpt>
+<trkpt lat="52.297050000" lon="14.002330000">
+  <name>Turn 129</name>
+</trkpt>
+<trkpt lat="52.296950000" lon="14.001570000">
+  <name>Turn 130</name>
+</trkpt>
+<trkpt lat="52.296900000" lon="14.001390000">
+  <name>Turn 131</name>
+</trkpt>
+<trkpt lat="52.296020000" lon="13.999220000">
+  <name>Turn 132</name>
+</trkpt>
+<trkpt lat="52.296190000" lon="13.998920000">
+  <name>Turn 133</name>
+</trkpt>
+<trkpt lat="52.297410000" lon="13.999090000">
+  <name>Turn 134</name>
+</trkpt>
+<trkpt lat="52.298370000" lon="13.998740000">
+  <name>Turn 135</name>
+</trkpt>
+<trkpt lat="52.298910000" lon="13.998190000">
+  <name>Turn 136</name>
+</trkpt>
+<trkpt lat="52.299340000" lon="13.996600000">
+  <name>Turn 137</name>
+</trkpt>
+<trkpt lat="52.299300000" lon="13.996100000">
+  <name>Turn 138</name>
+</trkpt>
+<trkpt lat="52.298760000" lon="13.995270000">
+  <name>Turn 139</name>
+</trkpt>
+<trkpt lat="52.298480000" lon="13.994470000">
+  <name>Turn 140</name>
+</trkpt>
+<trkpt lat="52.298170000" lon="13.994140000">
+  <name>Turn 141</name>
+</trkpt>
+<trkpt lat="52.298030000" lon="13.993650000">
+  <name>Turn 142</name>
+</trkpt>
+<trkpt lat="52.297990000" lon="13.993420000">
+  <name>Turn 143</name>
+</trkpt>
+<trkpt lat="52.297970000" lon="13.992950000">
+  <name>Turn 144</name>
+</trkpt>
+<trkpt lat="52.297900000" lon="13.992690000">
+  <name>Turn 145</name>
+</trkpt>
+<trkpt lat="52.297970000" lon="13.992270000">
+  <name>Turn 147</name>
+</trkpt>
+<trkpt lat="52.297940000" lon="13.991850000">
+  <name>Turn 148</name>
+</trkpt>
+<trkpt lat="52.297860000" lon="13.991430000">
+  <name>Turn 149</name>
+</trkpt>
+<trkpt lat="52.296610000" lon="13.988990000">
+  <name>Turn 151</name>
+</trkpt>
+<trkpt lat="52.296060000" lon="13.987880000">
+  <name>Turn 152</name>
+</trkpt>
+<trkpt lat="52.296120000" lon="13.987790000">
+  <name>Turn 154</name>
+</trkpt>
+<trkpt lat="52.295440000" lon="13.987260000">
+  <name>Turn 157</name>
+</trkpt>
+<trkpt lat="52.295230000" lon="13.987130000">
+  <name>Turn 158</name>
+</trkpt>
+<trkpt lat="52.293320000" lon="13.986260000">
+  <name>Turn 159</name>
+</trkpt>
+<trkpt lat="52.292610000" lon="13.986040000">
+  <name>Turn 161</name>
+</trkpt>
+<trkpt lat="52.291670000" lon="13.985840000">
+  <name>Turn 163</name>
+</trkpt>
+<trkpt lat="52.291240000" lon="13.985620000">
+  <name>Turn 165</name>
+</trkpt>
+<trkpt lat="52.291140000" lon="13.985540000">
+  <name>Turn 166</name>
+</trkpt>
+<trkpt lat="52.290970000" lon="13.986080000">
+  <name>Turn 168</name>
+</trkpt>
+<trkpt lat="52.290610000" lon="13.986530000">
+  <name>Turn 170</name>
+</trkpt>
+<trkpt lat="52.290490000" lon="13.986900000">
+  <name>Turn 171</name>
+</trkpt>
+<trkpt lat="52.290440000" lon="13.987140000">
+  <name>Turn 172</name>
+</trkpt>
+<trkpt lat="52.290310000" lon="13.987460000">
+  <name>Turn 173</name>
+</trkpt>
+<trkpt lat="52.289740000" lon="13.988360000">
+  <name>Turn 175</name>
+</trkpt>
+<trkpt lat="52.289620000" lon="13.988490000">
+  <name>Turn 176</name>
+</trkpt>
+<trkpt lat="52.289490000" lon="13.989060000">
+  <name>Turn 177</name>
+</trkpt>
+<trkpt lat="52.289260000" lon="13.989910000">
+  <name>Turn 179</name>
+</trkpt>
+<trkpt lat="52.289190000" lon="13.990520000">
+  <name>Turn 180</name>
+</trkpt>
+<trkpt lat="52.289150000" lon="13.991300000">
+  <name>Turn 181</name>
+</trkpt>
+<trkpt lat="52.289150000" lon="13.992070000">
+  <name>Turn 182</name>
+</trkpt>
+<trkpt lat="52.289200000" lon="13.992270000">
+  <name>Turn 183</name>
+</trkpt>
+<trkpt lat="52.289330000" lon="13.992500000">
+  <name>Turn 184</name>
+</trkpt>
+<trkpt lat="52.289280000" lon="13.993170000">
+  <name>Turn 185</name>
+</trkpt>
+<trkpt lat="52.289330000" lon="13.993420000">
+  <name>Turn 186</name>
+</trkpt>
+<trkpt lat="52.289430000" lon="13.993740000">
+  <name>Turn 188</name>
+</trkpt>
+<trkpt lat="52.289530000" lon="13.993920000">
+  <name>Turn 189</name>
+</trkpt>
+<trkpt lat="52.289700000" lon="13.994320000">
+  <name>Turn 190</name>
+</trkpt>
+<trkpt lat="52.290090000" lon="13.995140000">
+  <name>Turn 191</name>
+</trkpt>
+<trkpt lat="52.290200000" lon="13.995540000">
+  <name>Turn 192</name>
+</trkpt>
+<trkpt lat="52.290210000" lon="13.995890000">
+  <name>Turn 193</name>
+</trkpt>
+<trkpt lat="52.290170000" lon="13.996230000">
+  <name>Turn 194</name>
+</trkpt>
+<trkpt lat="52.290160000" lon="13.996840000">
+  <name>Turn 195</name>
+</trkpt>
+<trkpt lat="52.290220000" lon="13.997540000">
+  <name>Turn 196</name>
+</trkpt>
+<trkpt lat="52.290220000" lon="13.997830000">
+  <name>Turn 197</name>
+</trkpt>
+<trkpt lat="52.290110000" lon="13.997880000">
+  <name>Turn 198</name>
+</trkpt>
+<trkpt lat="52.289590000" lon="13.997830000">
+  <name>Turn 200</name>
+</trkpt>
+<trkpt lat="52.288890000" lon="13.997600000">
+  <name>Turn 202</name>
+</trkpt>
+<trkpt lat="52.288440000" lon="13.997560000">
+  <name>Turn 203</name>
+</trkpt>
+<trkpt lat="52.288060000" lon="13.997470000">
+  <name>Turn 204</name>
+</trkpt>
+<trkpt lat="52.287750000" lon="13.997430000">
+  <name>Turn 205</name>
+</trkpt>
+<trkpt lat="52.287210000" lon="13.997270000">
+  <name>Turn 206</name>
+</trkpt>
+<trkpt lat="52.286950000" lon="13.997110000">
+  <name>Turn 207</name>
+</trkpt>
+<trkpt lat="52.286640000" lon="13.996980000">
+  <name>Turn 208</name>
+</trkpt>
+<trkpt lat="52.286250000" lon="13.996910000">
+  <name>Turn 209</name>
+</trkpt>
+<trkpt lat="52.286070000" lon="13.996840000">
+  <name>Turn 210</name>
+</trkpt>
+<trkpt lat="52.284980000" lon="13.997070000">
+  <name>Turn 211</name>
+</trkpt>
+<trkpt lat="52.284500000" lon="13.997120000">
+  <name>Turn 212</name>
+</trkpt>
+<trkpt lat="52.279970000" lon="13.997120000">
+  <name>Turn 217</name>
+</trkpt>
+<trkpt lat="52.276340000" lon="13.997180000">
+  <name>Turn 218</name>
+</trkpt>
+<trkpt lat="52.275510000" lon="13.997160000">
+  <name>Turn 219</name>
+</trkpt>
+<trkpt lat="52.274380000" lon="13.997210000">
+  <name>Turn 220</name>
+</trkpt>
+<trkpt lat="52.273040000" lon="13.997210000">
+  <name>Turn 222</name>
+</trkpt>
+<trkpt lat="52.272610000" lon="13.997180000">
+  <name>Turn 223</name>
+</trkpt>
+<trkpt lat="52.271490000" lon="13.997160000">
+  <name>Turn 226</name>
+</trkpt>
+<trkpt lat="52.270610000" lon="13.997220000">
+  <name>Turn 229</name>
+</trkpt>
+<trkpt lat="52.269970000" lon="13.997380000">
+  <name>Turn 232</name>
+</trkpt>
+<trkpt lat="52.269870000" lon="13.997270000">
+  <name>Turn 233</name>
+</trkpt>
+<trkpt lat="52.270210000" lon="13.996860000">
+  <name>Turn 235</name>
+</trkpt>
+<trkpt lat="52.270240000" lon="13.994400000">
+  <name>Turn 239</name>
+</trkpt>
+<trkpt lat="52.270290000" lon="13.993340000">
+  <name>Turn 240</name>
+</trkpt>
+<trkpt lat="52.270810000" lon="13.990560000">
+  <name>Turn 242</name>
+</trkpt>
+<trkpt lat="52.270950000" lon="13.989570000">
+  <name>Turn 243</name>
+</trkpt>
+<trkpt lat="52.271250000" lon="13.987820000">
+  <name>Turn 244</name>
+</trkpt>
+<trkpt lat="52.271520000" lon="13.986580000">
+  <name>Turn 245</name>
+</trkpt>
+<trkpt lat="52.271950000" lon="13.984730000">
+  <name>Turn 246</name>
+</trkpt>
+<trkpt lat="52.272060000" lon="13.984420000">
+  <name>Turn 247</name>
+</trkpt>
+<trkpt lat="52.271930000" lon="13.983170000">
+  <name>Turn 248</name>
+</trkpt>
+<trkpt lat="52.271830000" lon="13.981800000">
+  <name>Turn 249</name>
+</trkpt>
+<trkpt lat="52.271590000" lon="13.979640000">
+  <name>Turn 250</name>
+</trkpt>
+<trkpt lat="52.271300000" lon="13.978300000">
+  <name>Turn 252</name>
+</trkpt>
+<trkpt lat="52.266180000" lon="13.977860000">
+  <name>Turn 257</name>
+</trkpt>
+<trkpt lat="52.266070000" lon="13.976580000">
+  <name>Turn 258</name>
+</trkpt>
+<trkpt lat="52.266040000" lon="13.976400000">
+  <name>Turn 259</name>
+</trkpt>
+<trkpt lat="52.266000000" lon="13.976310000">
+  <name>Turn 260</name>
+</trkpt>
+<trkpt lat="52.265870000" lon="13.976290000">
+  <name>Turn 261</name>
+</trkpt>
+<trkpt lat="52.265880000" lon="13.976120000">
+  <name>Turn 262</name>
+</trkpt>
+<trkpt lat="52.266140000" lon="13.975410000">
+  <name>Turn 263</name>
+</trkpt>
+<trkpt lat="52.266180000" lon="13.975120000">
+  <name>Turn 264</name>
+</trkpt>
+<trkpt lat="52.266100000" lon="13.973510000">
+  <name>Turn 266</name>
+</trkpt>
+<trkpt lat="52.266010000" lon="13.972690000">
+  <name>Turn 267</name>
+</trkpt>
+<trkpt lat="52.265990000" lon="13.972170000">
+  <name>Turn 268</name>
+</trkpt>
+<trkpt lat="52.265980000" lon="13.970820000">
+  <name>Turn 269</name>
+</trkpt>
+<trkpt lat="52.265430000" lon="13.970230000">
+  <name>Turn 270</name>
+</trkpt>
+<trkpt lat="52.265200000" lon="13.970330000">
+  <name>Turn 271</name>
+</trkpt>
+<trkpt lat="52.264920000" lon="13.970760000">
+  <name>Turn 272</name>
+</trkpt>
+<trkpt lat="52.264450000" lon="13.970780000">
+  <name>Turn 273</name>
+</trkpt>
+<trkpt lat="52.264380000" lon="13.970330000">
+  <name>Turn 274</name>
+</trkpt>
+<trkpt lat="52.265090000" lon="13.969820000">
+  <name>Turn 275</name>
+</trkpt>
+<trkpt lat="52.265150000" lon="13.969220000">
+  <name>Turn 276</name>
+</trkpt>
+<trkpt lat="52.264970000" lon="13.968790000">
+  <name>Turn 277</name>
+</trkpt>
+<trkpt lat="52.264750000" lon="13.968900000">
+  <name>Turn 278</name>
+</trkpt>
+<trkpt lat="52.264440000" lon="13.969280000">
+  <name>Turn 280</name>
+</trkpt>
+<trkpt lat="52.264250000" lon="13.965860000">
+  <name>Turn 282</name>
+</trkpt>
+<trkpt lat="52.264090000" lon="13.964140000">
+  <name>Turn 284</name>
+</trkpt>
+<trkpt lat="52.263980000" lon="13.963340000">
+  <name>Turn 285</name>
+</trkpt>
+<trkpt lat="52.263870000" lon="13.962760000">
+  <name>Turn 286</name>
+</trkpt>
+<trkpt lat="52.263340000" lon="13.960930000">
+  <name>Turn 288</name>
+</trkpt>
+<trkpt lat="52.262940000" lon="13.958550000">
+  <name>Turn 290</name>
+</trkpt>
+<trkpt lat="52.262860000" lon="13.957920000">
+  <name>Turn 291</name>
+</trkpt>
+<trkpt lat="52.261790000" lon="13.951090000">
+  <name>Turn 293</name>
+</trkpt>
+<trkpt lat="52.261230000" lon="13.947630000">
+  <name>Turn 295</name>
+</trkpt>
+<trkpt lat="52.261070000" lon="13.946900000">
+  <name>Turn 296</name>
+</trkpt>
+<trkpt lat="52.260430000" lon="13.944430000">
+  <name>Turn 298</name>
+</trkpt>
+<trkpt lat="52.260150000" lon="13.943260000">
+  <name>Turn 299</name>
+</trkpt>
+<trkpt lat="52.260110000" lon="13.942860000">
+  <name>Turn 300</name>
+</trkpt>
+<trkpt lat="52.260100000" lon="13.942580000">
+  <name>Turn 301</name>
+</trkpt>
+<trkpt lat="52.260330000" lon="13.940200000">
+  <name>Turn 303</name>
+</trkpt>
+<trkpt lat="52.260360000" lon="13.939600000">
+  <name>Turn 304</name>
+</trkpt>
+<trkpt lat="52.260340000" lon="13.939100000">
+  <name>Turn 305</name>
+</trkpt>
+<trkpt lat="52.260750000" lon="13.936960000">
+  <name>Turn 306</name>
+</trkpt>
+<trkpt lat="52.260610000" lon="13.936940000">
+  <name>Turn 307</name>
+</trkpt>
+<trkpt lat="52.260750000" lon="13.936960000">
+  <name>Turn 308</name>
+</trkpt>
+<trkpt lat="52.260760000" lon="13.936820000">
+  <name>Turn 309</name>
+</trkpt>
+<trkpt lat="52.260730000" lon="13.936640000">
+  <name>Turn 310</name>
+</trkpt>
+<trkpt lat="52.260560000" lon="13.936370000">
+  <name>Turn 311</name>
+</trkpt>
+<trkpt lat="52.260230000" lon="13.935970000">
+  <name>Turn 312</name>
+</trkpt>
+<trkpt lat="52.259980000" lon="13.935710000">
+  <name>Turn 313</name>
+</trkpt>
+<trkpt lat="52.259340000" lon="13.935480000">
+  <name>Turn 315</name>
+</trkpt>
+<trkpt lat="52.258780000" lon="13.935390000">
+  <name>Turn 316</name>
+</trkpt>
+<trkpt lat="52.258070000" lon="13.935170000">
+  <name>Turn 317</name>
+</trkpt>
+<trkpt lat="52.257890000" lon="13.935040000">
+  <name>Turn 318</name>
+</trkpt>
+<trkpt lat="52.257720000" lon="13.934840000">
+  <name>Turn 319</name>
+</trkpt>
+<trkpt lat="52.257190000" lon="13.934080000">
+  <name>Turn 320</name>
+</trkpt>
+<trkpt lat="52.256910000" lon="13.933570000">
+  <name>Turn 322</name>
+</trkpt>
+<trkpt lat="52.254890000" lon="13.930630000">
+  <name>Turn 325</name>
+</trkpt>
+<trkpt lat="52.254820000" lon="13.930470000">
+  <name>Turn 326</name>
+</trkpt>
+<trkpt lat="52.254450000" lon="13.929890000">
+  <name>Turn 328</name>
+</trkpt>
+<trkpt lat="52.254010000" lon="13.929410000">
+  <name>Turn 329</name>
+</trkpt>
+<trkpt lat="52.253830000" lon="13.929020000">
+  <name>Turn 330</name>
+</trkpt>
+<trkpt lat="52.253800000" lon="13.928920000">
+  <name>Turn 331</name>
+</trkpt>
+<trkpt lat="52.253750000" lon="13.928620000">
+  <name>Turn 333</name>
+</trkpt>
+<trkpt lat="52.253790000" lon="13.928600000">
+  <name>Turn 334</name>
+</trkpt>
+<trkpt lat="52.253820000" lon="13.928530000">
+  <name>Turn 335</name>
+</trkpt>
+<trkpt lat="52.253880000" lon="13.928270000">
+  <name>Turn 336</name>
+</trkpt>
+<trkpt lat="52.254030000" lon="13.927310000">
+  <name>Turn 337</name>
+</trkpt>
+<trkpt lat="52.254080000" lon="13.925120000">
+  <name>Turn 339</name>
+</trkpt>
+<trkpt lat="52.254040000" lon="13.924930000">
+  <name>Turn 340</name>
+</trkpt>
+<trkpt lat="52.253700000" lon="13.923940000">
+  <name>Turn 341</name>
+</trkpt>
+<trkpt lat="52.253600000" lon="13.923540000">
+  <name>Turn 342</name>
+</trkpt>
+<trkpt lat="52.253410000" lon="13.922530000">
+  <name>Turn 343</name>
+</trkpt>
+<trkpt lat="52.253190000" lon="13.922220000">
+  <name>Turn 344</name>
+</trkpt>
+<trkpt lat="52.251880000" lon="13.921170000">
+  <name>Turn 345</name>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
