@@ -49,6 +49,7 @@
 <script src="js/util.js"></script>
 <script src="js/gpx.js"></script>
 <script src="js/wide-line.js"></script>
+<script src="js/summary.js"></script>
 <script src="js/gpxmap.js"></script>
 
 <script type="text/javascript">
@@ -68,6 +69,7 @@ TILE_LAYERS.push({
 
 document.addEventListener('DOMContentLoaded', function () {
     GPXMAP.gpxmap('gpxmap', {
+        'title': 'BerlinWalks',
         'tileLayers': TILE_LAYERS,
         'index': 'gpx/index.json',
         'gpx': 'gpx/',
