@@ -83,7 +83,7 @@ def process_atom_entry(entry):
         return {
                 'title': html.unescape(entry.find(ATOM_TITLE + "[@type='html']").text),
                 'link': entry.find(ATOM_LINK + "[@rel='alternate']").get('href'),
-                'category': entry.find(ATOM_CATEGORY).get('term'),
+                'categories': [ entry.find(ATOM_CATEGORY).get('term') ],
                 'dates': [
                         datetime.strptime(
                                 entry.find(ATOM_PUBLISHED).text,
@@ -100,6 +100,7 @@ def process_atom_entry(entry):
 def process_rss_item(item):
         '''Extract the walk described in the given RSS item.'''
         walk = {
+                'categories': [ item.find('category').text ],
                 'dates': [
                         parsedate_to_datetime(item.find('pubDate').text).
                                 astimezone()
@@ -109,7 +110,7 @@ def process_rss_item(item):
                 )),
         }
 
-        for prop in ['title', 'link', 'category']:
+        for prop in ['title', 'link']:
                 walk[prop] = item.find(prop).text
 
         return walk
@@ -120,28 +121,29 @@ def json_datetime(obj):
                 raise TypeError("Object of type '%s' is not JSON serializable" % type(obj))
         return obj.isoformat()
 
-walks = []
-for url in argv[1:]:
-        root = ElementTree.parse(urlopen(url)).getroot()
-        if ATOM_FEED == root.tag:
-                walks += (
-                        process_atom_entry(entry)
-                                for entry in root.findall(ATOM_ENTRY)
-                )
-        elif 'rss' == root.tag:
-                walks += (
-                        process_rss_item(item)
-                                for chan in root
-                                for item in chan.findall('item')
-                )
-        else:
-                exit('%s: unsupported feed' % root.tag)
+if '__main__' == __name__:
+        walks = []
+        for url in argv[1:]:
+                root = ElementTree.parse(urlopen(url)).getroot()
+                if ATOM_FEED == root.tag:
+                        walks += (
+                                process_atom_entry(entry)
+                                        for entry in root.findall(ATOM_ENTRY)
+                        )
+                elif 'rss' == root.tag:
+                        walks += (
+                                process_rss_item(item)
+                                        for chan in root
+                                        for item in chan.findall('item')
+                        )
+                else:
+                        exit('%s: unsupported feed' % root.tag)
 
-print(json.dumps(walks
-        , default = json_datetime
-        , indent = ' '
-        , separators = (',', ':')
-        , sort_keys = True
-))
-#for word in words:
-#       print(word)
+        print(json.dumps(walks
+                , default = json_datetime
+                , indent = ' '
+                , separators = (',', ':')
+                , sort_keys = True
+        ))
+        #for word in words:
+        #       print(word)
