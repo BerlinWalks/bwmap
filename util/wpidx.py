@@ -29,13 +29,13 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-from datetime import datetime, timezone
+from datetime import datetime
 import html
 import json
 from sys import argv
 from urllib.parse import urljoin
 from urllib.request import urlopen
-from mkdb import extract_people, json_datetime, words
+from mkdb import extract_people, json_datetime#, words
 
 if len(argv) < 2:
         exit('''\

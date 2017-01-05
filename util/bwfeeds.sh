@@ -39,7 +39,7 @@ do
         while [ 0 -lt $m ]
         do
                 printf "${BWURL}\\n" "$y" "$m"
-                m=$(($m - 1))
+                m=$((m - 1))
         done
-        y=$(($y - 1))
+        y=$((y - 1))
 done
