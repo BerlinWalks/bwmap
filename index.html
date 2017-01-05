@@ -43,10 +43,6 @@
 
 <style type="text/css">
     html, body                          { height: 100%; }
-    .hbox, .vbox                        { display: flex; }
-    .hbox                               { flex-direction: row; }
-    .vbox                               { flex-direction: column; }
-    .view                               { flex-grow: 1; }
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js"></script>
@@ -79,7 +75,5 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </head>
 
-<body class="vbox">
-  <div id="bwmap" class="view"></div>
-</body>
+<body id="bwmap"></body>
 </html>
