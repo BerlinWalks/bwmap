@@ -117,11 +117,13 @@ document.addEventListener('DOMContentLoaded', function () {
         addLayer(L.tileLayer(OSM.url, OSM.options));
 
     loadJson('gpx/index.json').then(function (walks) {
-        // Load GPX tracks corresponding to all the walks' dates as layers.
-        walks.forEach(function (walk) {
-            walk.layers = walk.dates.map(function (date) {
+        // Load GPX tracks corresponding to all the walks' dates.
+        var layers = walks.flatMap(function (walk) {
+            // Load GPX file for each date.
+            return walk.dates.map(function (date) {
                 return {
                     'date': new Date(date),
+                    'walk': walk,
                     'gpx': new L.GPX('gpx/'+ date.substr(0, 10) +'.gpx', {
                         'async': true,
                         'marker_options': {
@@ -142,46 +144,40 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Add a layer group containing all GPX tracks.
-        bwmap.addLayer(L.layerGroup(walks.flatMap(function (walk) {
-            return walk.layers.map(function (layer) { return layer.gpx; });
+        bwmap.addLayer(L.layerGroup(layers.map(function (layer) {
+            return layer.gpx;
         })));
 
         // Return a Promise that fulfills when all tracks are loaded
-        return Promise.all(walks.flatMap(function (walk) {
-            return walk.layers.map(function (layer) {
-                return new Promise(function (resolve) {
-                    layer.gpx.on('loaded', function () { resolve(walk); });
-                });
+        return Promise.all(layers.map(function (layer) {
+            return new Promise(function (resolve) {
+                layer.gpx.on('loaded', function () { resolve(layer); });
             });
         }));
-    }).then(function (walks) {
+    }).then(function (layers) {
         // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(walks.flatMap(function (walk) {
-            return walk.layers.map(function (layer) {
-                return layer.gpx.getBounds();
-            })
+        var bounds = L.latLngBounds(layers.map(function (layer) {
+            return layer.gpx.getBounds();
         }));
         bwmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
 
         // Create a popup for all GPXs of each walk
-        walks.forEach(function (walk) {
-            walk.layers.forEach(function (layer) {
-                var popup = document.createElement('div');
-                var anchor = document.createElement('a');
+        layers.forEach(function (layer) {
+            var popup = document.createElement('div');
+            var anchor = document.createElement('a');
 
-                popup.textContent =
-                        [ layer.date.getDate()
-                        , layer.date.getMonth() + 1
-                        , layer.date.getFullYear()
-                        ].join('/') + ' ';
-                anchor.setAttribute('href', walk.link);
-                anchor.textContent = walk.title;
-                popup.appendChild(anchor);
-                popup.appendChild(document.createTextNode(
-                    ' ' + (Math.round(layer.gpx.get_distance() / 100) / 10) + 'km'
-                ));
-                layer.gpx.bindPopup(popup);
-            });
+            popup.textContent =
+                    [ layer.date.getDate()
+                    , layer.date.getMonth() + 1
+                    , layer.date.getFullYear()
+                    ].join('/') + ' ';
+            anchor.setAttribute('href', layer.walk.link);
+            anchor.textContent = layer.walk.title;
+            popup.appendChild(anchor);
+            popup.appendChild(document.createTextNode(
+                ' ' + (Math.round(layer.gpx.get_distance() / 100) / 10) + 'km'
+            ));
+            layer.gpx.bindPopup(popup);
         });
     });
 });
