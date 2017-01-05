@@ -79,16 +79,19 @@ Array.prototype.flatMap = function () {
 </script>
 
 <script type="text/javascript">
-/*
+var TILE_LAYERS = [];
+
+/**
  * Configuration for OpenStreetMap tiles.
  */
-var OSM = {
+TILE_LAYERS.push({
+    'name': 'OSM',
     'url': 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     'options': {
         'attribution':
             '© <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     },
-};
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     'use strict';
@@ -114,11 +117,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    var layersControl = L.control.layers();
+    // Create all configured tile layers.
+    var tileLayers = TILE_LAYERS.map(function (layer) {
+        return {
+            'name': layer.name,
+            'tileLayer': L.tileLayer(layer.url, layer.options),
+        };
+    });
+
+    // Create layers control.
+    var layersControl = L.control.layers(null, null, { 'hideSingleBase':true });
+    tileLayers.forEach(function (layer) {
+        layersControl.addBaseLayer(layer.tileLayer, layer.name);
+    });
+
+    // Create map with an initial tile layer and layers control.
     var bwmap = L.map('bwmap').
         addControl(L.control.scale()).
         addControl(layersControl).
-        addLayer(L.tileLayer(OSM.url, OSM.options));
+        addLayer(tileLayers[0].tileLayer);
 
     loadJson('gpx/index.json').then(function (walks) {
         // Load GPX tracks corresponding to all the walks' dates.
