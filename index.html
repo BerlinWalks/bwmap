@@ -114,8 +114,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    var layersControl = L.control.layers();
     var bwmap = L.map('bwmap').
         addControl(L.control.scale()).
+        addControl(layersControl).
         addLayer(L.tileLayer(OSM.url, OSM.options));
 
     loadJson('gpx/index.json').then(function (walks) {
@@ -145,10 +147,25 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // Add a layer group containing all GPX tracks.
-        bwmap.addLayer(L.layerGroup(layers.map(function (layer) {
-            return layer.gpx;
-        })));
+        (function () {
+            var yearGpx = {}, year, lg;
+
+            // Group GPX layers by year.
+            layers.forEach(function (layer) {
+                var year = layer.date.getFullYear();
+
+                if (!yearGpx[year])
+                    yearGpx[year] = [];
+                yearGpx[year].push(layer.gpx);
+            });
+
+            // Create one layer group per year and add to the map.
+            for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
+                lg = L.layerGroup(yearGpx[year]);
+                bwmap.addLayer(lg);
+                layersControl.addOverlay(lg, year);
+            }
+        }());
 
         // Return a Promise that fulfills when all tracks are loaded
         return Promise.all(layers.map(function (layer) {
