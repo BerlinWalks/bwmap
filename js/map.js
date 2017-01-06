@@ -59,7 +59,7 @@ MAP.map = function (id, options) {
         addControl(layersControl).
         addLayer(tileLayers[0].tileLayer);
 
-    UTIL.loadJson(options.index).then(function (walks) {
+    UTIL.load(options.index).then(function (walks) {
         // Load GPX tracks corresponding to all the walks' dates.
         var layers = walks.flatMap(function (walk) {
             // Load GPX file for each date.

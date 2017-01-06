@@ -42,15 +42,16 @@ Array.prototype.flatMap = function () {
 };
 
 /**
- * Return a Promise that resolves to the loaded JSON object on success.
+ * Return a Promise that resolves to the response object on success. If
+ * `type` is unspecified, JSON is assumed.
  */
-UTIL.loadJson = function (url) {
+UTIL.load = function (url, type) {
     'use strict';
 
     var xhr = new XMLHttpRequest();
 
     xhr.open('GET', url, true);
-    xhr.responseType = 'json';
+    xhr.responseType = type || 'json';
 
     return new Promise(function (resolve, reject) {
         xhr.onload = function () {
