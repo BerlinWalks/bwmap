@@ -30,18 +30,18 @@
  */
 
 /* GPX tracks */
-.map-track {
-    color: #17f; /*#17f;*/
+.gpxmap-track {
+    color: #17f;
     stroke-width: 2px;
     stroke-opacity: .8;
     transition: color .2s, stroke-width .2s;
 }
 
-.map-track:hover {
+.gpxmap-track:hover {
     stroke-width: 4px;
     stroke-opacity: 1;
 }
 
-.map-track.map-select {
+.gpxmap-track.gpxmap-select {
     stroke-width: 3.5px;
 }
