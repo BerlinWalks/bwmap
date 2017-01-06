@@ -68,7 +68,7 @@ function yearColour(idx) {
 }
 
 function walkPopup(date, walk) {
-    var popup = document.createElement('div');
+    var popup = document.createDocumentFragment();
     var anchor = document.createElement('a');
     var idx = search(walk.dates, d => date <= d);
 
@@ -77,17 +77,31 @@ function walkPopup(date, walk) {
         return;
     }
 
-    popup.textContent =
+    var elem0 = document.createElement('h3');
+    elem0.textContent = walk.title;
+    popup.appendChild(elem0);
+
+    elem0 = document.createElement('div');
+    elem0.textContent = [
             [ +date.substr(8, 2)
             , +date.substr(5, 2)
             , +date.substr(0, 4)
-            ].join('/') + ' ';
+            ].join('/'),
+            +(walk.distances[idx] / 1000).toFixed(1) +'km',
+            walk.walkers +' walkers',
+            walk.categories.join(' — '),
+            '',
+        ].join(' — ');
+
     anchor.setAttribute('href', walk.link);
-    anchor.textContent = walk.title;
-    popup.appendChild(anchor);
-    popup.appendChild(document.createTextNode(
-        ' '+ +(walk.distances[idx] / 1000).toFixed(1) +'km'
-    ));
+    anchor.textContent = 'blog';
+    elem0.appendChild(anchor);
+    popup.appendChild(elem0);
+
+    elem0 = document.createElement('p');
+    elem0.textContent = walk.people.sort().join(' • ');
+    popup.appendChild(elem0);
+
     return popup;
 }
 
@@ -119,14 +133,14 @@ function gpxmap(id, options) {
     var domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
 
     var hiddenYear = {};
-    function trackStyle(hover) {
+    function trackStyle(hover, selected) {
         return function (props) {
             var year = props.date.substr(0, 4);
             return hiddenYear[year] ? [] : {
                 'className': CSS.TRACK,
                 'color': yearColour(year - 2011),
                 'opacity': hover ? 1 : .8,
-                'weight': hover ? 4 : 2,
+                'weight': hover ? 4 : selected ? 3.5 : 2,
             };
         };
     }
@@ -141,6 +155,7 @@ function gpxmap(id, options) {
     ).addTo(gpxmap);
 
     // This layer has invisible mouse-responsive tracks.
+    var selected;
     var mouseLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
@@ -156,7 +171,12 @@ function gpxmap(id, options) {
     ).on('mouseover', function (evt) {
         walkLayer.setFeatureStyle(evt.layer.properties.date, trackStyle(true));
     }).on('mouseout', function (evt) {
-        walkLayer.resetFeatureStyle(evt.layer.properties.date);
+        var date = evt.layer.properties.date;
+        if (date === selected) {
+            walkLayer.setFeatureStyle(date, trackStyle(false, true));
+        } else {
+            walkLayer.resetFeatureStyle(date);
+        }
     }).addTo(gpxmap);
 
     UTIL.load(options.index).then(function (walks) {
@@ -170,32 +190,52 @@ function gpxmap(id, options) {
             var date = evt.layer.properties.date;
             var idx = search(walks, walk => date < walk.dates[0]) - 1;
             var popup = walkPopup(date, walks[idx]);
-            this.closePopup().unbindPopup();
+
+            L.DomEvent.stopPropagation(evt);
+            if (date === selected) {
+                return;
+            }
+            if (selected) {
+                walkLayer.resetFeatureStyle(selected);
+            }
             if (popup) {
-                this.bindPopup(popup).openPopup(evt.latlng);
+                L.DomUtil.empty(domDetails);
+                domDetails.appendChild(walkPopup(date, walks[idx]));
+                selected = date;
+                walkLayer.setFeatureStyle(selected, trackStyle(true, true));
             }
         });
 
         // Set up a summary pane that reacts when years are toggled.
-        var sumPane = Summary.summaryPane(walks, function () {
+        function renderSummary() {
             var h3 = L.DomUtil.create('h3');
 
             h3.textContent = options.title;
             L.DomUtil.empty(domDetails);
             domDetails.appendChild(h3);
             domDetails.appendChild(this.render());
+        }
+        var sumPane = Summary.summaryPane(walks, renderSummary);
+        gpxmap.on('click', function () {
+            if (selected) {
+                walkLayer.resetFeatureStyle(selected);
+                selected = void 0;
+                renderSummary.call(sumPane);
+            }
         });
 
         // Create one layer group per year and add to the map.
         Object.keys(years).forEach(function (year) {
             var lg = L.layerGroup().on('add', function () {
                 if (hiddenYear[year]) {
+                    selected = void 0;
                     hiddenYear[year] = false;
                     walkLayer.redraw();
                     mouseLayer.redraw();
                 }
             }).on('remove', function () {
                 if (!hiddenYear[year]) {
+                    selected = void 0;
                     hiddenYear[year] = true;
                     walkLayer.redraw();
                     mouseLayer.redraw();
