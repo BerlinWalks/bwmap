@@ -29,15 +29,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var MAP = {};
+var GPXMAP = {};
 
-MAP.map = function (id, options) {
+GPXMAP.CSS = {
+    'TRACK': 'gpxmap-track',
+    'SELECT': 'gpxmap-select',
+};
+
+GPXMAP.gpxmap = function (id, options) {
     'use strict';
-
-    var CSS = MAP.CSS = {
-        'TRACK': 'map-track',
-        'SELECT': 'map-select',
-    };
+    var CSS = GPXMAP.CSS;
 
     // Create all configured tile layers.
     var tileLayers = options.tileLayers.map(function (layer) {
@@ -54,7 +55,7 @@ MAP.map = function (id, options) {
     });
 
     // Create map with an initial tile layer and layers control.
-    var bwmap = L.map(id).
+    var gpxmap = L.map(id).
         addControl(L.control.scale()).
         addControl(layersControl).
         addLayer(tileLayers[0].tileLayer);
@@ -98,7 +99,7 @@ MAP.map = function (id, options) {
         // Create one layer group per year and add to the map.
         for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
             lg = L.layerGroup(yearGpx[year]);
-            bwmap.addLayer(lg);
+            gpxmap.addLayer(lg);
             layersControl.addOverlay(lg, year);
         }
 
@@ -106,7 +107,7 @@ MAP.map = function (id, options) {
         var bounds = L.latLngBounds(layers.map(function (layer) {
             return layer.gpx.getBounds();
         }));
-        bwmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
+        gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
 
         // Create a popup for all GPXs of each walk
         layers.forEach(function (layer) {

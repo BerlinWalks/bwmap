@@ -39,7 +39,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.css">
-<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="css/gpxmap.css">
 
 <style type="text/css">
     html, body                          { height: 100%; }
@@ -48,7 +48,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.2/leaflet.js"></script>
 <script src="js/util.js"></script>
 <script src="js/gpx.js"></script>
-<script src="js/map.js"></script>
+<script src="js/gpxmap.js"></script>
 
 <script type="text/javascript">
 var TILE_LAYERS = [];
@@ -66,7 +66,7 @@ TILE_LAYERS.push({
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    MAP.map('bwmap', {
+    GPXMAP.gpxmap('gpxmap', {
         'tileLayers': TILE_LAYERS,
         'index': 'gpx/index.json',
         'gpx': 'gpx/',
@@ -75,5 +75,5 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </head>
 
-<body id="bwmap"></body>
+<body id="gpxmap"></body>
 </html>
