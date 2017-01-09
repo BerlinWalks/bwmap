@@ -36,10 +36,10 @@ GPX.NS = 'http://www.topografix.com/GPX/1/1';
 /**
  * Compute the length of a Polyline, in radians.
  */
-GPX.distance = function (line) {
+GPX.distance = function (latLngs) {
     'use strict';
 
-    var latLngs = line.getLatLngs(), Earth = L.CRS.Earth;
+    var Earth = L.CRS.Earth;
     if (0 === latLngs.length) {
         return 0;
     }

@@ -123,7 +123,7 @@ GPXMAP.gpxmap = function (id, options) {
             anchor.textContent = layer.walk.title;
             popup.appendChild(anchor);
             popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(GPX.distance(layer.gpx) / 100) / 10) + 'km'
+                ' ' + (Math.round(GPX.distance(layer.gpx.getLatLngs()) / 100) / 10) + 'km'
             ));
             layer.gpx.bindPopup(popup);
         });
