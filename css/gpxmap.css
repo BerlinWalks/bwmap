@@ -31,18 +31,5 @@
 
 /* GPX tracks */
 .gpxmap-track {
-    color: #17f;
-    stroke-width: 2px;
-    stroke-opacity: .8;
     transition: color .2s, stroke-width .2s;
-}
-
-/* Apply hover effect when hovering over invisible previous sibling. */
-*:hover + .gpxmap-track {
-    stroke-width: 4px;
-    stroke-opacity: 1;
-}
-
-.gpxmap-track.gpxmap-select {
-    stroke-width: 3.5px;
 }

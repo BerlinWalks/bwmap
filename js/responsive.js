@@ -30,32 +30,48 @@
  */
 
 /**
- * A Polyline whose mouse handlers react to nearby events.
+ * Make a component respond to mouse hover.
  *
- * This is implemented by drawing a wider, invisible line underneath and
- * attaching event handlers to that.
+ * When the mouse hovers over the component, the 'hovering' properties are
+ * added.
  */
-function WideLine(props) {
-    'use strict';
-    var wideProps = {}, lineProps = {}, $ = React.createElement;
+var Responsive = React.createClass({
+    'getInitialState': function () {
+        return { 'hover': false };
+    },
 
-    // Split properties into visual properties and events.
-    for (var p in props) if (props.hasOwnProperty(p)) {
-        if (p.startsWith('on')) {
-            wideProps[p] = props[p];
-        } else {
-            lineProps[p] = props[p];
+    'handleMouseOver': function() {
+        'use strict';
+
+        this.setState({ 'hover': true });
+        if (this.props.onMouseOver) {
+            this.props.onMouseOver.apply(this, arguments);
         }
-    }
-    wideProps.positions = props.positions;
-    wideProps.opacity = 0;
-    wideProps.weight = 20;
-    lineProps.interactive = false;
+    },
 
-    return $('div', null,
-        $(ReactLeaflet.Polyline, wideProps, props.children),
-        $(ReactLeaflet.Polyline, lineProps)
-    );
-}
+    'handleMouseOut': function () {
+        'use strict';
 
-WideLine.propTypes = ReactLeaflet.Polyline.propTypes;
+        this.setState({ 'hover': false });
+        if (this.props.onMouseOut) {
+            this.props.onMouseOut.apply(this, arguments);
+        }
+    },
+
+    'render': function () {
+        'use strict';
+
+        return React.createElement(this.props.component,
+            Object.assign(
+                {},
+                this.props,
+                this.state.hover ? this.props.hovering : null,
+                {
+                    'onMouseOver': this.handleMouseOver,
+                    'onMouseOut': this.handleMouseOut,
+                }
+            ),
+            this.props.children
+        );
+    },
+});

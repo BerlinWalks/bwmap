@@ -29,38 +29,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var GPXMAP = {};
+var GpxMap = React.createClass({
+'getInitialState': function () {
+    return { 'layers': [] };
+},
 
-GPXMAP.CSS = {
-    'TRACK': 'gpxmap-track',
-    'SELECT': 'gpxmap-select',
-};
-
-GPXMAP.gpxmap = function (id, options) {
+'componentDidMount': function () {
     'use strict';
-    var CSS = GPXMAP.CSS;
+    var self = this;
 
-    // Create all configured tile layers.
-    var tileLayers = options.tileLayers.map(function (layer) {
-        return {
-            'name': layer.name,
-            'tileLayer': L.tileLayer(layer.url, layer.options),
-        };
-    });
-
-    // Create layers control.
-    var layersControl = L.control.layers(null, null, { 'hideSingleBase':true });
-    tileLayers.forEach(function (layer) {
-        layersControl.addBaseLayer(layer.tileLayer, layer.name);
-    });
-
-    // Create map with an initial tile layer and layers control.
-    var gpxmap = L.map(id).
-        addControl(L.control.scale()).
-        addControl(layersControl).
-        addLayer(tileLayers[0].tileLayer);
-
-    UTIL.load(options.index).then(function (walks) {
+    UTIL.load(self.props.index).then(function (walks) {
         /*
          * Return a Promise that resolves to an array of GPX tracks once
          * all tracks have been loaded.
@@ -69,7 +47,7 @@ GPXMAP.gpxmap = function (id, options) {
             // Load GPX file for each date.
             return walk.dates.map(function (date) {
                 return UTIL.load(
-                    options.gpx + date.substr(0, 10) +'.gpx', 'document'
+                    self.props.gpx + date.substr(0, 10) +'.gpx', 'document'
                 ).then(function (gpx) {
                     // Turn segments into MultiPolylines.
                     return {
@@ -83,50 +61,88 @@ GPXMAP.gpxmap = function (id, options) {
             });
         }));
     }).then(function (layers) {
-        var yearGpx = {}, year, lg;
-
-        // Group GPX layers by year.
-        layers.forEach(function (layer) {
-            var year = layer.date.getFullYear();
-            var line = wideline(layer.lines, {
-                'className': CSS.TRACK,
-                'color': 'currentColor',
-            });
-
-            // Create a popup for each walk
-            var popup = document.createElement('div');
-            var anchor = document.createElement('a');
-
-            popup.textContent =
-                    [ layer.date.getDate()
-                    , layer.date.getMonth() + 1
-                    , layer.date.getFullYear()
-                    ].join('/') + ' ';
-            anchor.setAttribute('href', layer.walk.link);
-            anchor.textContent = layer.walk.title;
-            popup.appendChild(anchor);
-            popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(GPX.distance(layer.lines) / 100) / 10) + 'km'
-            ));
-            line.bindPopup(popup);
-
-            if (!yearGpx[year]) {
-                yearGpx[year] = [];
-            }
-            yearGpx[year].push(line);
-        });
-
-        // Create one layer group per year and add to the map.
-        for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
-            lg = L.layerGroup(yearGpx[year]);
-            gpxmap.addLayer(lg);
-            layersControl.addOverlay(lg, year);
-        }
-
-        // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(layers.flatMap(function (layer) {
-            return layer.lines;
-        }));
-        gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
+        self.setState({ 'layers': layers });
     });
+},
+
+'render': function () {
+    'use strict';
+    var CSS = GpxMap.CSS, $ = React.createElement;
+    var yearGpx = {}, years = [], layersControl, mapProps;
+
+    // Group GPX layers by year.
+    this.state.layers.forEach(function (layer) {
+        var year = layer.date.getFullYear();
+
+        if (!yearGpx[year]) {
+            years.push(year);
+            yearGpx[year] = [];
+        }
+        yearGpx[year].push($(Responsive, {
+                'key': layer.date,
+                'component': WideLine,
+                'className': CSS.TRACK,
+                'positions': layer.lines,
+                'color': '#17f',
+                'weight': 2,
+                'opacity': .8,
+                'hovering': {
+                    'weight': 4,
+                    'opacity': 1,
+                }
+            },
+            $(ReactLeaflet.Popup, null, $('div', null,
+                [ layer.date.getDate()
+                , layer.date.getMonth() + 1
+                , layer.date.getFullYear()
+                ].join('/') + ' ',
+                $('a', { 'href': layer.walk.link, }, layer.walk.title),
+                ' ' + (Math.round(GPX.distance(layer.lines) / 100) / 10) + 'km'
+            ))
+        ));
+    });
+    years.sort();
+
+    // Create base layers and overlays inside layers control.
+    layersControl = $(ReactLeaflet.LayersControl,
+        { 'hideSingleBase': true },
+        this.props.tileLayers.map(function (layer, i) {
+            return $(ReactLeaflet.LayersControl.BaseLayer,
+                { 'name': layer.name, 'key': layer.name, 'checked': 0 === i },
+                $(ReactLeaflet.TileLayer, {
+                    'url': layer.url,
+                    'attribution': layer.options.attribution,
+                })
+            );
+        }),
+        years.map(function (year) {
+            return $(ReactLeaflet.LayersControl.Overlay,
+                { 'name': ''+ year, 'key': year, 'checked': true },
+                $(ReactLeaflet.LayerGroup, null, yearGpx[year])
+            );
+        })
+    );
+
+    // Adjust the map's viewport when all GPX tracks are loaded
+    if (0 < this.state.layers.length) {
+        mapProps = {
+            'bounds': L.latLngBounds(this.state.layers.flatMap(function (layer) {
+                return layer.lines;
+            })),
+        };
+        mapProps.maxBounds = mapProps.bounds.pad(.05);
+    } else {
+        mapProps = null;
+    }
+
+    // Create map with an initial tile layer and layers control.
+    return $(ReactLeaflet.Map, mapProps,
+        $(ReactLeaflet.ScaleControl),
+        layersControl
+    );
+},
+});
+
+GpxMap.CSS = {
+    'TRACK': 'gpxmap-track',
 };
