@@ -88,8 +88,7 @@ GPXMAP.gpxmap = function (id, options) {
         // Group GPX layers by year.
         layers.forEach(function (layer) {
             var year = layer.date.getFullYear();
-
-            var line = L.polyline(layer.lines, {
+            var line = wideline(layer.lines, {
                 'className': CSS.TRACK,
                 'color': 'currentColor',
             });
