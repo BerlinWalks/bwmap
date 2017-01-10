@@ -45,19 +45,22 @@ Sample output looks like this:
     "dates":[ "2011-10-30T14:37:39+01:00" ],
     "link":"https://berlinwalks.wordpress.com/2011/10/30/berliner-mauerweg-part-2/",
     "people":[ "Christine", "Gernot" ],
-    "title":"Berliner Mauerweg \u2013 Part 2"
+    "title":"Berliner Mauerweg \u2013 Part 2",
+    "walkers":2
   },
   { "categories":[ "Berliner Mauerweg" ],
     "dates":[ "2011-10-28T23:22:19+02:00" ],
     "link":"https://berlinwalks.wordpress.com/2011/10/28/berliner-mauerweg-part-1/",
     "people":[ "Charlie", "Liam", "Martin", "Rafi" ],
-    "title":"Berliner Mauerweg \u2013 Part 1"
+    "title":"Berliner Mauerweg \u2013 Part 1",
+    "walkers":4
   },
   { "categories":[ "Background" ],
     "dates":[ "2011-10-27T16:41:01+02:00" ],
     "link":"https://berlinwalks.wordpress.com/2011/10/27/hello-world/",
     "people":[ "Leandro" ],
-    "title":"Berlin walks- how, when and where it all started"
+    "title":"Berlin walks- how, when and where it all started",
+    "walkers":1
   }
 ]
 ```

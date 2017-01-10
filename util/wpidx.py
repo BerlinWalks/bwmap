@@ -63,6 +63,8 @@ categories = {
 }
 
 def process_post(post):
+        '''Extract the walk described in the given WordPress post.'''
+        ppl = extract_people(html.unescape(post['content']['rendered']))
         return {
                 'categories': [
                         categories[cat] for cat in post['categories']
@@ -72,7 +74,8 @@ def process_post(post):
                                 astimezone()
                 ],
                 'link': post['link'],
-                'people': extract_people(html.unescape(post['content']['rendered'])),
+                'walkers': len(ppl),
+                'people': ppl,
                 'title': html.unescape(post['title']['rendered']),
         }
 

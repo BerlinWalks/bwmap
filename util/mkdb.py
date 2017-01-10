@@ -80,6 +80,9 @@ def extract_people(desc):
 
 def process_atom_entry(entry):
         '''Extract the walk described in the given Atom entry.'''
+        ppl = extract_people(html.unescape(
+                entry.find(ATOM_CONTENT + "[@type='html']").text
+        ))
         return {
                 'title': html.unescape(entry.find(ATOM_TITLE + "[@type='html']").text),
                 'link': entry.find(ATOM_LINK + "[@rel='alternate']").get('href'),
@@ -92,22 +95,23 @@ def process_atom_entry(entry):
                         replace(tzinfo = timezone.utc).
                         astimezone()
                 ],
-                'people': extract_people(html.unescape(
-                        entry.find(ATOM_CONTENT + "[@type='html']").text
-                )),
+                'walkers': len(ppl),
+                'people': ppl,
         }
 
 def process_rss_item(item):
         '''Extract the walk described in the given RSS item.'''
+        ppl = extract_people(html.unescape(
+                item.find(CONTENT_ENCODED).text
+        ))
         walk = {
                 'categories': [ item.find('category').text ],
                 'dates': [
                         parsedate_to_datetime(item.find('pubDate').text).
                                 astimezone()
                 ],
-                'people': extract_people(html.unescape(
-                        item.find(CONTENT_ENCODED).text
-                )),
+                'walkers': len(ppl),
+                'people': ppl,
         }
 
         for prop in ['title', 'link']:
