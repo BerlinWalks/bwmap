@@ -29,17 +29,15 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var GPXMAP = {};
+var GPXMAP = (function () {
+'use strict';
 
-GPXMAP.CSS = {
+var CSS = {
     'TRACK': 'gpxmap-track',
     'SELECT': 'gpxmap-select',
 };
 
-GPXMAP.gpxmap = function (id, options) {
-    'use strict';
-    var CSS = GPXMAP.CSS;
-
+function gpxmap(id, options) {
     // Create all configured tile layers.
     var tileLayers = options.tileLayers.map(function (layer) {
         return {
@@ -129,4 +127,13 @@ GPXMAP.gpxmap = function (id, options) {
         }));
         gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
     });
+
+    return gpxmap;
+}
+
+// Export public symbols
+return {
+    'CSS': CSS,
+    'gpxmap': gpxmap,
 };
+}());
