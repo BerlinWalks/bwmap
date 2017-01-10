@@ -4,10 +4,10 @@
    "North of the City"
   ],
   "dates":[
-   "2017-01-01T12:00:00+01:00"
+   "2017-01-01T23:29:46+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2017/01/01/muhlenbeck-birkenwerder/",
-  "people":["Lisa",
+  "people":[
    "Barbara",
    "Bernardo",
    "Christian",
@@ -17,11 +17,13 @@
    "Joachim",
    "Kasia",
    "Kathrin",
+   "Lisa",
    "Sebastian",
    "Stefan",
-   "Sylvia"
+   "Sylvi"
   ],
-  "title":"Mühlenbeck \u2013 Birkenwerder"
+  "title":"M\u00fchlenbeck \u2013 Birkenwerder",
+  "walkers":13
  },
  {
   "categories":[
@@ -31,18 +33,20 @@
    "2016-12-18T21:31:36+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/12/18/nassenheide-liebenberg/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Fredi",
    "Helge",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Martina",
    "Sandra",
    "Sebastian",
    "Sophie"
   ],
-  "title":"Nassenheide \u2013 Liebenberg"
+  "title":"Nassenheide \u2013 Liebenberg",
+  "walkers":10
  },
  {
   "categories":[
@@ -52,10 +56,11 @@
    "2016-12-11T13:45:42+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/12/11/borgsdorf-velten/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
    "Joachim",
    "Karl",
+   "Lisa",
    "Mariana",
    "Richard",
    "Sandra",
@@ -64,7 +69,8 @@
    "Sylvia",
    "Vera"
   ],
-  "title":"Borgsdorf \u2013 Velten"
+  "title":"Borgsdorf \u2013 Velten",
+  "walkers":11
  },
  {
   "categories":[
@@ -74,15 +80,17 @@
    "2016-12-04T22:29:59+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/12/04/wansdorf-hennigsdorf/",
-  "people":["Lisa",
+  "people":[
    "Carlos",
    "Guilherme",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Martina",
    "Sebastian"
   ],
-  "title":"Wansdorf \u2013 Hennigsdorf"
+  "title":"Wansdorf \u2013 Hennigsdorf",
+  "walkers":7
  },
  {
   "categories":[
@@ -92,7 +100,7 @@
    "2016-11-27T16:22:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/11/27/wansdorf-brieselang/",
-  "people":["Lisa",
+  "people":[
    "Catalin",
    "Christoph",
    "Enrique",
@@ -103,6 +111,7 @@
    "Irina",
    "Joachim",
    "Joe",
+   "Lisa",
    "Martina",
    "Miriam",
    "Sandra",
@@ -111,7 +120,8 @@
    "Sylvia",
    "Wiltrud"
   ],
-  "title":"Wansdorf \u2013 Brieselang"
+  "title":"Wansdorf \u2013 Brieselang",
+  "walkers":18
  },
  {
   "categories":[
@@ -121,7 +131,7 @@
    "2016-11-20T14:05:04+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/11/20/wustermark-nauen/",
-  "people":["Lisa",
+  "people":[
    "Ali",
    "Bernardo",
    "Christian",
@@ -130,6 +140,7 @@
    "Joachim",
    "Joy",
    "Katrin",
+   "Lisa",
    "Mia",
    "Nadja",
    "Nadya",
@@ -142,7 +153,8 @@
    "Sylvia",
    "Wiebke"
   ],
-  "title":"Wustermark \u2013 Nauen"
+  "title":"Wustermark \u2013 Nauen",
+  "walkers":20
  },
  {
   "categories":[
@@ -152,7 +164,7 @@
    "2016-11-13T22:17:43+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/11/13/uetz-wustermark/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Antje",
    "Christoph",
@@ -162,6 +174,7 @@
    "Joachim",
    "Joy",
    "Katrin",
+   "Lisa",
    "Martina",
    "Mia",
    "Norman",
@@ -169,7 +182,8 @@
    "Sebastian",
    "Stefan"
   ],
-  "title":"Uetz \u2013 Wustermark"
+  "title":"Uetz \u2013 Wustermark",
+  "walkers":16
  },
  {
   "categories":[
@@ -179,13 +193,14 @@
    "2016-11-06T23:20:56+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/11/06/briesener-berge-briesener-tal/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Fredi",
    "Guilherme",
    "Joachim",
    "Joy",
    "Katrin",
+   "Lisa",
    "Martina",
    "Mia",
    "Sebastian",
@@ -194,7 +209,8 @@
    "Vesta",
    "Yuri"
   ],
-  "title":"Briesener Berge"
+  "title":"Briesener Berge",
+  "walkers":14
  },
  {
   "categories":[
@@ -205,7 +221,7 @@
    "2016-10-30T22:22:15+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/10/30/tiergarten-charlottenburg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Ata",
    "Ewka",
@@ -214,6 +230,7 @@
    "Gustav",
    "Helge",
    "Joachim",
+   "Lisa",
    "Marcela",
    "Martina",
    "Ralf",
@@ -224,7 +241,8 @@
    "Sylvia",
    "Yasamin"
   ],
-  "title":"Tiergarten & Charlottenburg"
+  "title":"Tiergarten & Charlottenburg",
+  "walkers":18
  },
  {
   "categories":[
@@ -233,8 +251,11 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2016/10/29/5th-birthday/",
-  "people":["Lisa"],
-  "title":"Fifth Birthday"
+  "people":[
+   "Lisa"
+  ],
+  "title":"Fifth Birthday",
+  "walkers":1
  },
  {
   "categories":[
@@ -244,11 +265,12 @@
    "2016-10-16T14:15:31+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/10/16/golm-marquardt/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Fredi",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Norman",
    "Philipp",
    "Sebastian",
@@ -256,7 +278,8 @@
    "Wiebke",
    "Yasamin"
   ],
-  "title":"Golm \u2013 Marquardt"
+  "title":"Golm \u2013 Marquardt",
+  "walkers":11
  },
  {
   "categories":[
@@ -266,16 +289,18 @@
    "2016-10-09T00:26:37+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/10/09/seddiner-see/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Merlin",
    "Philipp",
    "Sandra",
    "Sebastian"
   ],
-  "title":"Seddiner See"
+  "title":"Seddiner See",
+  "walkers":8
  },
  {
   "categories":[
@@ -285,7 +310,7 @@
    "2016-09-25T14:26:23+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/09/25/saarmund-potsdam/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Bernado",
    "Caroline",
@@ -297,6 +322,7 @@
    "Joachim",
    "Katrin",
    "Leonie",
+   "Lisa",
    "Martina",
    "Patrizia",
    "Philipp",
@@ -306,7 +332,8 @@
    "Thomas",
    "Wiebke"
   ],
-  "title":"Saarmund \u2013 Potsdam"
+  "title":"Saarmund \u2013 Potsdam",
+  "walkers":20
  },
  {
   "categories":[
@@ -317,7 +344,7 @@
    "2016-09-17T17:31:42+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/09/17/2-days-geburtstagswalk/",
-  "people":["Lisa",
+  "people":[
    "Asar",
    "Claudia",
    "Ewka",
@@ -326,6 +353,7 @@
    "Julia",
    "Katrin",
    "Khaled",
+   "Lisa",
    "Mariana",
    "Martina",
    "Sandra",
@@ -333,7 +361,8 @@
    "Sylvia",
    "Yves"
   ],
-  "title":"2 days: Geburtstagswalk"
+  "title":"2 days: Geburtstagswalk",
+  "walkers":15
  },
  {
   "categories":[
@@ -343,12 +372,13 @@
    "2016-09-11T21:35:15+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/09/11/ludwigsfelde-saarmund/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Ernst",
    "Fredi",
    "Helge",
    "Kasie",
+   "Lisa",
    "Magnus",
    "Maria",
    "Martina",
@@ -358,7 +388,8 @@
    "Sylvi",
    "Wiebke"
   ],
-  "title":"Ludwigsfelde \u2013 Saarmund"
+  "title":"Ludwigsfelde \u2013 Saarmund",
+  "walkers":14
  },
  {
   "categories":[
@@ -368,18 +399,20 @@
    "2016-09-04T17:55:10+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/09/04/ludwigsfelde-rangsdorf/",
-  "people":["Lisa",
+  "people":[
    "Ata",
    "Elena",
    "Janina",
    "Joachim",
    "John",
+   "Lisa",
    "Magnus",
    "Martina",
    "Norman",
    "Sebastian"
   ],
-  "title":"Ludwigsfelde \u2013 Rangsdorf"
+  "title":"Ludwigsfelde \u2013 Rangsdorf",
+  "walkers":10
  },
  {
   "categories":[
@@ -390,7 +423,7 @@
    "2016-08-28T11:17:43+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/08/28/egsdorf-wunsdorf/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Daniela",
    "Enrique",
@@ -404,6 +437,7 @@
    "Johannes",
    "Katrin",
    "Leonie",
+   "Lisa",
    "Martina",
    "Philipp",
    "Sebastian",
@@ -411,7 +445,8 @@
    "Wiebke",
    "Wiltrud"
   ],
-  "title":"Egsdorf \u2013 W\u00fcnsdorf"
+  "title":"Egsdorf \u2013 W\u00fcnsdorf",
+  "walkers":20
  },
  {
   "categories":[
@@ -422,13 +457,14 @@
    "2016-07-24T00:25:23+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/07/24/halbe-egsdorf/",
-  "people":["Lisa",
+  "people":[
    "Claudia",
    "Daniela",
    "Federico",
    "Inna",
    "Joachim",
    "Khaled",
+   "Lisa",
    "Maria",
    "Martina",
    "Norman",
@@ -440,7 +476,8 @@
    "Sylvia",
    "Tatiana"
   ],
-  "title":"Halbe \u2013 Egsdorf"
+  "title":"Halbe \u2013 Egsdorf",
+  "walkers":17
  },
  {
   "categories":[
@@ -450,19 +487,21 @@
    "2016-07-17T17:46:40+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/07/17/dabendorf-konigs-wusterhausen/",
-  "people":["Lisa",
+  "people":[
    "Afroze",
    "Enrique",
    "Helge",
    "Joachim",
    "Kaja",
+   "Lisa",
    "Martina",
    "Paul",
    "Sandra",
    "Sebastian",
    "Shun"
   ],
-  "title":"Dabendorf \u2013 K\u00f6nigs Wusterhausen"
+  "title":"Dabendorf \u2013 K\u00f6nigs Wusterhausen",
+  "walkers":11
  },
  {
   "categories":[
@@ -472,7 +511,7 @@
    "2016-07-10T00:11:57+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/07/10/schlaubetal/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Daniela",
    "Elena",
@@ -481,6 +520,7 @@
    "Julieta",
    "Katrin",
    "Khaled",
+   "Lisa",
    "Marit",
    "Martina",
    "Norman",
@@ -491,7 +531,8 @@
    "Thomas",
    "Ursula"
   ],
-  "title":"Schlaubetal"
+  "title":"Schlaubetal",
+  "walkers":18
  },
  {
   "categories":[
@@ -501,19 +542,21 @@
    "2016-07-03T14:02:39+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/07/03/wernsdorf-konigs-wusterhausen/",
-  "people":["Lisa",
+  "people":[
    "Alfroze",
    "Christoph",
    "Joachim",
    "Kathrin",
    "Khaled",
+   "Lisa",
    "Nathalie",
    "Ola",
    "Philipp",
    "Sebastian",
    "Sophie"
   ],
-  "title":"Wernsdorf \u2013 K\u00f6nigs Wusterhausen"
+  "title":"Wernsdorf \u2013 K\u00f6nigs Wusterhausen",
+  "walkers":11
  },
  {
   "categories":[
@@ -523,18 +566,20 @@
    "2016-06-26T22:29:12+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/06/26/gosen-schmockwitz/",
-  "people":["Lisa",
+  "people":[
    "Alfroze",
    "Christian",
    "Christoph",
    "Enrique",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Mariana",
    "Martina",
    "Nathalie"
   ],
-  "title":"Gosen \u2013 Schm\u00f6ckwitz"
+  "title":"Gosen \u2013 Schm\u00f6ckwitz",
+  "walkers":10
  },
  {
   "categories":[
@@ -544,19 +589,21 @@
    "2016-06-19T17:05:38+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/06/19/fangschleuse-schmockwitzwerder/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Christoph",
    "Florian",
    "Fredi",
    "Joachim",
+   "Lisa",
    "Martina",
    "Nathalie",
    "Sandra",
    "Sebastian",
    "Sophie"
   ],
-  "title":"Fangschleuse \u2013 Schm\u00f6ckwitzwerder"
+  "title":"Fangschleuse \u2013 Schm\u00f6ckwitzwerder",
+  "walkers":11
  },
  {
   "categories":[
@@ -566,7 +613,7 @@
    "2016-06-12T09:50:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/06/12/frankfurt-oder-slubice-helenesee/",
-  "people":["Lisa",
+  "people":[
    "Elena",
    "Ewka",
    "Fredi",
@@ -578,13 +625,15 @@
    "Julia",
    "Julieta",
    "Kathrin",
+   "Lisa",
    "Martina",
    "Philipp",
    "Sandra",
    "Sylvia",
    "Thomas"
   ],
-  "title":"Frankfurt Oder, Slubice & Helenesee"
+  "title":"Frankfurt Oder, Slubice & Helenesee",
+  "walkers":17
  },
  {
   "categories":[
@@ -594,7 +643,7 @@
    "2016-06-05T20:04:40+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/06/05/10598/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Christoph",
    "Elena",
@@ -602,13 +651,15 @@
    "Joachim",
    "Joanna",
    "Leonie",
+   "Lisa",
    "Norman",
    "Philipp",
    "Sarah",
    "Sebastian",
    "Sylvia"
   ],
-  "title":"Fangschleuse \u2013 Woltersdorf"
+  "title":"Fangschleuse \u2013 Woltersdorf",
+  "walkers":13
  },
  {
   "categories":[
@@ -618,7 +669,7 @@
    "2016-05-29T20:09:24+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/05/29/hangelsberg-herzfelde/",
-  "people":["Lisa",
+  "people":[
    "Afroze",
    "Elena",
    "Eloise",
@@ -632,6 +683,7 @@
    "Jana",
    "Joachim",
    "Laura",
+   "Lisa",
    "Mariana",
    "Mark",
    "Martina",
@@ -643,7 +695,8 @@
    "Tatiana",
    "Wiltrud"
   ],
-  "title":"Hangelsberg \u2013 Herzfelde"
+  "title":"Hangelsberg \u2013 Herzfelde",
+  "walkers":24
  },
  {
   "categories":[
@@ -653,12 +706,13 @@
    "2016-05-16T16:30:58+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/05/16/buckow-muncheberg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anna",
    "Christoph",
    "Elena",
    "Joachim",
+   "Lisa",
    "Mariana",
    "Martina",
    "Philipp",
@@ -666,7 +720,8 @@
    "Sebastian",
    "Stefan"
   ],
-  "title":"Buckow \u2013 M\u00fcncheberg"
+  "title":"Buckow \u2013 M\u00fcncheberg",
+  "walkers":12
  },
  {
   "categories":[
@@ -676,7 +731,7 @@
    "2016-05-08T14:57:41+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/05/08/neuenhagen-petershagen/",
-  "people":["Lisa",
+  "people":[
    "Ana",
    "Catalin",
    "Christoph",
@@ -687,6 +742,7 @@
    "Helge",
    "Joachim",
    "Laura",
+   "Lisa",
    "Martina",
    "Michael",
    "Mustafizur",
@@ -695,7 +751,8 @@
    "Sylvi",
    "Yves"
   ],
-  "title":"Neuenhagen \u2013 Petershagen"
+  "title":"Neuenhagen \u2013 Petershagen",
+  "walkers":18
  },
  {
   "categories":[
@@ -705,7 +762,7 @@
    "2016-05-01T18:11:29+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/05/01/berlin-walks-werder-ferch/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anastasia",
    "Catalin",
@@ -720,6 +777,7 @@
    "Joachim",
    "Katrin",
    "Laura",
+   "Lisa",
    "Martina",
    "Mustafizur",
    "Noemi",
@@ -727,7 +785,8 @@
    "Sebastian",
    "Sergio"
   ],
-  "title":"Werder \u2013 Ferch"
+  "title":"Werder \u2013 Ferch",
+  "walkers":21
  },
  {
   "categories":[
@@ -738,7 +797,7 @@
    "2016-04-23T14:36:05+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/04/23/2-days-bad-freienwalde/",
-  "people":["Lisa",
+  "people":[
    "Amaia",
    "April",
    "Asar",
@@ -746,11 +805,13 @@
    "Federico",
    "Joachim",
    "Leonie",
+   "Lisa",
    "Martina",
    "Sarah",
    "Sebastian"
   ],
-  "title":"2 days: Bad Freienwalde"
+  "title":"2 days: Bad Freienwalde",
+  "walkers":11
  },
  {
   "categories":[
@@ -760,19 +821,21 @@
    "2016-04-17T22:53:30+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/04/17/blumberg-honow/",
-  "people":["Lisa",
+  "people":[
    "April",
    "Catalin",
    "Christoph",
    "Federico",
    "Helge",
    "Joachim",
+   "Lisa",
    "Martina",
    "Philipp",
    "Sandra",
    "Sergio"
   ],
-  "title":"Blumberg \u2013 H\u00f6now"
+  "title":"Blumberg \u2013 H\u00f6now",
+  "walkers":11
  },
  {
   "categories":[
@@ -782,7 +845,7 @@
    "2016-04-09T22:22:33+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/04/09/2-days-eberswalde-liepe-falkenberg/",
-  "people":["Lisa",
+  "people":[
    "Ana",
    "April",
    "Asar",
@@ -790,6 +853,7 @@
    "Florian",
    "Fredi",
    "Joachim",
+   "Lisa",
    "Mariana",
    "Martina",
    "Philipp",
@@ -797,7 +861,8 @@
    "Sebastian",
    "Sylvi"
   ],
-  "title":"2 days: Eberswalde \u2013 Liepe \u2013 Falkenberg"
+  "title":"2 days: Eberswalde \u2013 Liepe \u2013 Falkenberg",
+  "walkers":14
  },
  {
   "categories":[
@@ -807,7 +872,7 @@
    "2016-04-03T22:24:19+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/04/03/bernau-blumberg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Ana",
    "April",
@@ -824,6 +889,7 @@
    "Leire",
    "Leonie",
    "Lewis",
+   "Lisa",
    "Martina",
    "Michael",
    "Nina",
@@ -834,7 +900,8 @@
    "Sandra",
    "Sebastian"
   ],
-  "title":"Bernau \u2013 Blumberg"
+  "title":"Bernau \u2013 Blumberg",
+  "walkers":26
  },
  {
   "categories":[
@@ -844,7 +911,7 @@
    "2016-03-20T16:38:47+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/03/20/schonwalde-bernau/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Bj\u00f6rn",
    "Federico",
@@ -852,12 +919,14 @@
    "Joachim",
    "Judith",
    "Khaled",
+   "Lisa",
    "Michael",
    "Oliver",
    "Philipp",
    "Sandra"
   ],
-  "title":"Sch\u00f6nwalde \u2013 Bernau"
+  "title":"Sch\u00f6nwalde \u2013 Bernau",
+  "walkers":12
  },
  {
   "categories":[
@@ -867,7 +936,7 @@
    "2016-03-13T10:54:53+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/03/13/basdorf-schonerlinde/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Christoph",
    "Claudia",
@@ -882,6 +951,7 @@
    "Kaja",
    "Kathrin",
    "Leire",
+   "Lisa",
    "Magdalena",
    "Martina",
    "Philipp",
@@ -890,7 +960,8 @@
    "Wiltrud",
    "Yves"
   ],
-  "title":"Basdorf \u2013 Sch\u00f6nerlinde"
+  "title":"Basdorf \u2013 Sch\u00f6nerlinde",
+  "walkers":22
  },
  {
   "categories":[
@@ -900,7 +971,7 @@
    "2016-03-06T21:10:40+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/03/06/birkenwerder-basdorf/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Christoph",
    "Clara",
@@ -909,6 +980,7 @@
    "Fredi",
    "Hannah",
    "Judith",
+   "Lisa",
    "Mariana",
    "Martina",
    "Michael",
@@ -916,7 +988,8 @@
    "Sandra",
    "Sebastian"
   ],
-  "title":"Birkenwerder \u2013 Basdorf"
+  "title":"Birkenwerder \u2013 Basdorf",
+  "walkers":15
  },
  {
   "categories":[
@@ -926,7 +999,7 @@
    "2016-02-28T16:23:52+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/02/28/birkenwerder-lehnitz/",
-  "people":["Lisa",
+  "people":[
    "Alexander",
    "Amaia",
    "Andre",
@@ -936,6 +1009,7 @@
    "Federico",
    "Hannah",
    "Jesus",
+   "Lisa",
    "Mariana",
    "Martina",
    "Nicole",
@@ -947,7 +1021,8 @@
    "Ralf",
    "Roberto"
   ],
-  "title":"Birkenwerder \u2013 Lehnitz"
+  "title":"Birkenwerder \u2013 Lehnitz",
+  "walkers":20
  },
  {
   "categories":[
@@ -957,14 +1032,16 @@
    "2016-02-21T23:23:32+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/02/21/hohen-neuendorf-hermsdorf/",
-  "people":["Lisa",
+  "people":[
    "Elena",
    "Joachim",
+   "Lisa",
    "Martina",
    "Peter",
    "Philipps"
   ],
-  "title":"Hohen Neuendorf \u2013 Hermsdorf"
+  "title":"Hohen Neuendorf \u2013 Hermsdorf",
+  "walkers":6
  },
  {
   "categories":[
@@ -974,13 +1051,14 @@
    "2016-02-14T16:17:39+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/02/14/hennigsdorf-waidmannslust/",
-  "people":["Lisa",
+  "people":[
    "Ander",
    "Christoph",
    "Elena",
    "Florian",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Marit",
    "Norman",
    "Sandra",
@@ -988,7 +1066,8 @@
    "Thomas",
    "Widelina"
   ],
-  "title":"Hennigsdorf \u2013 Waidmannslust"
+  "title":"Hennigsdorf \u2013 Waidmannslust",
+  "walkers":13
  },
  {
   "categories":[
@@ -998,11 +1077,12 @@
    "2016-02-07T13:21:49+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/02/07/heiligengrabe-dossow/",
-  "people":["Lisa",
+  "people":[
    "Asar",
    "Federico",
    "Florian",
    "Joachim",
+   "Lisa",
    "Maria",
    "Martina",
    "Sandra",
@@ -1010,7 +1090,8 @@
    "Wilson",
    "Wiltrud"
   ],
-  "title":"Heiligengrabe \u2013 Dossow"
+  "title":"Heiligengrabe \u2013 Dossow",
+  "walkers":11
  },
  {
   "categories":[
@@ -1020,7 +1101,7 @@
    "2016-01-31T21:34:58+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/01/31/schonwalde-hennigsdorf/",
-  "people":["Lisa",
+  "people":[
    "Adam",
    "Andrea",
    "Christoph",
@@ -1030,11 +1111,13 @@
    "Joachim",
    "Johannes",
    "Jose",
+   "Lisa",
    "Lucile",
    "Sebastian",
    "Sylvia"
   ],
-  "title":"Sch\u00f6nwalde \u2013 Hennigsdorf"
+  "title":"Sch\u00f6nwalde \u2013 Hennigsdorf",
+  "walkers":13
  },
  {
   "categories":[
@@ -1044,7 +1127,7 @@
    "2016-01-24T15:58:14+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/01/24/dallgow-doberitz-finkenkrug/",
-  "people":["Lisa",
+  "people":[
    "Asar",
    "Christoph",
    "Federico",
@@ -1053,13 +1136,15 @@
    "Hannes",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Martina",
    "Norman",
    "Sandra",
    "Sylvia",
    "Wiltrud"
   ],
-  "title":"Dallgow-D\u00f6beritz \u2013 Finkenkrug"
+  "title":"Dallgow-D\u00f6beritz \u2013 Finkenkrug",
+  "walkers":14
  },
  {
   "categories":[
@@ -1069,17 +1154,19 @@
    "2016-01-17T11:03:20+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/01/17/fahrland-elstal/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Corina",
    "Fredi",
    "Helge",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Martina",
    "Sylvia"
   ],
-  "title":"Fahrland \u2013 Elstal"
+  "title":"Fahrland \u2013 Elstal",
+  "walkers":9
  },
  {
   "categories":[
@@ -1089,10 +1176,11 @@
    "2016-01-10T23:48:19+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/01/10/berlin-walks-ragosen-bad-belzig/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Federico",
    "Joachim",
+   "Lisa",
    "Maria",
    "Martina",
    "Sandra",
@@ -1100,7 +1188,8 @@
    "Sophie",
    "Sylvia"
   ],
-  "title":"Rag\u00f6sen \u2013 Bad Belzig"
+  "title":"Rag\u00f6sen \u2013 Bad Belzig",
+  "walkers":10
  },
  {
   "categories":[
@@ -1110,11 +1199,12 @@
    "2016-01-03T13:49:52+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2016/01/03/fahrland-bornstedt-2/",
-  "people":["Lisa",
+  "people":[
    "Florian",
    "Fredi",
    "Hannah",
    "Joachim",
+   "Lisa",
    "Magdalena",
    "Marit",
    "Martina",
@@ -1124,7 +1214,8 @@
    "Stefan",
    "Thomas"
   ],
-  "title":"Fahrland \u2013 Bornstedt"
+  "title":"Fahrland \u2013 Bornstedt",
+  "walkers":13
  },
  {
   "categories":[
@@ -1134,18 +1225,20 @@
    "2015-12-20T16:48:06+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/12/20/struveshof-potsdam/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Hannes",
    "Helge",
    "Irene",
    "Joachim",
+   "Lisa",
    "Martina",
    "Sebastian",
    "Vera",
    "Wilhelm"
   ],
-  "title":"Struveshof \u2013 Potsdam"
+  "title":"Struveshof \u2013 Potsdam",
+  "walkers":10
  },
  {
   "categories":[
@@ -1155,7 +1248,7 @@
    "2015-12-13T02:08:42+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/12/13/thyrow/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Federico",
    "Fredi",
@@ -1163,12 +1256,14 @@
    "Inna",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Sandra",
    "Sebastian",
    "Sylvia",
    "Verena"
   ],
-  "title":"Thyrow"
+  "title":"Thyrow",
+  "walkers":12
  },
  {
   "categories":[
@@ -1178,20 +1273,22 @@
    "2015-12-06T20:08:47+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/12/06/thyrow-zossen/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Christoph",
    "Dodo",
    "Enrique",
    "Helge",
    "Joachim",
+   "Lisa",
    "Martina",
    "Norman",
    "Radomir",
    "Richard",
    "Sylvia"
   ],
-  "title":"Thyrow \u2013 Zossen"
+  "title":"Thyrow \u2013 Zossen",
+  "walkers":12
  },
  {
   "categories":[
@@ -1201,7 +1298,7 @@
    "2015-11-29T13:28:04+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/29/baruth-glashutte-klasdorf/",
-  "people":["Lisa",
+  "people":[
    "Charlie",
    "Enrique",
    "Florian",
@@ -1210,11 +1307,13 @@
    "Joachim",
    "Johannes",
    "Kathrin",
+   "Lisa",
    "Martina",
    "Nayeli",
    "Sebastian"
   ],
-  "title":"Baruth \u2013 Glash\u00fctte \u2013 Klasdorf"
+  "title":"Baruth \u2013 Glash\u00fctte \u2013 Klasdorf",
+  "walkers":12
  },
  {
   "categories":[
@@ -1224,16 +1323,18 @@
    "2015-11-22T15:31:16+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/22/rangsdorf-dabendorf/",
-  "people":["Lisa",
+  "people":[
    "Daniela",
    "Enrique",
    "Joachim",
+   "Lisa",
    "Marit",
    "Martina",
    "Norman",
    "Thomas"
   ],
-  "title":"Rangsdorf \u2013 Dabendorf"
+  "title":"Rangsdorf \u2013 Dabendorf",
+  "walkers":8
  },
  {
   "categories":[
@@ -1243,17 +1344,19 @@
    "2015-11-15T14:05:44+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/15/ragow-rangsdorf/",
-  "people":["Lisa",
+  "people":[
    "David",
    "Fredi",
    "Joachim",
    "Katja",
    "Kero",
+   "Lisa",
    "Martina",
    "Natali",
    "Rickard"
   ],
-  "title":"Ragow \u2013 Rangsdorf"
+  "title":"Ragow \u2013 Rangsdorf",
+  "walkers":9
  },
  {
   "categories":[
@@ -1263,7 +1366,7 @@
    "2015-11-08T22:22:18+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/08/wildau-zeuthen/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Dylan",
    "Enrique",
@@ -1272,6 +1375,7 @@
    "Joachim",
    "John",
    "Kathrin",
+   "Lisa",
    "Martina",
    "Miriam",
    "Norman",
@@ -1279,7 +1383,8 @@
    "Sandra",
    "Sebastian"
   ],
-  "title":"Wildau \u2013 Zeuthen"
+  "title":"Wildau \u2013 Zeuthen",
+  "walkers":15
  },
  {
   "categories":[
@@ -1288,10 +1393,12 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/06/fourth-birthday/",
-  "people":["Lisa",
-   "Fredi"
+  "people":[
+   "Fredi",
+   "Lisa"
   ],
-  "title":"Fourth Birthday"
+  "title":"Fourth Birthday",
+  "walkers":2
  },
  {
   "categories":[
@@ -1301,18 +1408,20 @@
    "2015-11-01T19:54:54+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/11/01/ragow-wildau/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Daniela",
    "Elena",
    "Florian",
    "Helge",
+   "Lisa",
    "Martina",
    "Sandra",
    "Sebastian",
    "Sylvia"
   ],
-  "title":"Ragow \u2013 Wildau"
+  "title":"Ragow \u2013 Wildau",
+  "walkers":10
  },
  {
   "categories":[
@@ -1323,7 +1432,7 @@
    "2015-10-16T15:31:36+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/10/16/2-5-days-unterspreewald-walk/",
-  "people":["Lisa",
+  "people":[
    "Elena",
    "Florian",
    "Fredi",
@@ -1331,12 +1440,14 @@
    "Joachim",
    "Johannes",
    "Kathrin",
+   "Lisa",
    "Sandra",
    "Sebastian",
    "Sylvia",
    "Vero"
   ],
-  "title":"2.5 days Unterspreewald walk"
+  "title":"2.5 days Unterspreewald walk",
+  "walkers":12
  },
  {
   "categories":[
@@ -1346,7 +1457,7 @@
    "2015-10-11T00:08:48+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/10/11/muggelheim-forest-and-seddinsee/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Enrique",
    "Florian",
@@ -1354,12 +1465,14 @@
    "Ingo",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Martina",
    "Norman",
    "Ralf",
    "Sandra"
   ],
-  "title":"M\u00fcggelheim \u2013 Forest and Seddinsee"
+  "title":"M\u00fcggelheim \u2013 Forest and Seddinsee",
+  "walkers":12
  },
  {
   "categories":[
@@ -1370,16 +1483,18 @@
    "2015-09-27T22:11:10+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/09/27/storkow-wendisch-rietz/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Christoph",
    "Ingrid",
    "Joachim",
+   "Lisa",
    "Martina",
    "Rudolf",
    "Sheraz"
   ],
-  "title":"Storkow \u2013 Wendisch-Rietz"
+  "title":"Storkow \u2013 Wendisch-Rietz",
+  "walkers":8
  },
  {
   "categories":[
@@ -1389,7 +1504,7 @@
    "2015-09-20T21:44:51+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/09/20/kaulsdorfer-seen/",
-  "people":["Lisa",
+  "people":[
    "Christoph",
    "Corina",
    "Florian",
@@ -1399,6 +1514,7 @@
    "Ingo",
    "Joachim",
    "Lisa",
+   "Lisa",
    "Martina",
    "Marzena",
    "Sam",
@@ -1407,7 +1523,8 @@
    "Sophie",
    "Yasamin"
   ],
-  "title":"Kaulsdorfer Seen"
+  "title":"Kaulsdorfer Seen",
+  "walkers":17
  },
  {
   "categories":[
@@ -1418,7 +1535,7 @@
    "2015-09-13T11:32:15+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/09/13/bad-saarow-storkow/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Caroline",
    "Corina",
@@ -1427,10 +1544,12 @@
    "Fredi",
    "Ingo",
    "Jeremy",
+   "Lisa",
    "Martina",
    "Sophie"
   ],
-  "title":"Bad Saarow \u2013 Storkow"
+  "title":"Bad Saarow \u2013 Storkow",
+  "walkers":11
  },
  {
   "categories":[
@@ -1441,13 +1560,14 @@
    "2015-09-06T15:21:29+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/09/06/furstenwalde-bad-saarow/",
-  "people":["Lisa",
+  "people":[
    "Elena",
    "Enrique",
    "Hans",
    "Hensel",
    "Joachim",
    "Karl",
+   "Lisa",
    "Luise",
    "Pavel",
    "Rudolf",
@@ -1455,7 +1575,8 @@
    "Sandra",
    "Wilhelm"
   ],
-  "title":"F\u00fcrstenwalde \u2013 Bad Saarow"
+  "title":"F\u00fcrstenwalde \u2013 Bad Saarow",
+  "walkers":13
  },
  {
   "categories":[
@@ -1465,7 +1586,7 @@
    "2015-08-30T18:02:39+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/08/30/hangelsberg-furstenwalde-2/",
-  "people":["Lisa",
+  "people":[
    "Clemens",
    "Elena",
    "Enrique",
@@ -1474,13 +1595,15 @@
    "Jeremy",
    "Jing",
    "Joachim",
+   "Lisa",
    "Martina",
    "Sam",
    "Santiago",
    "Selim",
    "Sylvia"
   ],
-  "title":"Hangelsberg \u2013 F\u00fcrstenwalde"
+  "title":"Hangelsberg \u2013 F\u00fcrstenwalde",
+  "walkers":14
  },
  {
   "categories":[
@@ -1490,7 +1613,7 @@
    "2015-08-09T11:46:29+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/08/09/rudersdorf-hangelsberg/",
-  "people":["Lisa",
+  "people":[
    "Corina",
    "Daniela",
    "Federico",
@@ -1499,6 +1622,7 @@
    "Joachim",
    "Karl",
    "Kathrin",
+   "Lisa",
    "Martina",
    "Philipp",
    "Rasmus",
@@ -1507,7 +1631,8 @@
    "Sophie",
    "Sylvi"
   ],
-  "title":"R\u00fcdersdorf \u2013 Hangelsberg"
+  "title":"R\u00fcdersdorf \u2013 Hangelsberg",
+  "walkers":16
  },
  {
   "categories":[
@@ -1517,10 +1642,11 @@
    "2015-08-02T19:56:24+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/08/02/2-5-day-markisch-oderland-walk/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
    "Joachim",
    "Jon",
+   "Lisa",
    "Magnus",
    "Monica",
    "Norman",
@@ -1528,7 +1654,8 @@
    "Sylvi",
    "Sylvia"
   ],
-  "title":"2.5 day M\u00e4rkisch Oderland walk"
+  "title":"2.5 day M\u00e4rkisch Oderland walk",
+  "walkers":10
  },
  {
   "categories":[
@@ -1538,7 +1665,7 @@
    "2015-07-26T13:53:33+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/07/26/markische-schweiz-schermutzelsee/",
-  "people":["Lisa",
+  "people":[
    "Ana",
    "Caroline",
    "Carsten",
@@ -1546,13 +1673,15 @@
    "Fredi",
    "Helge",
    "Joachim",
+   "Lisa",
    "Magnus",
    "Martina",
    "Monica",
    "Nina",
    "Sylvia"
   ],
-  "title":"M\u00e4rkische Schweiz & Scherm\u00fctzelsee"
+  "title":"M\u00e4rkische Schweiz & Scherm\u00fctzelsee",
+  "walkers":13
  },
  {
   "categories":[
@@ -1563,7 +1692,7 @@
    "2015-07-19T10:21:31+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/07/19/muncheberg-rehfelde/",
-  "people":["Lisa",
+  "people":[
    "Corina",
    "Enrique",
    "Federico",
@@ -1571,11 +1700,13 @@
    "Joachim",
    "Katarina",
    "Keani",
+   "Lisa",
    "Sebastian",
    "Sophie",
    "Sylvia"
   ],
-  "title":"M\u00fcncheberg \u2013 Rehfelde"
+  "title":"M\u00fcncheberg \u2013 Rehfelde",
+  "walkers":11
  },
  {
   "categories":[
@@ -1586,18 +1717,20 @@
    "2015-07-12T18:48:44+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/07/12/strausberg-rehfelde/",
-  "people":["Lisa",
+  "people":[
    "Carsten",
    "Enrique",
    "Fredi",
    "Joachim",
+   "Lisa",
    "Martina",
    "Monica",
    "Paul",
    "Philipp",
    "Sylvia"
   ],
-  "title":"Strausberg \u2013 Rehfelde"
+  "title":"Strausberg \u2013 Rehfelde",
+  "walkers":10
  },
  {
   "categories":[
@@ -1607,18 +1740,20 @@
    "2015-07-05T18:37:42+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/07/05/schoneiche-fredersdorf/",
-  "people":["Lisa",
+  "people":[
    "Benjamin",
    "Caroline",
    "Carsten",
    "Joachim",
+   "Lisa",
    "Marcus",
    "Martina",
    "Sebastian",
    "Sophie",
    "Sylvia"
   ],
-  "title":"Sch\u00f6neiche \u2013 Fredersdorf"
+  "title":"Sch\u00f6neiche \u2013 Fredersdorf",
+  "walkers":10
  },
  {
   "categories":[
@@ -1629,13 +1764,14 @@
    "2015-06-28T12:40:13+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/06/28/werneuchen-strausberg/",
-  "people":["Lisa",
+  "people":[
    "Carsten",
    "Helge",
    "Ina",
    "Ingrid",
    "Joachim",
    "Jon",
+   "Lisa",
    "Martina",
    "Michael",
    "Monica",
@@ -1643,7 +1779,8 @@
    "Ralf",
    "Sandra"
   ],
-  "title":"Werneuchen \u2013 Strausberg"
+  "title":"Werneuchen \u2013 Strausberg",
+  "walkers":13
  },
  {
   "categories":[
@@ -1653,7 +1790,7 @@
    "2015-06-21T10:57:33+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/06/21/altlandsberg-seefeld/",
-  "people":["Lisa",
+  "people":[
    "Alberto",
    "Andrea",
    "Barbara",
@@ -1664,6 +1801,7 @@
    "Helge",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Marcel",
    "Marit",
    "Martina",
@@ -1672,7 +1810,8 @@
    "Sophie",
    "Thomas"
   ],
-  "title":"Altlandsberg \u2013 Seefeld"
+  "title":"Altlandsberg \u2013 Seefeld",
+  "walkers":18
  },
  {
   "categories":[
@@ -1683,7 +1822,7 @@
    "2015-06-14T17:09:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/06/14/bernau-seefeld/",
-  "people":["Lisa",
+  "people":[
    "Asar",
    "Caroline",
    "Christian",
@@ -1691,12 +1830,14 @@
    "Jeremy",
    "Joachim",
    "Julia",
+   "Lisa",
    "Sebastian",
    "Sheena",
    "Suyu",
    "Sylvia"
   ],
-  "title":"Bernau \u2013 Seefeld"
+  "title":"Bernau \u2013 Seefeld",
+  "walkers":12
  },
  {
   "categories":[
@@ -1706,7 +1847,7 @@
    "2015-06-07T21:15:07+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/06/07/rudnitz-lanke/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Florian",
    "Fredi",
@@ -1714,6 +1855,7 @@
    "Joachim",
    "Kathrin",
    "Kristina",
+   "Lisa",
    "Martina",
    "Monica",
    "Norman",
@@ -1721,7 +1863,8 @@
    "Sophia",
    "Sylvia"
   ],
-  "title":"R\u00fcdnitz \u2013 Lanke"
+  "title":"R\u00fcdnitz \u2013 Lanke",
+  "walkers":14
  },
  {
   "categories":[
@@ -1731,7 +1874,7 @@
    "2015-05-31T23:12:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/05/31/klosterfelde-wandlitz/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Ewka",
    "Fredi",
@@ -1740,10 +1883,12 @@
    "Julia",
    "Julie",
    "Lilu",
+   "Lisa",
    "Manuela",
    "Martina"
   ],
-  "title":"Klosterfelde \u2013 Wandlitz"
+  "title":"Klosterfelde \u2013 Wandlitz",
+  "walkers":11
  },
  {
   "categories":[
@@ -1753,17 +1898,19 @@
    "2015-05-24T05:39:16+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/05/24/basdorf-schonwalde/",
-  "people":["Lisa",
+  "people":[
    "Anna",
    "Enrique",
    "Helge",
    "Joachim",
+   "Lisa",
    "Martina",
    "Nelly",
    "Robert",
    "Sandra"
   ],
-  "title":"Basdorf \u2013 Sch\u00f6nwalde"
+  "title":"Basdorf \u2013 Sch\u00f6nwalde",
+  "walkers":9
  },
  {
   "categories":[
@@ -1773,17 +1920,19 @@
    "2015-05-17T14:51:33+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/05/17/lychen-furstenberg/",
-  "people":["Lisa",
+  "people":[
    "Florian",
    "Helge",
    "Henrique",
    "Joachim",
+   "Lisa",
    "Martina",
    "Merlin",
    "Monica",
    "Norman"
   ],
-  "title":"Lychen \u2013 F\u00fcrstenberg"
+  "title":"Lychen \u2013 F\u00fcrstenberg",
+  "walkers":9
  },
  {
   "categories":[
@@ -1793,19 +1942,21 @@
    "2015-05-10T20:06:45+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/05/10/schmachtenhagen-nassenheide/",
-  "people":["Lisa",
+  "people":[
    "Benjamin",
    "Henry",
    "Jack",
    "Joachim",
    "Jon",
    "Jutta",
+   "Lisa",
    "Martina",
    "Norman",
    "Philipp",
    "Sebastian"
   ],
-  "title":"Schmachtenhagen \u2013 Nassenheide"
+  "title":"Schmachtenhagen \u2013 Nassenheide",
+  "walkers":11
  },
  {
   "categories":[
@@ -1815,12 +1966,13 @@
    "2015-05-03T19:57:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/05/03/velten-bernsteinsee-velten/",
-  "people":["Lisa",
+  "people":[
    "Cheryl",
    "Flavio",
    "Florian",
    "Helge",
    "Joachim",
+   "Lisa",
    "Martina",
    "Natali",
    "Norman",
@@ -1830,7 +1982,8 @@
    "Sebastian",
    "Sylvia"
   ],
-  "title":"Velten \u2013 Bernsteinsee \u2013 Velten"
+  "title":"Velten \u2013 Bernsteinsee \u2013 Velten",
+  "walkers":14
  },
  {
   "categories":[
@@ -1840,7 +1993,7 @@
    "2015-04-26T21:13:38+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/04/26/werder-petzow/",
-  "people":["Lisa",
+  "people":[
    "April",
    "Caroline",
    "Dominik",
@@ -1851,6 +2004,7 @@
    "Joachim",
    "Johannes",
    "Kathrin",
+   "Lisa",
    "Magnus",
    "Mario",
    "Merlin",
@@ -1859,7 +2013,8 @@
    "Sylvia",
    "Tuya"
   ],
-  "title":"Werder \u2013 Petzow"
+  "title":"Werder \u2013 Petzow",
+  "walkers":18
  },
  {
   "categories":[
@@ -1869,7 +2024,7 @@
    "2015-04-19T13:48:38+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/04/19/kramer-wald-velten/",
-  "people":["Lisa",
+  "people":[
    "Angela",
    "April",
    "Benjamin",
@@ -1880,13 +2035,15 @@
    "Johannes",
    "Julian",
    "Kunarskis",
+   "Lisa",
    "Marloes",
    "Martina",
    "Matze",
    "Merlin",
    "Sebastian"
   ],
-  "title":"Kr\u00e4mer Wald, Velten"
+  "title":"Kr\u00e4mer Wald, Velten",
+  "walkers":16
  },
  {
   "categories":[
@@ -1896,17 +2053,19 @@
    "2015-03-29T21:31:05+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/03/29/dossow-wittstock/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Dominik",
    "Joachim",
+   "Lisa",
    "Lydia",
    "Magnus",
    "Miriam",
    "Philipp",
    "Sebastian"
   ],
-  "title":"Dossow \u2013 Wittstock"
+  "title":"Dossow \u2013 Wittstock",
+  "walkers":9
  },
  {
   "categories":[
@@ -1916,13 +2075,15 @@
    "2015-03-22T21:27:33+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/03/22/bergfelde-lehnitz/",
-  "people":["Lisa",
+  "people":[
    "Angela",
    "Hannes",
    "Joachim",
+   "Lisa",
    "Nelly"
   ],
-  "title":"Bergfelde \u2013 Lehnitz"
+  "title":"Bergfelde \u2013 Lehnitz",
+  "walkers":5
  },
  {
   "categories":[
@@ -1932,13 +2093,14 @@
    "2015-03-15T22:48:04+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/03/15/falkensee-nieder-neuendorf/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Benjamin",
    "Dominik",
    "Florian",
    "Helge",
    "Joachim",
+   "Lisa",
    "Lydia",
    "Patrick",
    "Philipp",
@@ -1948,7 +2110,8 @@
    "Sylvia",
    "Verena"
   ],
-  "title":"Falkensee \u2013 Nieder Neuendorf"
+  "title":"Falkensee \u2013 Nieder Neuendorf",
+  "walkers":15
  },
  {
   "categories":[
@@ -1958,13 +2121,14 @@
    "2015-03-08T18:23:06+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/03/08/paaren-nauen/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Enrique",
    "Erzso",
    "Ingrid",
    "Joachim",
    "Johannes",
+   "Lisa",
    "Maria",
    "Marit",
    "Roberto",
@@ -1972,7 +2136,8 @@
    "Sophie",
    "Sylvia"
   ],
-  "title":"Paaren \u2013 Nauen"
+  "title":"Paaren \u2013 Nauen",
+  "walkers":13
  },
  {
   "categories":[
@@ -1982,13 +2147,15 @@
    "2015-03-01T19:57:43+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/03/01/albrechtshof-gros-glienicke/",
-  "people":["Lisa",
+  "people":[
    "Caroline",
    "Dominik",
    "Fredi",
-   "Joachim"
+   "Joachim",
+   "Lisa"
   ],
-  "title":"Albrechtshof \u2013 Gro\u00df Glienicke"
+  "title":"Albrechtshof \u2013 Gro\u00df Glienicke",
+  "walkers":5
  },
  {
   "categories":[
@@ -1998,7 +2165,7 @@
    "2015-02-20T10:46:51+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/02/20/25-day-flaming-walk/",
-  "people":["Lisa",
+  "people":[
    "Asar",
    "Cedric",
    "Claudia",
@@ -2008,6 +2175,7 @@
    "Joachim",
    "Kaja",
    "Kerstin",
+   "Lisa",
    "Marit",
    "Merlin",
    "Philipp",
@@ -2015,7 +2183,8 @@
    "Sophie",
    "Sylvi"
   ],
-  "title":"2,5 day Fl\u00e4ming walk"
+  "title":"2,5 day Fl\u00e4ming walk",
+  "walkers":16
  },
  {
   "categories":[
@@ -2026,7 +2195,7 @@
    "2015-02-15T18:42:33+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/02/15/wedding-stresow/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Benjamin",
    "Bernardo",
@@ -2034,6 +2203,7 @@
    "Jack",
    "Katharine",
    "Leo",
+   "Lisa",
    "Marco",
    "Merlin",
    "Nayeli",
@@ -2044,7 +2214,8 @@
    "Ulli",
    "Verena"
   ],
-  "title":"Wedding \u2013 Stresow"
+  "title":"Wedding \u2013 Stresow",
+  "walkers":17
  },
  {
   "categories":[
@@ -2054,7 +2225,7 @@
    "2015-02-08T14:49:22+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/02/08/juterbog/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Benjamin",
    "Caroline",
@@ -2070,6 +2241,7 @@
    "Johannes",
    "Kathrin",
    "Kyle",
+   "Lisa",
    "Marco",
    "Marie",
    "Sandra",
@@ -2078,7 +2250,8 @@
    "Verena",
    "Wilhelm"
   ],
-  "title":"J\u00fcterbog"
+  "title":"J\u00fcterbog",
+  "walkers":23
  },
  {
   "categories":[
@@ -2088,7 +2261,7 @@
    "2015-02-01T14:24:19+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/02/01/ludwigsfelde-potsdam/",
-  "people":["Lisa",
+  "people":[
    "Arthur",
    "Benjamin",
    "Bernardo",
@@ -2100,10 +2273,12 @@
    "Helge",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Marit",
    "Sylvia"
   ],
-  "title":"Ludwigsfelde \u2013 Potsdam"
+  "title":"Ludwigsfelde \u2013 Potsdam",
+  "walkers":14
  },
  {
   "categories":[
@@ -2113,7 +2288,7 @@
    "2015-01-25T01:25:32+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/01/25/grosbeeren-ludwigsfelde/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Benjamin",
    "Caroline",
@@ -2125,11 +2300,13 @@
    "Joachim",
    "Kathrin",
    "Kris",
+   "Lisa",
    "Marco",
    "Sylvia",
    "Verena"
   ],
-  "title":"Gro\u00dfbeeren \u2013 Ludwigsfelde"
+  "title":"Gro\u00dfbeeren \u2013 Ludwigsfelde",
+  "walkers":15
  },
  {
   "categories":[
@@ -2139,7 +2316,7 @@
    "2015-01-18T19:55:24+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/01/18/blankenfelde-grosbeeren/",
-  "people":["Lisa",
+  "people":[
    "Christian",
    "Dodo",
    "Enrique",
@@ -2151,12 +2328,14 @@
    "Julia",
    "Karl",
    "Kathrin",
+   "Lisa",
    "Miriam",
    "Ralf",
    "Sandra",
    "Wilhelm"
   ],
-  "title":"Blankenfelde \u2013 Gro\u00dfbeeren"
+  "title":"Blankenfelde \u2013 Gro\u00dfbeeren",
+  "walkers":16
  },
  {
   "categories":[
@@ -2166,7 +2345,7 @@
    "2015-01-11T21:15:30+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/01/11/rangsdorf-dahlewitz/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Benjamin",
    "Enrique",
@@ -2176,10 +2355,12 @@
    "Joachim",
    "Katharine",
    "Lars",
+   "Lisa",
    "Pavel",
    "Sylvia"
   ],
-  "title":"Rangsdorf \u2013 Dahlewitz"
+  "title":"Rangsdorf \u2013 Dahlewitz",
+  "walkers":12
  },
  {
   "categories":[
@@ -2189,7 +2370,7 @@
    "2015-01-04T23:43:16+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2015/01/04/rotberg-rangsdorf/",
-  "people":["Lisa",
+  "people":[
    "Cheryl",
    "Christian",
    "Daniel",
@@ -2199,12 +2380,14 @@
    "Inna",
    "Joachim",
    "Kathrin",
+   "Lisa",
    "Manuela",
    "Maria",
    "Marit",
    "Sylvia"
   ],
-  "title":"Rotberg \u2013 Rangsdorf"
+  "title":"Rotberg \u2013 Rangsdorf",
+  "walkers":14
  },
  {
   "categories":[
@@ -2214,14 +2397,16 @@
    "2014-12-21T20:59:01+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/12/21/gosen-alt-schmockwitz/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Fredi",
    "Joachim",
    "Kaja",
+   "Lisa",
    "Sandra"
   ],
-  "title":"Gosen \u2013 Alt-Schm\u00f6ckwitz"
+  "title":"Gosen \u2013 Alt-Schm\u00f6ckwitz",
+  "walkers":6
  },
  {
   "categories":[
@@ -2231,18 +2416,20 @@
    "2014-12-14T01:03:46+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/12/14/around-erkner/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Annika",
    "Christian",
    "Enrique",
    "Florian",
    "Joachim",
+   "Lisa",
    "Miriam",
    "Oreas",
    "Philipp"
   ],
-  "title":"Around Erkner"
+  "title":"Around Erkner",
+  "walkers":10
  },
  {
   "categories":[
@@ -2252,7 +2439,7 @@
    "2014-12-07T20:31:42+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/12/07/rotberg-eichwalde/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Angel",
    "Anne",
@@ -2262,12 +2449,14 @@
    "Henrique",
    "Ina",
    "Joachim",
+   "Lisa",
    "Miriam",
    "Narry",
    "Radomir",
    "Sandra"
   ],
-  "title":"Rotberg \u2013 Eichwalde"
+  "title":"Rotberg \u2013 Eichwalde",
+  "walkers":14
  },
  {
   "categories":[
@@ -2277,13 +2466,14 @@
    "2014-11-30T19:50:20+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/30/eichwalde-zeuthen/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andrea",
    "Enrique",
    "Floriane",
    "Heinrich",
    "Joachim",
+   "Lisa",
    "Lorenzo",
    "Matteo",
    "Pedro",
@@ -2291,7 +2481,8 @@
    "Sylvia",
    "Zsanett"
   ],
-  "title":"Eichwalde \u2013 Zeuthen"
+  "title":"Eichwalde \u2013 Zeuthen",
+  "walkers":13
  },
  {
   "categories":[
@@ -2301,7 +2492,7 @@
    "2014-11-23T17:31:20+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/23/bad-wilsnack-plattenburg-bad-wilsnack/",
-  "people":["Lisa",
+  "people":[
    "Coni",
    "Enrique",
    "Ewka",
@@ -2311,10 +2502,12 @@
    "Gustav",
    "Helge",
    "Joachim",
+   "Lisa",
    "Sandra",
    "Wilhelm"
   ],
-  "title":"Bad Wilsnack \u2013 Plattenburg \u2013 Bad Wilsnack"
+  "title":"Bad Wilsnack \u2013 Plattenburg \u2013 Bad Wilsnack",
+  "walkers":12
  },
  {
   "categories":[
@@ -2324,14 +2517,16 @@
    "2014-11-16T12:16:32+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/16/hangelsberg-furstenwalde/",
-  "people":["Lisa",
+  "people":[
    "Federico",
    "Helge",
    "Joachim",
    "Johannes",
+   "Lisa",
    "Lucia"
   ],
-  "title":"Hangelsberg \u2013 F\u00fcrstenwalde"
+  "title":"Hangelsberg \u2013 F\u00fcrstenwalde",
+  "walkers":6
  },
  {
   "categories":[
@@ -2342,16 +2537,18 @@
    "2014-11-09T21:59:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/09/tierpark-hirschgarten/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Dodo",
    "Ewka",
    "Florian",
    "Getting",
+   "Lisa",
    "Rudolf",
    "Yael"
   ],
-  "title":"Tierpark \u2013 Hirschgarten"
+  "title":"Tierpark \u2013 Hirschgarten",
+  "walkers":8
  },
  {
   "categories":[
@@ -2361,7 +2558,7 @@
    "2014-11-02T21:48:38+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/02/historic-berlin-rallye/",
-  "people":["Lisa",
+  "people":[
    "Andrea",
    "Benjamin",
    "Fredi",
@@ -2370,13 +2567,15 @@
    "Joachim",
    "Johannes",
    "Kathrin",
+   "Lisa",
    "Lucia",
    "Marit",
    "Oleg",
    "Philipp",
    "Robert"
   ],
-  "title":"Historic Berlin Rallye"
+  "title":"Historic Berlin Rallye",
+  "walkers":14
  },
  {
   "categories":[
@@ -2385,10 +2584,12 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2014/11/01/third-birthday/",
-  "people":["Lisa",
+  "people":[
+   "Lisa",
    "Silvia"
   ],
-  "title":"Third Birthday"
+  "title":"Third Birthday",
+  "walkers":2
  },
  {
   "categories":[
@@ -2398,15 +2599,17 @@
    "2014-10-26T22:13:01+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/10/26/hangelsberg-fangschleuse/",
-  "people":["Lisa",
+  "people":[
    "Joachim",
+   "Lisa",
    "Marco",
    "Maria",
    "Robert",
    "Sandra",
    "Verena"
   ],
-  "title":"Hangelsberg \u2013 Fangschleuse"
+  "title":"Hangelsberg \u2013 Fangschleuse",
+  "walkers":7
  },
  {
   "categories":[
@@ -2417,7 +2620,7 @@
    "2014-10-19T21:21:11+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/10/19/honow-lichtenberg/",
-  "people":["Lisa",
+  "people":[
    "Claudia",
    "Daniela",
    "Enrique",
@@ -2430,13 +2633,15 @@
    "John",
    "Leandro",
    "Lewin",
+   "Lisa",
    "Louis",
    "Philipp",
    "Ralf",
    "Sandra",
    "Sylvia"
   ],
-  "title":"H\u00f6now \u2013 Lichtenberg"
+  "title":"H\u00f6now \u2013 Lichtenberg",
+  "walkers":18
  },
  {
   "categories":[
@@ -2447,14 +2652,16 @@
    "2014-10-12T21:40:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/10/12/locknitztal/",
-  "people":["Lisa",
+  "people":[
    "Bastian",
    "Cati",
    "Fredi",
    "Helge",
-   "Joachim"
+   "Joachim",
+   "Lisa"
   ],
-  "title":"L\u00f6cknitztal"
+  "title":"L\u00f6cknitztal",
+  "walkers":6
  },
  {
   "categories":[
@@ -2464,7 +2671,7 @@
    "2014-10-05T14:53:33+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/10/05/fangschleuse-hangelsberg/",
-  "people":["Lisa",
+  "people":[
    "Adrian",
    "Anja",
    "Ed",
@@ -2477,6 +2684,7 @@
    "Joachim",
    "Karl",
    "Lala",
+   "Lisa",
    "Marco",
    "Mareike",
    "Philipp",
@@ -2487,7 +2695,8 @@
    "Sylvia",
    "Verena"
   ],
-  "title":"Fangschleuse \u2013 Woltersdorf"
+  "title":"Fangschleuse \u2013 Woltersdorf",
+  "walkers":22
  },
  {
   "categories":[
@@ -2498,16 +2707,18 @@
    "2014-09-28T22:27:23+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/09/28/strausberg-rudersdorf-2/",
-  "people":["Lisa",
+  "people":[
    "Christian",
    "Federico",
    "Florian",
    "Fredi",
    "Joachim",
+   "Lisa",
    "Lucia",
    "Sylvia"
   ],
-  "title":"Strausberg \u2013 R\u00fcdersdorf"
+  "title":"Strausberg \u2013 R\u00fcdersdorf",
+  "walkers":8
  },
  {
   "categories":[
@@ -2517,10 +2728,12 @@
    "2014-09-21T10:27:58+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/09/21/strausberg/",
-  "people":["Lisa",
+  "people":[
+   "Lisa",
    "Philipp"
   ],
-  "title":"Strausberg"
+  "title":"Strausberg",
+  "walkers":2
  },
  {
   "categories":[
@@ -2530,14 +2743,16 @@
    "2014-09-14T14:18:14+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/09/14/markische-schweiz/",
-  "people":["Lisa",
+  "people":[
    "Cati",
    "Ewka",
    "Florian",
    "Fredi",
+   "Lisa",
    "Tuya"
   ],
-  "title":"M\u00e4rkische Schweiz"
+  "title":"M\u00e4rkische Schweiz",
+  "walkers":6
  },
  {
   "categories":[
@@ -2547,7 +2762,7 @@
    "2014-09-07T14:36:59+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/09/07/tiefensee-strausberg/",
-  "people":["Lisa",
+  "people":[
    "Adolf",
    "Enrique",
    "Erzso",
@@ -2558,11 +2773,13 @@
    "Julia",
    "Kathrin",
    "Kris",
+   "Lisa",
    "Sandra",
    "Sylvia",
    "Yulia"
   ],
-  "title":"Tiefensee \u2013 Strausberg"
+  "title":"Tiefensee \u2013 Strausberg",
+  "walkers":14
  },
  {
   "categories":[
@@ -2572,12 +2789,14 @@
    "2014-08-24T23:49:05+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/08/24/neuenhagener-insel/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
    "Gudrun",
-   "Joachim"
+   "Joachim",
+   "Lisa"
   ],
-  "title":"Neuenhagener Insel"
+  "title":"Neuenhagener Insel",
+  "walkers":4
  },
  {
   "categories":[
@@ -2587,7 +2806,7 @@
    "2014-08-10T23:23:39+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/08/10/tiefensee-falkenberg/",
-  "people":["Lisa",
+  "people":[
    "Adolf",
    "Chen",
    "Desire",
@@ -2595,12 +2814,14 @@
    "Ivan",
    "Joachim",
    "Katrin",
+   "Lisa",
    "Rafal",
    "Robert",
    "Sylvia",
    "Tina"
   ],
-  "title":"Tiefensee \u2013 Falkenberg"
+  "title":"Tiefensee \u2013 Falkenberg",
+  "walkers":12
  },
  {
   "categories":[
@@ -2610,13 +2831,15 @@
    "2014-08-03T11:50:17+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/08/03/oderberg-chorin/",
-  "people":["Lisa",
+  "people":[
    "Enrique",
    "Joachim",
    "John",
-   "Katrin"
+   "Katrin",
+   "Lisa"
   ],
-  "title":"Oderberg \u2013 Chorin"
+  "title":"Oderberg \u2013 Chorin",
+  "walkers":5
  },
  {
   "categories":[
@@ -2627,15 +2850,17 @@
    "2014-07-27T22:44:57+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/07/27/melchow-falkenberg/",
-  "people":["Lisa",
+  "people":[
    "Elena",
    "Enrique",
    "Fredi",
    "Helge",
    "Joachim",
+   "Lisa",
    "Robert"
   ],
-  "title":"Melchow \u2013 Falkenberg"
+  "title":"Melchow \u2013 Falkenberg",
+  "walkers":7
  },
  {
   "categories":[
@@ -2646,11 +2871,13 @@
    "2014-07-19T15:45:09+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/07/20/2-day-walk-wandlitzsee-lottschesee/",
-  "people":["Lisa",
+  "people":[
    "Coni",
-   "Joachim"
+   "Joachim",
+   "Lisa"
   ],
-  "title":"2 day walk : Wandlitzsee \u2013 Lottschesee"
+  "title":"2 day walk : Wandlitzsee \u2013 Lottschesee",
+  "walkers":3
  },
  {
   "categories":[
@@ -2661,14 +2888,16 @@
    "2014-07-13T13:34:35+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/07/13/lobetal-biesenthal/",
-  "people":["Lisa",
+  "people":[
    "Angelina",
    "Florian",
    "Joachim",
    "Julia",
+   "Lisa",
    "Sandra"
   ],
-  "title":"Lobetal \u2013 Biesenthal"
+  "title":"Lobetal \u2013 Biesenthal",
+  "walkers":6
  },
  {
   "categories":[
@@ -2678,7 +2907,7 @@
    "2014-07-06T08:08:59+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/07/06/zuhlsdorf-lobetal/",
-  "people":["Lisa",
+  "people":[
    "Anna",
    "Bob",
    "Enrique",
@@ -2688,6 +2917,7 @@
    "Joachim",
    "Kerstin",
    "Lavanya",
+   "Lisa",
    "Michael",
    "Natascha",
    "Robert",
@@ -2696,7 +2926,8 @@
    "Sylvia",
    "Yulia"
   ],
-  "title":"Z\u00fchlsdorf \u2013 R\u00fcdnitz"
+  "title":"Z\u00fchlsdorf \u2013 R\u00fcdnitz",
+  "walkers":17
  },
  {
   "categories":[
@@ -2706,14 +2937,16 @@
    "2014-06-29T20:46:22+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/06/29/sachsenhausen/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
    "Helge",
    "Jack",
    "Joachim",
-   "Kristina"
+   "Kristina",
+   "Lisa"
   ],
-  "title":"Sachsenhausen \u2013 Z\u00fchlsdorf"
+  "title":"Sachsenhausen \u2013 Z\u00fchlsdorf",
+  "walkers":6
  },
  {
   "categories":[
@@ -2723,18 +2956,20 @@
    "2014-06-15T12:06:57+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/06/15/angermunde/",
-  "people":["Lisa",
+  "people":[
    "Ewka",
    "Federico",
    "Fredi",
    "Helge",
    "Jack",
    "Joachim",
+   "Lisa",
    "Maria",
    "Philipp",
    "Robert"
   ],
-  "title":"Angerm\u00fcnde"
+  "title":"Angerm\u00fcnde",
+  "walkers":10
  },
  {
   "categories":[
@@ -2744,16 +2979,18 @@
    "2014-06-08T23:18:26+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/06/08/bernau-schonwalde/",
-  "people":["Lisa",
+  "people":[
    "Cati",
    "Helge",
    "Joachim",
    "Karo",
+   "Lisa",
    "Robert",
    "Sylvia",
    "Tatiana"
   ],
-  "title":"Bernau \u2013 Sch\u00f6nwalde"
+  "title":"Bernau \u2013 Sch\u00f6nwalde",
+  "walkers":8
  },
  {
   "categories":[
@@ -2763,14 +3000,16 @@
    "2014-05-25T21:52:13+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/05/25/wahlwalk/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andre",
    "Joachim",
+   "Lisa",
    "Marit",
    "Silvia"
   ],
-  "title":"Wahlwalk"
+  "title":"Wahlwalk",
+  "walkers":6
  },
  {
   "categories":[
@@ -2780,7 +3019,7 @@
    "2014-05-18T12:23:14+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/05/18/borgsdorf-oranienburg-lehnitz/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Enrique",
    "Ewka",
@@ -2791,10 +3030,12 @@
    "Joachim",
    "John",
    "K\u00e4bi",
+   "Lisa",
    "Merlin",
    "Philip"
   ],
-  "title":"Borgsdorf \u2013 Oranienburg \u2013 Lehnitz"
+  "title":"Borgsdorf \u2013 Oranienburg \u2013 Lehnitz",
+  "walkers":13
  },
  {
   "categories":[
@@ -2804,18 +3045,20 @@
    "2014-05-11T17:55:22+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/05/11/hennigsdorf-hohen-neuendorf/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Fredi",
    "GeeDee",
    "Helge",
    "Joachim",
+   "Lisa",
    "Rayo",
    "Sandra",
    "Sylvia",
    "Todd"
   ],
-  "title":"Hennigsdorf \u2013 Hohen Neuendorf"
+  "title":"Hennigsdorf \u2013 Hohen Neuendorf",
+  "walkers":10
  },
  {
   "categories":[
@@ -2825,7 +3068,7 @@
    "2014-05-04T23:31:53+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/05/04/falkensee-hennigsdorf/",
-  "people":["Lisa",
+  "people":[
    "Betw",
    "Enrique",
    "Erich",
@@ -2835,13 +3078,15 @@
    "Jack",
    "Joachim",
    "Julia",
+   "Lisa",
    "Marc",
    "Marit",
    "Philip",
    "Rosario",
    "Sandra"
   ],
-  "title":"Falkensee \u2013 Hennigsdorf"
+  "title":"Falkensee \u2013 Hennigsdorf",
+  "walkers":15
  },
  {
   "categories":[
@@ -2851,7 +3096,7 @@
    "2014-04-27T13:14:11+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/04/27/werder-havel/",
-  "people":["Lisa",
+  "people":[
    "Adolf",
    "Alex",
    "Andrew",
@@ -2865,6 +3110,7 @@
    "Helge",
    "Joachim",
    "John",
+   "Lisa",
    "Marc",
    "Maria",
    "Marit",
@@ -2872,7 +3118,8 @@
    "Sylvia",
    "Verena"
   ],
-  "title":"Werder (Havel)"
+  "title":"Werder (Havel)",
+  "walkers":20
  },
  {
   "categories":[
@@ -2882,7 +3129,7 @@
    "2014-04-13T09:11:03+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/04/13/paulinenaue-ribbeck-paulinenaue/",
-  "people":["Lisa",
+  "people":[
    "Agnieszka",
    "Alex",
    "Antonella",
@@ -2903,6 +3150,7 @@
    "John",
    "Julia",
    "K\u00e4bi",
+   "Lisa",
    "Melanie",
    "Merlin",
    "Nadi",
@@ -2911,7 +3159,8 @@
    "Sandra",
    "Sylvia"
   ],
-  "title":"Paulinenaue \u2013 Ribbeck \u2013 Paulinenaue"
+  "title":"Paulinenaue \u2013 Ribbeck \u2013 Paulinenaue",
+  "walkers":28
  },
  {
   "categories":[
@@ -2921,7 +3170,7 @@
    "2014-04-06T20:14:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/04/06/alt-kladow-priort/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "April",
    "Cati",
@@ -2931,6 +3180,7 @@
    "Fredi",
    "Joachim",
    "Julia",
+   "Lisa",
    "Marisol",
    "Marit",
    "Merlin",
@@ -2940,7 +3190,8 @@
    "Sandra",
    "Sylvia"
   ],
-  "title":"Alt-Kladow \u2013 Priort"
+  "title":"Alt-Kladow \u2013 Priort",
+  "walkers":18
  },
  {
   "categories":[
@@ -2950,18 +3201,20 @@
    "2014-03-30T11:46:27+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/03/30/brandenburg-an-der-havel/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Ewka",
    "Franziska",
    "Fredi",
    "Helge",
    "John",
+   "Lisa",
    "Sandra",
    "Sylvia",
    "Tuya"
   ],
-  "title":"Brandenburg an der Havel"
+  "title":"Brandenburg an der Havel",
+  "walkers":10
  },
  {
   "categories":[
@@ -2971,7 +3224,7 @@
    "2014-03-23T13:25:19+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/03/23/wildpark-potsdam/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Antonella",
    "Arnim",
@@ -2981,11 +3234,13 @@
    "Joachim",
    "Julia",
    "Laura",
+   "Lisa",
    "Marion",
    "Merlin",
    "Sandra"
   ],
-  "title":"Wildpark Potsdam"
+  "title":"Wildpark Potsdam",
+  "walkers":13
  },
  {
   "categories":[
@@ -2996,7 +3251,7 @@
    "2014-03-16T18:37:29+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/03/16/steglitz/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andre",
    "Anno",
@@ -3006,11 +3261,13 @@
    "Joachim",
    "Johann",
    "John",
+   "Lisa",
    "Niklas",
    "Philip",
    "Tobias"
   ],
-  "title":"Steglitz"
+  "title":"Steglitz",
+  "walkers":13
  },
  {
   "categories":[
@@ -3020,7 +3277,7 @@
    "2014-03-09T12:27:51+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/03/09/wilhelmshorst-potsdam/",
-  "people":["Lisa",
+  "people":[
    "Angelina",
    "Catalina",
    "Christian",
@@ -3034,13 +3291,15 @@
    "Helge",
    "Joachim",
    "Johanna",
+   "Lisa",
    "Luiz",
    "Marit",
    "Pedro",
    "Sandra",
    "Sylvia"
   ],
-  "title":"Wilhelmshorst \u2013 Potsdam"
+  "title":"Wilhelmshorst \u2013 Potsdam",
+  "walkers":19
  },
  {
   "categories":[
@@ -3050,7 +3309,7 @@
    "2014-03-02T01:50:42+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/03/02/tempelhof/",
-  "people":["Lisa",
+  "people":[
    "Catalina",
    "Denis",
    "Ewka",
@@ -3061,13 +3320,15 @@
    "Jack",
    "Joachim",
    "John",
+   "Lisa",
    "Mark",
    "Merlin",
    "Paul",
    "Piotr",
    "Sandra"
   ],
-  "title":"Tempelhof"
+  "title":"Tempelhof",
+  "walkers":16
  },
  {
   "categories":[
@@ -3077,7 +3338,7 @@
    "2014-02-16T18:17:55+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/02/16/grosbeeren-saarmund/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andrea",
    "Carlo",
@@ -3090,6 +3351,7 @@
    "Hans",
    "Janine",
    "Joachim",
+   "Lisa",
    "Maria",
    "Marit",
    "Natali",
@@ -3097,7 +3359,8 @@
    "Sandra",
    "Sylvia"
   ],
-  "title":"Gro\u00dfbeeren \u2013 Saarmund"
+  "title":"Gro\u00dfbeeren \u2013 Saarmund",
+  "walkers":19
  },
  {
   "categories":[
@@ -3107,7 +3370,7 @@
    "2014-02-09T00:41:06+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/02/09/dahlewitz-grosbeeren/",
-  "people":["Lisa",
+  "people":[
    "Ahmed",
    "Alex",
    "Coni",
@@ -3117,11 +3380,13 @@
    "Hannes",
    "Joachim",
    "Laida",
+   "Lisa",
    "Marit",
    "Sandra",
    "Zsanett"
   ],
-  "title":"Dahlewitz \u2013 Gro\u00dfbeeren"
+  "title":"Dahlewitz \u2013 Gro\u00dfbeeren",
+  "walkers":13
  },
  {
   "categories":[
@@ -3131,7 +3396,7 @@
    "2014-02-02T13:41:39+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/02/02/south-of-neukolln/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Ben",
    "Corina",
@@ -3147,12 +3412,14 @@
    "Johannes",
    "John",
    "Linda",
+   "Lisa",
    "Marlen",
    "Merlin",
    "Rosario",
    "Stephane"
   ],
-  "title":"South of Neuk\u00f6lln"
+  "title":"South of Neuk\u00f6lln",
+  "walkers":20
  },
  {
   "categories":[
@@ -3162,7 +3429,7 @@
    "2014-01-26T20:41:29+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/01/26/kreuzberg-neukolln/",
-  "people":["Lisa",
+  "people":[
    "Ahmed",
    "Andrea",
    "Federico",
@@ -3170,11 +3437,13 @@
    "Hannes",
    "Jack",
    "Joachim",
+   "Lisa",
    "Merlin",
    "Sandra",
    "Vero"
   ],
-  "title":"Kreuzberg & Neuk\u00f6lln"
+  "title":"Kreuzberg & Neuk\u00f6lln",
+  "walkers":11
  },
  {
   "categories":[
@@ -3184,7 +3453,7 @@
    "2014-01-19T17:22:31+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/01/19/dahlewitz-rangsdorf/",
-  "people":["Lisa",
+  "people":[
    "Ahmed",
    "Alex",
    "Andrea",
@@ -3193,13 +3462,15 @@
    "Helge",
    "Johannes",
    "Laida",
+   "Lisa",
    "Marit",
    "Sandra",
    "Sebastian",
    "Sylvia",
    "Thomas"
   ],
-  "title":"Dahlewitz \u2013 Rangsdorf"
+  "title":"Dahlewitz \u2013 Rangsdorf",
+  "walkers":14
  },
  {
   "categories":[
@@ -3209,7 +3480,7 @@
    "2014-01-12T17:39:37+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/01/12/stralau-rummelsburg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Caroline",
    "Ewka",
@@ -3223,10 +3494,12 @@
    "Ivana",
    "Jack",
    "Joachim",
+   "Lisa",
    "Sandra",
    "Thomas"
   ],
-  "title":"Stralau & Rummelsburg"
+  "title":"Stralau & Rummelsburg",
+  "walkers":16
  },
  {
   "categories":[
@@ -3236,11 +3509,13 @@
    "2014-01-05T12:30:29+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2014/01/05/dahlem-dorf-heerstrase/",
-  "people":["Lisa",
+  "people":[
    "Claus",
+   "Lisa",
    "Sandra"
   ],
-  "title":"Dahlem-Dorf \u2013 Heerstra\u00dfe"
+  "title":"Dahlem-Dorf \u2013 Heerstra\u00dfe",
+  "walkers":3
  },
  {
   "categories":[
@@ -3249,8 +3524,11 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2013/08/24/farewell-anniversary/",
-  "people":["Lisa"],
-  "title":"Farewell & Anniversary"
+  "people":[
+   "Lisa"
+  ],
+  "title":"Farewell & Anniversary",
+  "walkers":1
  },
  {
   "categories":[
@@ -3262,7 +3540,7 @@
    "2013-08-18T16:38:25+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/08/20/3-day-walk-neuglobsow-neuruppin/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andrea",
    "Anne",
@@ -3272,12 +3550,14 @@
    "Hannes",
    "John",
    "Julia",
+   "Lisa",
    "Mareike",
    "Marieke",
    "Nina",
    "Rachel"
   ],
-  "title":"3 day walk: Neuglobsow \u2013 Neuruppin"
+  "title":"3 day walk: Neuglobsow \u2013 Neuruppin",
+  "walkers":14
  },
  {
   "categories":[
@@ -3288,18 +3568,20 @@
    "2013-08-11T15:20:35+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/08/11/rudersdorf-muggelspree/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andrej",
    "Birgit",
    "Florian",
    "Helge",
+   "Lisa",
    "Rudolf",
    "Sandra",
    "Sarah",
    "Tuya"
   ],
-  "title":"R\u00fcdersdorf \u2013 M\u00fcggelheim"
+  "title":"R\u00fcdersdorf \u2013 M\u00fcggelheim",
+  "walkers":10
  },
  {
   "categories":[
@@ -3310,11 +3592,13 @@
    "2013-08-04T19:16:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/08/04/wandlitzsee-lobetal/",
-  "people":["Lisa",
+  "people":[
    "Emerald",
+   "Lisa",
    "Tina"
   ],
-  "title":"Wandlitzsee \u2013 Lobetal"
+  "title":"Wandlitzsee \u2013 Lobetal",
+  "walkers":3
  },
  {
   "categories":[
@@ -3326,16 +3610,18 @@
    "2013-07-20T08:46:51+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/07/21/2-day-walk-birkenwerder-wandlitzsee/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Asar",
    "Clara",
+   "Lisa",
    "Nina",
    "Rayo",
    "Trent",
    "Yacob"
   ],
-  "title":"2 day walk: Birkenwerder \u2013 Wandlitzsee"
+  "title":"2 day walk: Birkenwerder \u2013 Wandlitzsee",
+  "walkers":8
  },
  {
   "categories":[
@@ -3345,13 +3631,14 @@
    "2013-07-14T12:48:45+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/07/14/hohennauener-see/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Clelia",
    "Enio",
    "Etienne",
    "Ewka",
    "Fredi",
+   "Lisa",
    "Ly",
    "Marc",
    "Marion",
@@ -3360,7 +3647,8 @@
    "Semlin",
    "Tina"
   ],
-  "title":"Hohennauener See"
+  "title":"Hohennauener See",
+  "walkers":14
  },
  {
   "categories":[
@@ -3371,7 +3659,7 @@
    "2013-07-07T08:45:16+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/07/07/hennigsdorf-borgsdorf/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anna",
    "Ben",
@@ -3379,9 +3667,11 @@
    "Johannes",
    "Laura",
    "Lisa",
+   "Lisa",
    "Marit"
   ],
-  "title":"Hennigsdorf \u2013 Borgsdorf"
+  "title":"Hennigsdorf \u2013 Borgsdorf",
+  "walkers":9
  },
  {
   "categories":[
@@ -3393,10 +3683,12 @@
    "2013-06-29T11:00:39+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/06/30/2-day-walk-hennigsdorf-falkensee/",
-  "people":["Lisa",
+  "people":[
+   "Lisa",
    "Marit"
   ],
-  "title":"2 day walk: Hennigsdorf \u2013 Falkensee"
+  "title":"2 day walk: Hennigsdorf \u2013 Falkensee",
+  "walkers":2
  },
  {
   "categories":[
@@ -3408,12 +3700,14 @@
    "2013-06-22T09:25:07+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/06/23/2-day-walk-dallgow-doberitz-marquardt/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Coni",
-   "Johannes"
+   "Johannes",
+   "Lisa"
   ],
-  "title":"2 day walk: Dallgow-D\u00f6beritz \u2013 Marquardt"
+  "title":"2 day walk: Dallgow-D\u00f6beritz \u2013 Marquardt",
+  "walkers":4
  },
  {
   "categories":[
@@ -3424,7 +3718,7 @@
    "2013-06-09T12:01:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/06/09/potsdam-marquardt/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Angelina",
    "Anna",
@@ -3436,13 +3730,15 @@
    "Fritz",
    "Helge",
    "Inna",
+   "Lisa",
    "Luu",
    "Mohamed",
    "Sabry",
    "Stefan",
    "Tina"
   ],
-  "title":"Potsdam \u2013 Marquardt"
+  "title":"Potsdam \u2013 Marquardt",
+  "walkers":17
  },
  {
   "categories":[
@@ -3452,7 +3748,7 @@
    "2013-05-19T14:33:42+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/05/19/babelsberg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Bao",
    "Claudia",
@@ -3462,6 +3758,7 @@
    "Frida",
    "Irai",
    "Karo",
+   "Lisa",
    "Maria",
    "Nina",
    "Sandra",
@@ -3469,7 +3766,8 @@
    "Tuya",
    "Wilhelm"
   ],
-  "title":"Babelsberg"
+  "title":"Babelsberg",
+  "walkers":16
  },
  {
   "categories":[
@@ -3482,10 +3780,12 @@
    "2013-05-09T12:45:48+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/05/12/4-day-walk-saarmund-trebbin/",
-  "people":["Lisa",
-   "Fredi"
+  "people":[
+   "Fredi",
+   "Lisa"
   ],
-  "title":"4 day walk: Saarmund \u2013 Trebbin"
+  "title":"4 day walk: Saarmund \u2013 Trebbin",
+  "walkers":2
  },
  {
   "categories":[
@@ -3495,7 +3795,7 @@
    "2013-05-05T23:49:25+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/05/05/potsdam-saarmund/",
-  "people":["Lisa",
+  "people":[
    "Albert",
    "Ben",
    "Coni",
@@ -3505,10 +3805,12 @@
    "Felix",
    "Heinrich",
    "Helge",
+   "Lisa",
    "Mario",
    "Yaron"
   ],
-  "title":"Potsdam \u2013 Saarmund"
+  "title":"Potsdam \u2013 Saarmund",
+  "walkers":12
  },
  {
   "categories":[
@@ -3518,7 +3820,7 @@
    "2013-04-28T17:29:35+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/04/28/parforce-heide/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andre",
    "Andreas",
@@ -3532,12 +3834,14 @@
    "Javier",
    "Jeannette",
    "John",
+   "Lisa",
    "Mario",
    "Rodrigo",
    "Sophie",
    "Theresa"
   ],
-  "title":"Parforce Heide"
+  "title":"Parforce Heide",
+  "walkers":18
  },
  {
   "categories":[
@@ -3547,7 +3851,7 @@
    "2013-04-21T11:47:24+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/04/21/wannsee-sudwestkirchhof-stahnsdorf/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "April",
    "Bruno",
@@ -3556,12 +3860,14 @@
    "Javier",
    "Johannes",
    "Laura",
+   "Lisa",
    "Marit",
    "Melanie",
    "Nadine",
    "Robert"
   ],
-  "title":"Wannsee \u2013 S\u00fcdwestkirchhof, Stahnsdorf"
+  "title":"Wannsee \u2013 S\u00fcdwestkirchhof, Stahnsdorf",
+  "walkers":13
  },
  {
   "categories":[
@@ -3571,7 +3877,7 @@
    "2013-04-14T16:11:53+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/04/14/lichterfelde-teltow-ruhlsdorf-kleinmachnow/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "April",
    "Cati",
@@ -3582,12 +3888,14 @@
    "Helge",
    "Jana",
    "Laura",
+   "Lisa",
    "Robert",
    "Rodrigo",
    "Sandra",
    "Sophie"
   ],
-  "title":"Lichterfelde \u2013 Teltow \u2013 Ruhlsdorf \u2013 Kleinmachnow"
+  "title":"Lichterfelde \u2013 Teltow \u2013 Ruhlsdorf \u2013 Kleinmachnow",
+  "walkers":15
  },
  {
   "categories":[
@@ -3597,7 +3905,7 @@
    "2013-04-07T21:26:38+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/04/07/lichtenrade-grosbeeren/",
-  "people":["Lisa",
+  "people":[
    "April",
    "Bruno",
    "Claudia",
@@ -3608,10 +3916,12 @@
    "Helge",
    "Julia",
    "Liam",
+   "Lisa",
    "Mario",
    "Melanie"
   ],
-  "title":"Lichtenrade \u2013 Gro\u00dfbeeren"
+  "title":"Lichtenrade \u2013 Gro\u00dfbeeren",
+  "walkers":13
  },
  {
   "categories":[
@@ -3621,10 +3931,12 @@
    "2013-03-31T08:37:24+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/03/31/selchower-seen/",
-  "people":["Lisa",
-   "Alex"
+  "people":[
+   "Alex",
+   "Lisa"
   ],
-  "title":"Selchower Seen"
+  "title":"Selchower Seen",
+  "walkers":2
  },
  {
   "categories":[
@@ -3634,17 +3946,19 @@
    "2013-03-24T23:08:06+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/03/24/schonefeld-adventure/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Claudia",
    "Fredi",
    "Hannes",
    "Helge",
    "John",
+   "Lisa",
    "Marit",
    "Yekaterina"
   ],
-  "title":"Sch\u00f6nefeld Adventure"
+  "title":"Sch\u00f6nefeld Adventure",
+  "walkers":9
  },
  {
   "categories":[
@@ -3654,13 +3968,15 @@
    "2013-03-17T17:30:38+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/03/17/frohnau/",
-  "people":["Lisa",
+  "people":[
    "Bruno",
    "Erik",
    "Ewka",
-   "John"
+   "John",
+   "Lisa"
   ],
-  "title":"Frohnau"
+  "title":"Frohnau",
+  "walkers":5
  },
  {
   "categories":[
@@ -3670,7 +3986,7 @@
    "2013-03-03T15:27:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/03/03/treptower-park-flugfeld-johannisthal/",
-  "people":["Lisa",
+  "people":[
    "Cedric",
    "Edrin",
    "Ewka",
@@ -3681,11 +3997,13 @@
    "Inna",
    "Julia",
    "Katharina",
+   "Lisa",
    "Marit",
    "Sandra",
    "Yekaterina"
   ],
-  "title":"Treptower Park \u2013 Flugfeld Johannisthal"
+  "title":"Treptower Park \u2013 Flugfeld Johannisthal",
+  "walkers":14
  },
  {
   "categories":[
@@ -3695,7 +4013,7 @@
    "2013-02-24T12:53:44+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/02/24/kiez-rallye-nordisches-viertel-prenzlauer-berg/",
-  "people":["Lisa",
+  "people":[
    "Christian",
    "Claudia",
    "Eva",
@@ -3703,12 +4021,14 @@
    "Fredi",
    "Irai",
    "Katharina",
+   "Lisa",
    "Mario",
    "Puneet",
    "Tuya",
    "Yekaterina"
   ],
-  "title":"Kiez Rallye: Nordisches Viertel, Prenzlauer Berg"
+  "title":"Kiez Rallye: Nordisches Viertel, Prenzlauer Berg",
+  "walkers":12
  },
  {
   "categories":[
@@ -3718,7 +4038,7 @@
    "2013-02-17T17:26:50+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/02/17/wuhlheide-planter-wald-treptower-park/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Alsu",
    "Andre",
@@ -3728,6 +4048,7 @@
    "Guido",
    "John",
    "Lisa",
+   "Lisa",
    "Marco",
    "Maria",
    "Mario",
@@ -3736,7 +4057,8 @@
    "Rudolf",
    "Sophie"
   ],
-  "title":"Wuhlheide, Pl\u00e4nter Wald & Treptower Park"
+  "title":"Wuhlheide, Pl\u00e4nter Wald & Treptower Park",
+  "walkers":17
  },
  {
   "categories":[
@@ -3746,7 +4068,7 @@
    "2013-02-10T21:40:54+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/02/10/altstadt-kopenick-kollnische-heide/",
-  "people":["Lisa",
+  "people":[
    "Alessia",
    "Alex",
    "Christina",
@@ -3757,11 +4079,13 @@
    "Helge",
    "Laura",
    "Lisa",
+   "Lisa",
    "Marit",
    "Rudolf",
    "Yekaterina"
   ],
-  "title":"Altstadt K\u00f6penick & K\u00f6llnische Heide"
+  "title":"Altstadt K\u00f6penick & K\u00f6llnische Heide",
+  "walkers":14
  },
  {
   "categories":[
@@ -3771,7 +4095,7 @@
    "2013-02-03T18:46:15+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/02/03/teufelssee-kanonenberge/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andre",
    "Angelina",
@@ -3785,6 +4109,7 @@
    "Irai",
    "Kay",
    "Linda",
+   "Lisa",
    "Maria",
    "Mario",
    "Marta",
@@ -3794,7 +4119,8 @@
    "Stephane",
    "Tuya"
   ],
-  "title":"Teufelssee & Kanonenberge"
+  "title":"Teufelssee & Kanonenberge",
+  "walkers":22
  },
  {
   "categories":[
@@ -3804,13 +4130,14 @@
    "2013-01-27T22:04:47+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/01/27/grose-krampe-muggelheimer-forst-muggelberge/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Erzso",
    "Ewka",
    "Frank",
    "Lars",
    "Linda",
+   "Lisa",
    "Mario",
    "Marit",
    "Marta",
@@ -3818,7 +4145,8 @@
    "Romania",
    "Stephane"
   ],
-  "title":"Gro\u00dfe Krampe, M\u00fcggelheimer Forst & M\u00fcggelberge"
+  "title":"Gro\u00dfe Krampe, M\u00fcggelheimer Forst & M\u00fcggelberge",
+  "walkers":13
  },
  {
   "categories":[
@@ -3828,7 +4156,7 @@
    "2013-01-20T21:00:00+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/01/20/revier-fahlenberg/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Christina",
    "Eva",
@@ -3836,10 +4164,12 @@
    "Janina",
    "Johannes",
    "Kaja",
+   "Lisa",
    "Mario",
    "Sabine"
   ],
-  "title":"Revier Fahlenberg"
+  "title":"Revier Fahlenberg",
+  "walkers":10
  },
  {
   "categories":[
@@ -3849,7 +4179,7 @@
    "2013-01-13T12:19:37+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/01/13/wilhelmshagen-rahnsdorf-muggelsee/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Angelina",
    "Brian",
@@ -3857,12 +4187,14 @@
    "Ewka",
    "Helge",
    "Kaja",
+   "Lisa",
    "Marit",
    "Richard",
    "Sam",
    "Sophie"
   ],
-  "title":"Wilhelmshagen \u2013 Rahnsdorf \u2013 M\u00fcggelsee"
+  "title":"Wilhelmshagen \u2013 Rahnsdorf \u2013 M\u00fcggelsee",
+  "walkers":12
  },
  {
   "categories":[
@@ -3872,7 +4204,7 @@
    "2013-01-06T20:52:30+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2013/01/06/mahlsdorf-friedrichshagen/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Brian",
    "Cati",
@@ -3881,11 +4213,13 @@
    "Fritz",
    "Karo",
    "Lars",
+   "Lisa",
    "Marit",
    "Sam",
    "Sophie"
   ],
-  "title":"Mahlsdorf \u2013 Friedrichshagen"
+  "title":"Mahlsdorf \u2013 Friedrichshagen",
+  "walkers":12
  },
  {
   "categories":[
@@ -3895,15 +4229,17 @@
    "2012-12-30T12:57:37+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/12/30/honow-hoppegarten-mahlsdorf/",
-  "people":["Lisa",
+  "people":[
    "Angelina",
    "Claudia",
    "Dominika",
    "Inna",
    "Jutta",
+   "Lisa",
    "Marit"
   ],
-  "title":"H\u00f6now \u2013 Hoppegarten \u2013 Mahlsdorf"
+  "title":"H\u00f6now \u2013 Hoppegarten \u2013 Mahlsdorf",
+  "walkers":7
  },
  {
   "categories":[
@@ -3913,14 +4249,16 @@
    "2012-12-16T17:19:05+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/12/16/snow-in-mittelheide/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Ewka",
    "Helge",
+   "Lisa",
    "Mario",
    "Yves"
   ],
-  "title":"Snow in Mittelheide"
+  "title":"Snow in Mittelheide",
+  "walkers":6
  },
  {
   "categories":[
@@ -3930,7 +4268,7 @@
    "2012-12-09T15:47:54+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/12/09/snowy-woods-wintry-slopes/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anja",
    "Cati",
@@ -3939,9 +4277,11 @@
    "Helge",
    "Kalo",
    "Leandro",
+   "Lisa",
    "Mario"
   ],
-  "title":"Snowy woods & wintry slopes"
+  "title":"Snowy woods & wintry slopes",
+  "walkers":10
  },
  {
   "categories":[
@@ -3951,16 +4291,18 @@
    "2012-12-02T10:31:42+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/12/02/sudostniederbarnimer-weiherkette/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anja",
    "Helge",
    "Irai",
    "John",
    "Leandro",
+   "Lisa",
    "Simone"
   ],
-  "title":"S\u00fcdostniederbarnimer Weiherkette"
+  "title":"S\u00fcdostniederbarnimer Weiherkette",
+  "walkers":8
  },
  {
   "categories":[
@@ -3970,7 +4312,7 @@
    "2012-11-25T23:01:40+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/11/25/ahrensfelde-mehrow-hohenschonhausen/",
-  "people":["Lisa",
+  "people":[
    "Anatoly",
    "Angelina",
    "Anne",
@@ -3980,11 +4322,13 @@
    "Fredi",
    "Garbi\u00f1e",
    "Leandro",
+   "Lisa",
    "Mario",
    "Marit",
    "Torsten"
   ],
-  "title":"Ahrensfelde \u2013 Mehrow \u2013 Hohensch\u00f6nhausen"
+  "title":"Ahrensfelde \u2013 Mehrow \u2013 Hohensch\u00f6nhausen",
+  "walkers":13
  },
  {
   "categories":[
@@ -3994,15 +4338,17 @@
    "2012-11-18T23:04:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/11/18/buch-schwanebeck-ahrensfelde/",
-  "people":["Lisa",
+  "people":[
    "Alsu",
    "Ewka",
    "Irai",
    "Leandro",
+   "Lisa",
    "Max",
    "Sam"
   ],
-  "title":"Buch \u2013 Schwanebeck \u2013 Ahrensfelde"
+  "title":"Buch \u2013 Schwanebeck \u2013 Ahrensfelde",
+  "walkers":7
  },
  {
   "categories":[
@@ -4012,18 +4358,20 @@
    "2012-11-11T21:50:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/11/11/buch-schonower-heide-zepernick/",
-  "people":["Lisa",
+  "people":[
    "Anne",
    "David",
    "Iris",
    "Javier",
    "Leandro",
    "Ling",
+   "Lisa",
    "Mario",
    "Sophie",
    "Sze"
   ],
-  "title":"Buch \u2013 Sch\u00f6nower Heide \u2013 Zepernick"
+  "title":"Buch \u2013 Sch\u00f6nower Heide \u2013 Zepernick",
+  "walkers":10
  },
  {
   "categories":[
@@ -4033,7 +4381,7 @@
    "2012-11-04T20:47:27+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/11/04/bucher-rieselfelder/",
-  "people":["Lisa",
+  "people":[
    "Adrian",
    "Alex",
    "Andreas",
@@ -4047,9 +4395,11 @@
    "Javier",
    "Kalo",
    "Kamila",
+   "Lisa",
    "Robert"
   ],
-  "title":"Bucher Rieselfelder"
+  "title":"Bucher Rieselfelder",
+  "walkers":15
  },
  {
   "categories":[
@@ -4059,7 +4409,7 @@
    "2012-10-28T09:31:40+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/10/28/tempelhofer-feld-schoneberger-sudgelande/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Andre",
    "Anja",
@@ -4075,12 +4425,14 @@
    "John",
    "Laura",
    "Leandro",
+   "Lisa",
    "Mario",
    "Marit",
    "Sam",
    "Sophie"
   ],
-  "title":"Tempelhofer Feld & Sch\u00f6neberger S\u00fcdgel\u00e4nde"
+  "title":"Tempelhofer Feld & Sch\u00f6neberger S\u00fcdgel\u00e4nde",
+  "walkers":20
  },
  {
   "categories":[
@@ -4089,8 +4441,11 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2012/10/27/anniversary/",
-  "people":["Lisa"],
-  "title":"Anniversary"
+  "people":[
+   "Lisa"
+  ],
+  "title":"Anniversary",
+  "walkers":1
  },
  {
   "categories":[
@@ -4100,7 +4455,7 @@
    "2012-10-21T15:13:23+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/10/21/schloss-dammsmuhle/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Alsu",
    "Anatoly",
@@ -4112,10 +4467,12 @@
    "Johannes",
    "Leandro",
    "Leo",
+   "Lisa",
    "Marit",
    "Sam"
   ],
-  "title":"Schloss Dammsm\u00fchle"
+  "title":"Schloss Dammsm\u00fchle",
+  "walkers":14
  },
  {
   "categories":[
@@ -4125,7 +4482,7 @@
    "2012-10-14T13:12:47+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/10/14/schonwalde-schonerlinde-muhlenbeck/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anja",
    "Daniela",
@@ -4133,9 +4490,11 @@
    "Fredi",
    "Helge",
    "Kalo",
+   "Lisa",
    "Yacob"
   ],
-  "title":"Sch\u00f6nwalde \u2013 Sch\u00f6nerlinde \u2013 M\u00fchlenbeck"
+  "title":"Sch\u00f6nwalde \u2013 Sch\u00f6nerlinde \u2013 M\u00fchlenbeck",
+  "walkers":9
  },
  {
   "categories":[
@@ -4145,16 +4504,18 @@
    "2012-10-07T18:17:45+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/10/07/lubars-blankenfelde-muhlenbeck/",
-  "people":["Lisa",
+  "people":[
    "Anja",
    "Daniela",
    "Helge",
    "Javier",
    "Kalo",
+   "Lisa",
    "Marit",
    "Stefan"
   ],
-  "title":"L\u00fcbars \u2013 Blankenfelde \u2013 M\u00fchlenbeck"
+  "title":"L\u00fcbars \u2013 Blankenfelde \u2013 M\u00fchlenbeck",
+  "walkers":8
  },
  {
   "categories":[
@@ -4164,7 +4525,7 @@
    "2012-09-30T22:54:57+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/30/frohnau-schonflies-lubars/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anja",
    "Don",
@@ -4173,10 +4534,12 @@
    "Helge",
    "Javier",
    "John",
+   "Lisa",
    "Sara",
    "Stefan"
   ],
-  "title":"Frohnau \u2013 Sch\u00f6nflie\u00df \u2013 L\u00fcbars"
+  "title":"Frohnau \u2013 Sch\u00f6nflie\u00df \u2013 L\u00fcbars",
+  "walkers":11
  },
  {
   "categories":[
@@ -4187,14 +4550,16 @@
    "2012-09-23T23:23:52+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/23/lehnitz-birthday-part-2/",
-  "people":["Lisa",
+  "people":[
    "Anja",
    "Helge",
+   "Lisa",
    "Marit",
    "Sophie",
    "Yacob"
   ],
-  "title":"Lehnitz \u2013 Birthday Part 2"
+  "title":"Lehnitz \u2013 Birthday Part 2",
+  "walkers":6
  },
  {
   "categories":[
@@ -4204,7 +4569,7 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/22/lehnitz-my-birthday-part-i/",
-  "people":["Lisa",
+  "people":[
    "Andreas",
    "Angelina",
    "Anja",
@@ -4219,12 +4584,14 @@
    "Jutta",
    "Leandro",
    "Lena",
+   "Lisa",
    "Marit",
    "Pia",
    "Ramnath",
    "Sev"
   ],
-  "title":"Lehnitz \u2013 Birthday Part I"
+  "title":"Lehnitz \u2013 Birthday Part I",
+  "walkers":19
  },
  {
   "categories":[
@@ -4234,7 +4601,7 @@
    "2012-09-16T23:28:34+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/16/heiligensee-birkenwerder-hohen-neuendorf-frohnau/",
-  "people":["Lisa",
+  "people":[
    "Albert",
    "Alex",
    "Anja",
@@ -4245,11 +4612,13 @@
    "Johannes",
    "John",
    "Lena",
+   "Lisa",
    "Marit",
    "Mylene",
    "Tom"
   ],
-  "title":"Heiligensee \u2013 Birkenwerder \u2013 Hohen Neuendorf \u2013 Frohnau"
+  "title":"Heiligensee \u2013 Birkenwerder \u2013 Hohen Neuendorf \u2013 Frohnau",
+  "walkers":14
  },
  {
   "categories":[
@@ -4259,7 +4628,7 @@
    "2012-09-09T18:31:45+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/09/scharfenberg-konradshohe-tegelort/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anja",
    "Geedee",
@@ -4267,11 +4636,13 @@
    "Helge",
    "Julia",
    "Lena",
+   "Lisa",
    "Marit",
    "Ramnath",
    "Stefan"
   ],
-  "title":"Scharfenberg, Konradsh\u00f6he & Tegelort"
+  "title":"Scharfenberg, Konradsh\u00f6he & Tegelort",
+  "walkers":11
  },
  {
   "categories":[
@@ -4281,7 +4652,7 @@
    "2012-09-02T16:00:55+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/09/02/tegeler-forst-south/",
-  "people":["Lisa",
+  "people":[
    "Anatoly",
    "Anja",
    "Christian",
@@ -4289,11 +4660,13 @@
    "Ewka",
    "Helge",
    "Kaja",
+   "Lisa",
    "Mary",
    "Richard",
    "Sveta"
   ],
-  "title":"Tegeler Forst South"
+  "title":"Tegeler Forst South",
+  "walkers":11
  },
  {
   "categories":[
@@ -4303,13 +4676,15 @@
    "2012-08-26T12:43:03+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/08/26/frohnau-to-sandhausen/",
-  "people":["Lisa",
+  "people":[
    "Anja",
    "Fredi",
    "Helge",
+   "Lisa",
    "Max"
   ],
-  "title":"Frohnau to Sandhausen"
+  "title":"Frohnau to Sandhausen",
+  "walkers":5
  },
  {
   "categories":[
@@ -4319,7 +4694,7 @@
    "2012-08-19T16:01:45+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/08/19/jungfernheide/",
-  "people":["Lisa",
+  "people":[
    "Anatoly",
    "Andre",
    "Angelina",
@@ -4331,12 +4706,14 @@
    "Fredi",
    "Helge",
    "Laura",
+   "Lisa",
    "Margarita",
    "Marit",
    "Oscar",
    "Tina"
   ],
-  "title":"Jungfernheide"
+  "title":"Jungfernheide",
+  "walkers":16
  },
  {
   "categories":[
@@ -4346,7 +4723,7 @@
    "2012-08-12T19:48:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/08/12/spandauer-forst-via-schonwalde/",
-  "people":["Lisa",
+  "people":[
    "Annika",
    "Charlie",
    "Claudia",
@@ -4354,12 +4731,14 @@
    "Eve",
    "Fredi",
    "Helge",
+   "Lisa",
    "Mario",
    "Marit",
    "Raffaele",
    "Ram\u00f3n"
   ],
-  "title":"Spandauer Forst via Sch\u00f6nwalde"
+  "title":"Spandauer Forst via Sch\u00f6nwalde",
+  "walkers":12
  },
  {
   "categories":[
@@ -4369,7 +4748,7 @@
    "2012-07-15T18:36:44+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/07/15/spektegrunzug-falkenhagener-see-spandauer-forst/",
-  "people":["Lisa",
+  "people":[
    "Ewka",
    "Fredi",
    "Georg",
@@ -4377,13 +4756,15 @@
    "Inma",
    "Jutta",
    "Laura",
+   "Lisa",
    "Mario",
    "Michela",
    "Petra",
    "Ramin",
    "Roberto"
   ],
-  "title":"Spektegr\u00fcnzug, Falkenhagener See & Spandauer Forst"
+  "title":"Spektegr\u00fcnzug, Falkenhagener See & Spandauer Forst",
+  "walkers":13
  },
  {
   "categories":[
@@ -4393,7 +4774,7 @@
    "2012-07-08T21:43:56+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/07/08/grunewald-pichelswerder/",
-  "people":["Lisa",
+  "people":[
    "Alsu",
    "Anatoly",
    "Anja",
@@ -4406,13 +4787,15 @@
    "Irai",
    "Karl",
    "Lina",
+   "Lisa",
    "Mario",
    "Marit",
    "Seema",
    "Sophie",
    "Stefan"
   ],
-  "title":"Grunewald & Pichelswerder"
+  "title":"Grunewald & Pichelswerder",
+  "walkers":18
  },
  {
   "categories":[
@@ -4422,18 +4805,20 @@
    "2012-07-01T22:07:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/07/01/gatow-staaken-bullengrabenweg/",
-  "people":["Lisa",
+  "people":[
    "Ewka",
    "Fredi",
    "Helge",
    "Irai",
    "Itai",
    "Karl",
+   "Lisa",
    "Marit",
    "Sophie",
    "Stefan"
   ],
-  "title":"Gatow \u2013 Staaken & Bullengrabenweg"
+  "title":"Gatow \u2013 Staaken & Bullengrabenweg",
+  "walkers":10
  },
  {
   "categories":[
@@ -4443,7 +4828,7 @@
    "2012-06-24T00:17:38+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/06/24/kladow-gatow/",
-  "people":["Lisa",
+  "people":[
    "Ale",
    "Alsu",
    "Anatoly",
@@ -4457,10 +4842,12 @@
    "Jutta",
    "Karl",
    "Laura",
+   "Lisa",
    "Marit",
    "Simone"
   ],
-  "title":"Kladow & Gatow"
+  "title":"Kladow & Gatow",
+  "walkers":16
  },
  {
   "categories":[
@@ -4470,7 +4857,7 @@
    "2012-06-17T22:12:34+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/06/17/kiez-rallye-wilmersdorf/",
-  "people":["Lisa",
+  "people":[
    "Alsu",
    "Christof",
    "Daniela",
@@ -4479,9 +4866,11 @@
    "Irai",
    "James",
    "Leandro",
+   "Lisa",
    "Marit"
   ],
-  "title":"Kiez Rallye: Wilmersdorf"
+  "title":"Kiez Rallye: Wilmersdorf",
+  "walkers":10
  },
  {
   "categories":[
@@ -4491,7 +4880,7 @@
    "2012-06-10T01:19:17+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/06/10/sacrow-area/",
-  "people":["Lisa",
+  "people":[
    "Bianca",
    "Carlos",
    "Christian",
@@ -4502,13 +4891,15 @@
    "Jeremias",
    "Laura",
    "Leandro",
+   "Lisa",
    "Miki",
    "Ramnath",
    "Richard",
    "Tina",
    "Titus"
   ],
-  "title":"Sacrow area"
+  "title":"Sacrow area",
+  "walkers":16
  },
  {
   "categories":[
@@ -4518,17 +4909,19 @@
    "2012-06-03T00:33:17+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/06/03/potsdam-castles-and-gardens/",
-  "people":["Lisa",
+  "people":[
    "Ewka",
    "Fredi",
    "Helge",
    "Laura",
+   "Lisa",
    "Marit",
    "Richard",
    "Sophie",
    "Stefan"
   ],
-  "title":"Potsdam: Castles and Gardens"
+  "title":"Potsdam: Castles and Gardens",
+  "walkers":9
  },
  {
   "categories":[
@@ -4538,7 +4931,7 @@
    "2012-05-27T16:22:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/05/27/wannsee-klein-glienicke/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anatholy",
    "Claudia",
@@ -4546,13 +4939,15 @@
    "Helge",
    "Henrique",
    "Leopold",
+   "Lisa",
    "Mario",
    "Marit",
    "Richard",
    "Sara",
    "Sophie"
   ],
-  "title":"Wannsee \u2013 Klein Glienicke"
+  "title":"Wannsee \u2013 Klein Glienicke",
+  "walkers":13
  },
  {
   "categories":[
@@ -4562,7 +4957,7 @@
    "2012-05-20T03:01:17+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/05/20/zehlendorf-wannsee-via-stammbahntrasse/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Carlos",
    "Cati",
@@ -4571,6 +4966,7 @@
    "Helge",
    "John",
    "Kamila",
+   "Lisa",
    "Margarita",
    "Robert",
    "Ruru",
@@ -4579,7 +4975,8 @@
    "Steffi",
    "Volker"
   ],
-  "title":"Zehlendorf \u2013 Wannsee (via Stammbahntrasse)"
+  "title":"Zehlendorf \u2013 Wannsee (via Stammbahntrasse)",
+  "walkers":16
  },
  {
   "categories":[
@@ -4589,12 +4986,14 @@
    "2012-05-13T16:55:16+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/05/13/marienfelde-heinersdorf-lichterfelde/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
+   "Lisa",
    "Mario",
    "Richard"
   ],
-  "title":"Marienfelde \u2013 Heinersdorf \u2013 Lichterfelde"
+  "title":"Marienfelde \u2013 Heinersdorf \u2013 Lichterfelde",
+  "walkers":4
  },
  {
   "categories":[
@@ -4604,13 +5003,15 @@
    "2012-05-06T13:20:49+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/05/06/marienfelde/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anatoly",
    "Duy",
+   "Lisa",
    "Richard"
   ],
-  "title":"Marienfelde"
+  "title":"Marienfelde",
+  "walkers":5
  },
  {
   "categories":[
@@ -4620,15 +5021,17 @@
    "2012-04-29T11:28:04+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/04/29/diedersdorf/",
-  "people":["Lisa",
+  "people":[
    "Anatoly",
    "Angelina",
    "April",
    "Fredi",
    "Laura",
+   "Lisa",
    "Sophie"
   ],
-  "title":"Diedersdorf"
+  "title":"Diedersdorf",
+  "walkers":7
  },
  {
   "categories":[
@@ -4638,15 +5041,17 @@
    "2012-04-22T15:09:09+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/04/22/honower-weiherkette-garten-der-welt/",
-  "people":["Lisa",
+  "people":[
    "April",
    "Catalina",
    "Johannes",
+   "Lisa",
    "Luisa",
    "Mario",
    "Nikolas"
   ],
-  "title":"H\u00f6nower Weiherkette & G\u00e4rten der Welt"
+  "title":"H\u00f6nower Weiherkette & G\u00e4rten der Welt",
+  "walkers":7
  },
  {
   "categories":[
@@ -4656,17 +5061,19 @@
    "2012-04-15T22:49:09+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/04/15/rudow-lichtenrade/",
-  "people":["Lisa",
+  "people":[
    "Andreas",
    "April",
    "Fredi",
    "Hannes",
    "Johannes",
    "Justyna",
+   "Lisa",
    "Regina",
    "Salman"
   ],
-  "title":"Rudow \u2013 Lichtenrade"
+  "title":"Rudow \u2013 Lichtenrade",
+  "walkers":9
  },
  {
   "categories":[
@@ -4676,12 +5083,13 @@
    "2012-04-01T22:44:24+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/04/01/kiez-rallye-reinickendorf/",
-  "people":["Lisa",
+  "people":[
    "April",
    "Cedric",
    "Fredi",
    "Ingrid",
    "Kurt",
+   "Lisa",
    "Lora",
    "Margaritka",
    "Marta",
@@ -4689,7 +5097,8 @@
    "Reinhardt",
    "Volker"
   ],
-  "title":"Kiez Rallye: Reinickendorf"
+  "title":"Kiez Rallye: Reinickendorf",
+  "walkers":12
  },
  {
   "categories":[
@@ -4699,13 +5108,15 @@
    "2012-03-25T20:03:02+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/03/25/grunau-to-rudow/",
-  "people":["Lisa",
+  "people":[
    "Fredi",
+   "Lisa",
    "Mario",
    "Sabine",
    "Sophie"
   ],
-  "title":"Gr\u00fcnau to Rudow"
+  "title":"Gr\u00fcnau to Rudow",
+  "walkers":5
  },
  {
   "categories":[
@@ -4715,15 +5126,17 @@
    "2012-03-18T23:37:19+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/03/18/from-grunau-to-rauchfangswerder/",
-  "people":["Lisa",
+  "people":[
    "Jeroen",
    "Jorge",
    "Line",
+   "Lisa",
    "Salman",
    "Sophie",
    "Volker"
   ],
-  "title":"From Gr\u00fcnau to Rauchfangswerder"
+  "title":"From Gr\u00fcnau to Rauchfangswerder",
+  "walkers":7
  },
  {
   "categories":[
@@ -4733,7 +5146,7 @@
    "2012-03-11T14:52:45+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/03/11/from-kopenick-to-grunau-via-muggelsee-and-muggelberge/",
-  "people":["Lisa",
+  "people":[
    "Andreas",
    "Angelina",
    "April",
@@ -4741,12 +5154,14 @@
    "Evelyn",
    "Jorge",
    "Julia",
+   "Lisa",
    "Mario",
    "Roberto",
    "Salman",
    "Sophie"
   ],
-  "title":"From K\u00f6penick to Gr\u00fcnau via M\u00fcggelsee and M\u00fcggelberge"
+  "title":"From K\u00f6penick to Gr\u00fcnau via M\u00fcggelsee and M\u00fcggelberge",
+  "walkers":12
  },
  {
   "categories":[
@@ -4756,7 +5171,7 @@
    "2012-03-04T22:02:15+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/03/04/grunewald-walking-with-a-horde-of-people/",
-  "people":["Lisa",
+  "people":[
    "Cedric",
    "Damon",
    "Flo",
@@ -4765,11 +5180,13 @@
    "Julia",
    "Jutta",
    "Ko",
+   "Lisa",
    "Mario",
    "Roberto",
    "Volker"
   ],
-  "title":"Grunewald \u2013 walking with a horde of people"
+  "title":"Grunewald \u2013 walking with a horde of people",
+  "walkers":12
  },
  {
   "categories":[
@@ -4779,7 +5196,7 @@
    "2012-02-26T21:37:46+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/02/26/kiez-rallye-tiergarten-sud/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Cedric",
    "Joarquin",
@@ -4788,11 +5205,13 @@
    "Laura",
    "Leandro",
    "Ling",
+   "Lisa",
    "Ramnath",
    "Ryme",
    "Sze"
   ],
-  "title":"Kiez Rallye: Tiergarten S\u00fcd"
+  "title":"Kiez Rallye: Tiergarten S\u00fcd",
+  "walkers":12
  },
  {
   "categories":[
@@ -4802,11 +5221,13 @@
    "2012-02-19T23:47:12+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/02/19/wuhletal-wanderweg/",
-  "people":["Lisa",
+  "people":[
+   "Lisa",
    "Mario",
    "Volker"
   ],
-  "title":"Wuhletal Wanderweg"
+  "title":"Wuhletal Wanderweg",
+  "walkers":3
  },
  {
   "categories":[
@@ -4816,7 +5237,7 @@
    "2012-01-29T22:25:36+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/01/29/charlottenburg-altstadtpfad-rallye/",
-  "people":["Lisa",
+  "people":[
    "Anna",
    "Catalina",
    "Charlotte",
@@ -4824,13 +5245,15 @@
    "Kim",
    "Laurent",
    "Leandro",
+   "Lisa",
    "Luba",
    "Mario",
    "Mark",
    "Romania",
    "Sophie"
   ],
-  "title":"Charlottenburg: Altstadtpfad-Rallye"
+  "title":"Charlottenburg: Altstadtpfad-Rallye",
+  "walkers":13
  },
  {
   "categories":[
@@ -4839,7 +5262,7 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2012/01/28/mauerweg-after-party/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Catalina",
    "Jeroen",
@@ -4847,12 +5270,14 @@
    "Karo",
    "Laura",
    "Leandro",
+   "Lisa",
    "Mario",
    "Mike",
    "Ramnath",
    "Roberto"
   ],
-  "title":"Mauerweg-After-Party"
+  "title":"Mauerweg-After-Party",
+  "walkers":12
  },
  {
   "categories":[
@@ -4863,15 +5288,17 @@
    "2012-01-22T22:59:26+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/01/22/barnimer-dorferweg-part-3-karow-ahrensfelde/",
-  "people":["Lisa",
+  "people":[
    "Kamila",
    "Ling",
+   "Lisa",
    "Mario",
    "Ramnath",
    "Robert",
    "Sze"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 3: Karow \u2013 Ahrensfelde"
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 3: Karow \u2013 Ahrensfelde",
+  "walkers":7
  },
  {
   "categories":[
@@ -4882,11 +5309,12 @@
    "2012-01-15T23:09:35+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/01/15/barnimer-dorferweg-part-2-lubars-karow/",
-  "people":["Lisa",
+  "people":[
    "Debbie",
    "Jeroen",
    "Leandro",
    "Ling",
+   "Lisa",
    "Marcia",
    "Mario",
    "Mike",
@@ -4894,7 +5322,8 @@
    "Salman",
    "Sze"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 2: L\u00fcbars \u2013 Karow"
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 2: L\u00fcbars \u2013 Karow",
+  "walkers":11
  },
  {
   "categories":[
@@ -4905,7 +5334,7 @@
    "2012-01-08T23:07:24+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2012/01/08/barnimer-dorferweg-part-1-tegel-lubars/",
-  "people":["Lisa",
+  "people":[
    "Brian",
    "Caren",
    "Gautam",
@@ -4915,12 +5344,14 @@
    "Kamila",
    "Karo",
    "Lena",
+   "Lisa",
    "Mario",
    "Mike",
    "Robert",
    "Salman"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 1: Tegel \u2013 L\u00fcbars"
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 1: Tegel \u2013 L\u00fcbars",
+  "walkers":14
  },
  {
   "categories":[
@@ -4930,7 +5361,7 @@
    "2011-12-18T21:16:54+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/12/18/berliner-mauerweg-part-18-the-last-part/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Anton",
    "Emine",
@@ -4938,6 +5369,7 @@
    "Laura",
    "Leandro",
    "Ling",
+   "Lisa",
    "Martin",
    "Mike",
    "Nick",
@@ -4946,7 +5378,8 @@
    "Tinn",
    "Toshimi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 18 (the last part)"
+  "title":"Berliner Mauerweg \u2013 Part 18 (the last part)",
+  "walkers":15
  },
  {
   "categories":[
@@ -4956,19 +5389,21 @@
    "2011-12-11T00:52:29+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/12/11/berliner-mauerweg-part-17/",
-  "people":["Lisa",
+  "people":[
    "Helene",
    "Jeroen",
    "Josh",
    "Karo",
    "Laura",
    "Ling",
+   "Lisa",
    "Mike",
    "Murilo",
    "Nadja",
    "Sze"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 17"
+  "title":"Berliner Mauerweg \u2013 Part 17",
+  "walkers":11
  },
  {
   "categories":[
@@ -4978,14 +5413,16 @@
    "2011-12-04T20:09:07+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/12/04/berliner-mauerweg-part-16/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Laura",
+   "Lisa",
    "Lukas",
    "Mario",
    "Mike"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 16"
+  "title":"Berliner Mauerweg \u2013 Part 16",
+  "walkers":6
  },
  {
   "categories":[
@@ -4995,12 +5432,14 @@
    "2011-11-29T19:57:54+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/29/berliner-mauerweg-part-15/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Karo",
-   "Laura"
+   "Laura",
+   "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 15"
+  "title":"Berliner Mauerweg \u2013 Part 15",
+  "walkers":4
  },
  {
   "categories":[
@@ -5010,17 +5449,19 @@
    "2011-11-27T23:14:24+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/27/berliner-mauerweg-part-14-christmas-market/",
-  "people":["Lisa",
+  "people":[
    "Emine",
    "Hakim",
    "Jeroen",
    "Laura",
    "Leandro",
+   "Lisa",
    "Mario",
    "Natalia",
    "Raunak"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 14 + Christmas Market"
+  "title":"Berliner Mauerweg \u2013 Part 14 + Christmas Market",
+  "walkers":9
  },
  {
   "categories":[
@@ -5030,11 +5471,13 @@
    "2011-11-24T01:15:38+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/24/berliner-mauerweg-part-13/",
-  "people":["Lisa",
+  "people":[
    "Alex",
+   "Lisa",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 13"
+  "title":"Berliner Mauerweg \u2013 Part 13",
+  "walkers":3
  },
  {
   "categories":[
@@ -5044,13 +5487,15 @@
    "2011-11-22T23:10:48+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/22/berliner-mauerweg-part-12/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Emine",
    "Flo",
+   "Lisa",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 12"
+  "title":"Berliner Mauerweg \u2013 Part 12",
+  "walkers":5
  },
  {
   "categories":[
@@ -5060,17 +5505,19 @@
    "2011-11-20T08:21:50+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/20/berliner-mauerweg-part-11/",
-  "people":["Lisa",
+  "people":[
    "Alex",
    "Barbara",
    "Gustavo",
    "Kamila",
+   "Lisa",
    "Nejc",
    "Ramnath",
    "Robert",
    "Roberto"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 11"
+  "title":"Berliner Mauerweg \u2013 Part 11",
+  "walkers":9
  },
  {
   "categories":[
@@ -5080,12 +5527,14 @@
    "2011-11-17T19:44:09+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/17/berliner-mauerweg-part-10/",
-  "people":["Lisa",
+  "people":[
    "Flo",
+   "Lisa",
    "Mario",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 10"
+  "title":"Berliner Mauerweg \u2013 Part 10",
+  "walkers":4
  },
  {
   "categories":[
@@ -5095,10 +5544,12 @@
    "2011-11-15T18:43:52+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/15/berliner-mauerweg-part-9/",
-  "people":["Lisa",
-   "Alice"
+  "people":[
+   "Alice",
+   "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 9"
+  "title":"Berliner Mauerweg \u2013 Part 9",
+  "walkers":2
  },
  {
   "categories":[
@@ -5108,13 +5559,15 @@
    "2011-11-13T10:33:08+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/13/berliner-mauerweg-part-8/",
-  "people":["Lisa",
+  "people":[
    "Gustavo",
    "Jessi",
+   "Lisa",
    "Mario",
    "Markus"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 8"
+  "title":"Berliner Mauerweg \u2013 Part 8",
+  "walkers":5
  },
  {
   "categories":[
@@ -5124,15 +5577,17 @@
    "2011-11-10T23:10:39+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/10/berliner-mauerweg-part-7/",
-  "people":["Lisa",
+  "people":[
    "Flo",
    "Florian",
    "Jutta",
+   "Lisa",
    "Luba",
    "Manuel",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 7"
+  "title":"Berliner Mauerweg \u2013 Part 7",
+  "walkers":7
  },
  {
   "categories":[
@@ -5142,12 +5597,14 @@
    "2011-11-08T18:32:14+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/08/berliner-mauerweg-part-6/",
-  "people":["Lisa",
+  "people":[
    "Alice",
    "Ellen",
-   "Jieun"
+   "Jieun",
+   "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 6"
+  "title":"Berliner Mauerweg \u2013 Part 6",
+  "walkers":4
  },
  {
   "categories":[
@@ -5157,7 +5614,7 @@
    "2011-11-06T00:22:01+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/06/berliner-mauerweg-part-5/",
-  "people":["Lisa",
+  "people":[
    "Alberto",
    "Alex",
    "Alice",
@@ -5165,11 +5622,13 @@
    "Ellen",
    "Felix",
    "Jieun",
+   "Lisa",
    "Mario",
    "Nejc",
    "Romania"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 5"
+  "title":"Berliner Mauerweg \u2013 Part 5",
+  "walkers":11
  },
  {
   "categories":[
@@ -5179,14 +5638,16 @@
    "2011-11-03T00:33:49+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/03/berliner-mauerweg-part-4/",
-  "people":["Lisa",
+  "people":[
    "Benjamin",
    "Ernst",
    "Jutta",
+   "Lisa",
    "Mario",
    "Steffi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 4"
+  "title":"Berliner Mauerweg \u2013 Part 4",
+  "walkers":6
  },
  {
   "categories":[
@@ -5196,10 +5657,12 @@
    "2011-11-01T16:59:00+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/11/01/berliner-mauerweg-part-3/",
-  "people":["Lisa",
-   "Ernst"
+  "people":[
+   "Ernst",
+   "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 3"
+  "title":"Berliner Mauerweg \u2013 Part 3",
+  "walkers":2
  },
  {
   "categories":[
@@ -5209,11 +5672,13 @@
    "2011-10-30T15:37:39+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/10/30/berliner-mauerweg-part-2/",
-  "people":["Lisa",
+  "people":[
    "Christine",
-   "Gernot"
+   "Gernot",
+   "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 2"
+  "title":"Berliner Mauerweg \u2013 Part 2",
+  "walkers":3
  },
  {
   "categories":[
@@ -5223,13 +5688,15 @@
    "2011-10-28T23:22:19+02:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2011/10/28/berliner-mauerweg-part-1/",
-  "people":["Lisa",
+  "people":[
    "Charlie",
    "Liam",
+   "Lisa",
    "Martin",
    "Rafi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 1"
+  "title":"Berliner Mauerweg \u2013 Part 1",
+  "walkers":5
  },
  {
   "categories":[
@@ -5238,9 +5705,11 @@
   "dates":[
   ],
   "link":"https://berlinwalks.wordpress.com/2011/10/27/hello-world/",
-  "people":["Lisa",
-   "Leandro"
+  "people":[
+   "Leandro",
+   "Lisa"
   ],
-  "title":"Berlin walks- how, when and where it all started"
+  "title":"Berlin walks- how, when and where it all started",
+  "walkers":2
  }
 ]
