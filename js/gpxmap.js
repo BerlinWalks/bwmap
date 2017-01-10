@@ -75,9 +75,8 @@ GPXMAP.gpxmap = function (id, options) {
                     return {
                         'date': new Date(date),
                         'walk': walk,
-                        'gpx': L.polyline(GPX.parse(gpx), {
-                            'className': CSS.TRACK,
-                            'color': 'currentColor',
+                        'lines': GPX.parse(gpx).map(function (line) {
+                            return line.map(L.latLng);
                         }),
                     };
                 });
@@ -89,28 +88,12 @@ GPXMAP.gpxmap = function (id, options) {
         // Group GPX layers by year.
         layers.forEach(function (layer) {
             var year = layer.date.getFullYear();
+            var line = wideline(layer.lines, {
+                'className': CSS.TRACK,
+                'color': 'currentColor',
+            });
 
-            if (!yearGpx[year]) {
-                yearGpx[year] = [];
-            }
-            yearGpx[year].push(layer.gpx);
-        });
-
-        // Create one layer group per year and add to the map.
-        for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
-            lg = L.layerGroup(yearGpx[year]);
-            gpxmap.addLayer(lg);
-            layersControl.addOverlay(lg, year);
-        }
-
-        // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(layers.map(function (layer) {
-            return layer.gpx.getBounds();
-        }));
-        gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
-
-        // Create a popup for all GPXs of each walk
-        layers.forEach(function (layer) {
+            // Create a popup for each walk
             var popup = document.createElement('div');
             var anchor = document.createElement('a');
 
@@ -123,9 +106,27 @@ GPXMAP.gpxmap = function (id, options) {
             anchor.textContent = layer.walk.title;
             popup.appendChild(anchor);
             popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(GPX.distance(layer.gpx) / 100) / 10) + 'km'
+                ' ' + (Math.round(GPX.distance(layer.lines) / 100) / 10) + 'km'
             ));
-            layer.gpx.bindPopup(popup);
+            line.bindPopup(popup);
+
+            if (!yearGpx[year]) {
+                yearGpx[year] = [];
+            }
+            yearGpx[year].push(line);
         });
+
+        // Create one layer group per year and add to the map.
+        for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
+            lg = L.layerGroup(yearGpx[year]);
+            gpxmap.addLayer(lg);
+            layersControl.addOverlay(lg, year);
+        }
+
+        // Adjust the map's viewport when all GPX tracks are loaded
+        var bounds = L.latLngBounds(layers.flatMap(function (layer) {
+            return layer.lines;
+        }));
+        gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
     });
 };

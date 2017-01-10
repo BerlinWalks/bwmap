@@ -37,7 +37,8 @@
     transition: color .2s, stroke-width .2s;
 }
 
-.gpxmap-track:hover {
+/* Apply hover effect when hovering over invisible previous sibling. */
+*:hover + .gpxmap-track {
     stroke-width: 4px;
     stroke-opacity: 1;
 }
