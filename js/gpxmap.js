@@ -29,17 +29,19 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var GPXMAP = {};
+var GPXMAP = (function () {
+'use strict';
 
-GPXMAP.CSS = {
-    'TRACK': 'gpxmap-track',
+var CSS = {
+    'DETAILS': 'gpxmap-details',
+    'HBOX': 'gpxmap-hbox',
     'SELECT': 'gpxmap-select',
+    'TRACK': 'gpxmap-track',
+    'VBOX': 'gpxmap-vbox',
+    'VIEW': 'gpxmap-view',
 };
 
-GPXMAP.gpxmap = function (id, options) {
-    'use strict';
-    var CSS = GPXMAP.CSS;
-
+function gpxmap(id, options) {
     // Create all configured tile layers.
     var tileLayers = options.tileLayers.map(function (layer) {
         return {
@@ -54,11 +56,17 @@ GPXMAP.gpxmap = function (id, options) {
         layersControl.addBaseLayer(layer.tileLayer, layer.name);
     });
 
+    // Create the DOM structure for our map.
+    var domContainer = L.DomUtil.get(id);
+    L.DomUtil.addClass(domContainer, CSS.VBOX);
+
     // Create map with an initial tile layer and layers control.
-    var gpxmap = L.map(id).
+    var gpxmap = L.map(L.DomUtil.create('div', CSS.VIEW, domContainer)).
         addControl(L.control.scale()).
         addControl(layersControl).
         addLayer(tileLayers[0].tileLayer);
+
+    var domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
 
     UTIL.load(options.index).then(function (walks) {
         /*
@@ -72,12 +80,14 @@ GPXMAP.gpxmap = function (id, options) {
                     options.gpx + date.substr(0, 10) +'.gpx', 'document'
                 ).then(function (gpx) {
                     // Turn segments into MultiPolylines.
+                    var lines = GPX.parse(gpx).map(function (line) {
+                        return line.map(L.latLng);
+                    });
                     return {
                         'date': new Date(date),
                         'walk': walk,
-                        'lines': GPX.parse(gpx).map(function (line) {
-                            return line.map(L.latLng);
-                        }),
+                        'lines': lines,
+                        'distance': GPX.distance(lines),
                     };
                 });
             });
@@ -116,11 +126,22 @@ GPXMAP.gpxmap = function (id, options) {
             yearGpx[year].push(line);
         });
 
+        // Set up a summary pane that reacts when years are toggled.
+        var sumPane = Summary.summaryPane(layers, function () {
+            var h3 = L.DomUtil.create('h3');
+
+            h3.textContent = options.title;
+            L.DomUtil.empty(domDetails);
+            domDetails.appendChild(h3);
+            domDetails.appendChild(this.render());
+        });
+
         // Create one layer group per year and add to the map.
         for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
             lg = L.layerGroup(yearGpx[year]);
             gpxmap.addLayer(lg);
             layersControl.addOverlay(lg, year);
+            sumPane.addLayer(lg, year);
         }
 
         // Adjust the map's viewport when all GPX tracks are loaded
@@ -129,4 +150,13 @@ GPXMAP.gpxmap = function (id, options) {
         }));
         gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
     });
+
+    return gpxmap;
+}
+
+// Export public symbols
+return {
+    'CSS': CSS,
+    'gpxmap': gpxmap,
 };
+}());

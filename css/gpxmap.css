@@ -29,6 +29,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+.gpxmap-hbox, .gpxmap-vbox      { display: flex; }
+.gpxmap-hbox                    { flex-direction: row; }
+.gpxmap-vbox                    { flex-direction: column; }
+.gpxmap-view                    { flex-grow: 1; }
+
 /* GPX tracks */
 .gpxmap-track {
     color: #17f;
@@ -45,4 +50,21 @@
 
 .gpxmap-track.gpxmap-select {
     stroke-width: 3.5px;
+}
+
+/* Information pane */
+.gpxmap-details {
+    text-align: center;
+    padding: 1ex;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+    z-index: 1000; /* ugly, Leaflet layers seem to reach up to 400. */
+}
+
+.gpxmap-details > * {
+    margin: .5ex 0 0;
+}
+
+.gpxmap-details > div {
+    font-size: smaller;
+    color: rgba(0, 0, 0, .5);
 }
