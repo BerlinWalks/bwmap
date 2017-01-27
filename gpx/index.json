@@ -4,12 +4,35 @@
    "North of the City"
   ],
   "dates":[
-   "2017-01-15T12:00:00+01:00"
+   "2017-01-22T12:00:00+01:00"
+  ],
+  "link":"https://berlinwalks.wordpress.com/2017/01/22/",
+  "people":[
+   "Lisa"
+  ],
+  "title":"Bernau \u2013 Werneuchen",
+  "walkers":14
+ },
+ {
+  "categories":[
+   "North of the City"
+  ],
+  "dates":[
+   "2017-01-15T21:10:07+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2017/01/15/basdorf-bernau/",
   "people":[
+   "Fredi",
+   "Helge",
+   "Joachim",
+   "Lisa",
+   "Martina",
+   "Mia",
+   "Nico",
+   "Sebastian",
+   "Sylvia"
   ],
-  "title":"Basdorf – Bernau",
+  "title":"Basdorf \u2013 Bernau",
   "walkers":16
  },
  {
@@ -17,11 +40,11 @@
    "North of the City"
   ],
   "dates":[
-   "2017-01-08T12:00:00+01:00"
+   "2017-01-08T18:31:44+01:00"
   ],
   "link":"https://berlinwalks.wordpress.com/2017/01/08/schonflies-rosenthal/",
   "people":[
-   "Anne-Liese",
+   "Anne",
    "Fredi",
    "Hannes",
    "Helge",
@@ -30,15 +53,17 @@
    "Joachim",
    "Keerthi",
    "Lisa",
+   "Marit",
    "Miriam",
    "Nico",
    "Norman",
    "Sandra",
    "Sebastian",
    "Stefan",
+   "Thomas",
    "Timo"
   ],
-  "title":"Schönfließ – Rosenthal",
+  "title":"Sch\u00f6nflie\u00df \u2013 Rosenthal",
   "walkers":21
  },
  {
@@ -542,7 +567,7 @@
    "Sebastian",
    "Shun"
   ],
-  "title":"Dabendorf \u2013 K\u00f6nigs Wusterhausen",
+  "title":"Dabendorf \u2013 K\u00f6nigs\u00a0Wusterhausen",
   "walkers":11
  },
  {
@@ -597,7 +622,7 @@
    "Sebastian",
    "Sophie"
   ],
-  "title":"Wernsdorf \u2013 K\u00f6nigs Wusterhausen",
+  "title":"Wernsdorf \u2013 K\u00f6nigs\u00a0Wusterhausen",
   "walkers":11
  },
  {
@@ -674,7 +699,7 @@
    "Sylvia",
    "Thomas"
   ],
-  "title":"Frankfurt Oder, Slubice & Helenesee",
+  "title":"Frankfurt Oder, Slubice &\u00a0Helenesee",
   "walkers":17
  },
  {
@@ -852,7 +877,7 @@
    "Sarah",
    "Sebastian"
   ],
-  "title":"2 days: Bad Freienwalde",
+  "title":"2 days: Bad\u00a0Freienwalde",
   "walkers":11
  },
  {
@@ -903,7 +928,7 @@
    "Sebastian",
    "Sylvi"
   ],
-  "title":"2 days: Eberswalde \u2013 Liepe \u2013 Falkenberg",
+  "title":"2 days: Eberswalde \u2013 Liepe \u2013\u00a0Falkenberg",
   "walkers":14
  },
  {
@@ -1082,7 +1107,7 @@
    "Peter",
    "Philipps"
   ],
-  "title":"Hohen Neuendorf \u2013 Hermsdorf",
+  "title":"Hohen Neuendorf \u2013\u00a0Hermsdorf",
   "walkers":6
  },
  {
@@ -1230,7 +1255,7 @@
    "Sophie",
    "Sylvia"
   ],
-  "title":"Rag\u00f6sen \u2013 Bad Belzig",
+  "title":"Rag\u00f6sen \u2013 Bad\u00a0Belzig",
   "walkers":10
  },
  {
@@ -1354,7 +1379,7 @@
    "Nayeli",
    "Sebastian"
   ],
-  "title":"Baruth \u2013 Glash\u00fctte \u2013 Klasdorf",
+  "title":"Baruth \u2013 Glash\u00fctte \u2013\u00a0Klasdorf",
   "walkers":12
  },
  {
@@ -1488,7 +1513,7 @@
    "Sylvia",
    "Vero"
   ],
-  "title":"2.5 days Unterspreewald walk",
+  "title":"2.5 days Unterspreewald\u00a0walk",
   "walkers":12
  },
  {
@@ -1513,7 +1538,7 @@
    "Ralf",
    "Sandra"
   ],
-  "title":"M\u00fcggelheim \u2013 Forest and Seddinsee",
+  "title":"M\u00fcggelheim \u2013 Forest and\u00a0Seddinsee",
   "walkers":12
  },
  {
@@ -1590,7 +1615,7 @@
    "Martina",
    "Sophie"
   ],
-  "title":"Bad Saarow \u2013 Storkow",
+  "title":"Bad Saarow \u2013\u00a0Storkow",
   "walkers":11
  },
  {
@@ -1617,7 +1642,7 @@
    "Sandra",
    "Wilhelm"
   ],
-  "title":"F\u00fcrstenwalde \u2013 Bad Saarow",
+  "title":"F\u00fcrstenwalde \u2013 Bad\u00a0Saarow",
   "walkers":13
  },
  {
@@ -1696,7 +1721,7 @@
    "Sylvi",
    "Sylvia"
   ],
-  "title":"2.5 day M\u00e4rkisch Oderland walk",
+  "title":"2.5 day M\u00e4rkisch Oderland\u00a0walk",
   "walkers":10
  },
  {
@@ -1722,7 +1747,7 @@
    "Nina",
    "Sylvia"
   ],
-  "title":"M\u00e4rkische Schweiz & Scherm\u00fctzelsee",
+  "title":"M\u00e4rkische Schweiz &\u00a0Scherm\u00fctzelsee",
   "walkers":13
  },
  {
@@ -2024,7 +2049,7 @@
    "Sebastian",
    "Sylvia"
   ],
-  "title":"Velten \u2013 Bernsteinsee \u2013 Velten",
+  "title":"Velten \u2013 Bernsteinsee \u2013\u00a0Velten",
   "walkers":14
  },
  {
@@ -2152,7 +2177,7 @@
    "Sylvia",
    "Verena"
   ],
-  "title":"Falkensee \u2013 Nieder Neuendorf",
+  "title":"Falkensee \u2013 Nieder\u00a0Neuendorf",
   "walkers":15
  },
  {
@@ -2196,7 +2221,7 @@
    "Joachim",
    "Lisa"
   ],
-  "title":"Albrechtshof \u2013 Gro\u00df Glienicke",
+  "title":"Albrechtshof \u2013 Gro\u00df\u00a0Glienicke",
   "walkers":5
  },
  {
@@ -2225,7 +2250,7 @@
    "Sophie",
    "Sylvi"
   ],
-  "title":"2,5 day Fl\u00e4ming walk",
+  "title":"2,5 day Fl\u00e4ming\u00a0walk",
   "walkers":16
  },
  {
@@ -2548,7 +2573,7 @@
    "Sandra",
    "Wilhelm"
   ],
-  "title":"Bad Wilsnack \u2013 Plattenburg \u2013 Bad Wilsnack",
+  "title":"Bad Wilsnack \u2013 Plattenburg \u2013 Bad\u00a0Wilsnack",
   "walkers":12
  },
  {
@@ -2918,7 +2943,7 @@
    "Joachim",
    "Lisa"
   ],
-  "title":"2 day walk : Wandlitzsee \u2013 Lottschesee",
+  "title":"2 day walk : Wandlitzsee \u2013\u00a0Lottschesee",
   "walkers":3
  },
  {
@@ -3076,7 +3101,7 @@
    "Merlin",
    "Philip"
   ],
-  "title":"Borgsdorf \u2013 Oranienburg \u2013 Lehnitz",
+  "title":"Borgsdorf \u2013 Oranienburg \u2013\u00a0Lehnitz",
   "walkers":13
  },
  {
@@ -3099,7 +3124,7 @@
    "Sylvia",
    "Todd"
   ],
-  "title":"Hennigsdorf \u2013 Hohen Neuendorf",
+  "title":"Hennigsdorf \u2013 Hohen\u00a0Neuendorf",
   "walkers":10
  },
  {
@@ -3201,7 +3226,7 @@
    "Sandra",
    "Sylvia"
   ],
-  "title":"Paulinenaue \u2013 Ribbeck \u2013 Paulinenaue",
+  "title":"Paulinenaue \u2013 Ribbeck \u2013\u00a0Paulinenaue",
   "walkers":28
  },
  {
@@ -3255,7 +3280,7 @@
    "Sylvia",
    "Tuya"
   ],
-  "title":"Brandenburg an der Havel",
+  "title":"Brandenburg an der\u00a0Havel",
   "walkers":10
  },
  {
@@ -3598,7 +3623,7 @@
    "Nina",
    "Rachel"
   ],
-  "title":"3 day walk: Neuglobsow \u2013 Neuruppin",
+  "title":"3 day walk: Neuglobsow \u2013\u00a0Neuruppin",
   "walkers":14
  },
  {
@@ -3662,7 +3687,7 @@
    "Trent",
    "Yacob"
   ],
-  "title":"2 day walk: Birkenwerder \u2013 Wandlitzsee",
+  "title":"2 day walk: Birkenwerder \u2013\u00a0Wandlitzsee",
   "walkers":8
  },
  {
@@ -3729,7 +3754,7 @@
    "Lisa",
    "Marit"
   ],
-  "title":"2 day walk: Hennigsdorf \u2013 Falkensee",
+  "title":"2 day walk: Hennigsdorf \u2013\u00a0Falkensee",
   "walkers":2
  },
  {
@@ -3748,7 +3773,7 @@
    "Johannes",
    "Lisa"
   ],
-  "title":"2 day walk: Dallgow-D\u00f6beritz \u2013 Marquardt",
+  "title":"2 day walk: Dallgow-D\u00f6beritz \u2013\u00a0Marquardt",
   "walkers":4
  },
  {
@@ -3826,7 +3851,7 @@
    "Fredi",
    "Lisa"
   ],
-  "title":"4 day walk: Saarmund \u2013 Trebbin",
+  "title":"4 day walk: Saarmund \u2013\u00a0Trebbin",
   "walkers":2
  },
  {
@@ -3936,7 +3961,7 @@
    "Sandra",
    "Sophie"
   ],
-  "title":"Lichterfelde \u2013 Teltow \u2013 Ruhlsdorf \u2013 Kleinmachnow",
+  "title":"Lichterfelde \u2013 Teltow \u2013 Ruhlsdorf \u2013\u00a0Kleinmachnow",
   "walkers":15
  },
  {
@@ -4044,7 +4069,7 @@
    "Sandra",
    "Yekaterina"
   ],
-  "title":"Treptower Park \u2013 Flugfeld Johannisthal",
+  "title":"Treptower Park \u2013 Flugfeld\u00a0Johannisthal",
   "walkers":14
  },
  {
@@ -4069,7 +4094,7 @@
    "Tuya",
    "Yekaterina"
   ],
-  "title":"Kiez Rallye: Nordisches Viertel, Prenzlauer Berg",
+  "title":"Kiez Rallye: Nordisches Viertel, Prenzlauer\u00a0Berg",
   "walkers":12
  },
  {
@@ -4099,7 +4124,7 @@
    "Rudolf",
    "Sophie"
   ],
-  "title":"Wuhlheide, Pl\u00e4nter Wald & Treptower Park",
+  "title":"Wuhlheide, Pl\u00e4nter Wald & Treptower\u00a0Park",
   "walkers":17
  },
  {
@@ -4126,7 +4151,7 @@
    "Rudolf",
    "Yekaterina"
   ],
-  "title":"Altstadt K\u00f6penick & K\u00f6llnische Heide",
+  "title":"Altstadt K\u00f6penick & K\u00f6llnische\u00a0Heide",
   "walkers":14
  },
  {
@@ -4187,7 +4212,7 @@
    "Romania",
    "Stephane"
   ],
-  "title":"Gro\u00dfe Krampe, M\u00fcggelheimer Forst & M\u00fcggelberge",
+  "title":"Gro\u00dfe Krampe, M\u00fcggelheimer Forst &\u00a0M\u00fcggelberge",
   "walkers":13
  },
  {
@@ -4235,7 +4260,7 @@
    "Sam",
    "Sophie"
   ],
-  "title":"Wilhelmshagen \u2013 Rahnsdorf \u2013 M\u00fcggelsee",
+  "title":"Wilhelmshagen \u2013 Rahnsdorf \u2013\u00a0M\u00fcggelsee",
   "walkers":12
  },
  {
@@ -4280,7 +4305,7 @@
    "Lisa",
    "Marit"
   ],
-  "title":"H\u00f6now \u2013 Hoppegarten \u2013 Mahlsdorf",
+  "title":"H\u00f6now \u2013 Hoppegarten \u2013\u00a0Mahlsdorf",
   "walkers":7
  },
  {
@@ -4322,7 +4347,7 @@
    "Lisa",
    "Mario"
   ],
-  "title":"Snowy woods & wintry slopes",
+  "title":"Snowy woods & wintry\u00a0slopes",
   "walkers":10
  },
  {
@@ -4389,7 +4414,7 @@
    "Max",
    "Sam"
   ],
-  "title":"Buch \u2013 Schwanebeck \u2013 Ahrensfelde",
+  "title":"Buch \u2013 Schwanebeck \u2013\u00a0Ahrensfelde",
   "walkers":7
  },
  {
@@ -4412,7 +4437,7 @@
    "Sophie",
    "Sze"
   ],
-  "title":"Buch \u2013 Sch\u00f6nower Heide \u2013 Zepernick",
+  "title":"Buch \u2013 Sch\u00f6nower Heide \u2013\u00a0Zepernick",
   "walkers":10
  },
  {
@@ -4473,7 +4498,7 @@
    "Sam",
    "Sophie"
   ],
-  "title":"Tempelhofer Feld & Sch\u00f6neberger S\u00fcdgel\u00e4nde",
+  "title":"Tempelhofer Feld & Sch\u00f6neberger\u00a0S\u00fcdgel\u00e4nde",
   "walkers":20
  },
  {
@@ -4535,7 +4560,7 @@
    "Lisa",
    "Yacob"
   ],
-  "title":"Sch\u00f6nwalde \u2013 Sch\u00f6nerlinde \u2013 M\u00fchlenbeck",
+  "title":"Sch\u00f6nwalde \u2013 Sch\u00f6nerlinde \u2013\u00a0M\u00fchlenbeck",
   "walkers":9
  },
  {
@@ -4556,7 +4581,7 @@
    "Marit",
    "Stefan"
   ],
-  "title":"L\u00fcbars \u2013 Blankenfelde \u2013 M\u00fchlenbeck",
+  "title":"L\u00fcbars \u2013 Blankenfelde \u2013\u00a0M\u00fchlenbeck",
   "walkers":8
  },
  {
@@ -4580,7 +4605,7 @@
    "Sara",
    "Stefan"
   ],
-  "title":"Frohnau \u2013 Sch\u00f6nflie\u00df \u2013 L\u00fcbars",
+  "title":"Frohnau \u2013 Sch\u00f6nflie\u00df \u2013\u00a0L\u00fcbars",
   "walkers":11
  },
  {
@@ -4600,7 +4625,7 @@
    "Sophie",
    "Yacob"
   ],
-  "title":"Lehnitz \u2013 Birthday Part 2",
+  "title":"Lehnitz \u2013 Birthday Part\u00a02",
   "walkers":6
  },
  {
@@ -4632,7 +4657,7 @@
    "Ramnath",
    "Sev"
   ],
-  "title":"Lehnitz \u2013 Birthday Part I",
+  "title":"Lehnitz \u2013 Birthday Part\u00a0I",
   "walkers":19
  },
  {
@@ -4659,7 +4684,7 @@
    "Mylene",
    "Tom"
   ],
-  "title":"Heiligensee \u2013 Birkenwerder \u2013 Hohen Neuendorf \u2013 Frohnau",
+  "title":"Heiligensee \u2013 Birkenwerder \u2013 Hohen Neuendorf \u2013\u00a0Frohnau",
   "walkers":14
  },
  {
@@ -4683,7 +4708,7 @@
    "Ramnath",
    "Stefan"
   ],
-  "title":"Scharfenberg, Konradsh\u00f6he & Tegelort",
+  "title":"Scharfenberg, Konradsh\u00f6he &\u00a0Tegelort",
   "walkers":11
  },
  {
@@ -4779,7 +4804,7 @@
    "Raffaele",
    "Ram\u00f3n"
   ],
-  "title":"Spandauer Forst via Sch\u00f6nwalde",
+  "title":"Spandauer Forst via\u00a0Sch\u00f6nwalde",
   "walkers":12
  },
  {
@@ -4805,7 +4830,7 @@
    "Ramin",
    "Roberto"
   ],
-  "title":"Spektegr\u00fcnzug, Falkenhagener See & Spandauer Forst",
+  "title":"Spektegr\u00fcnzug, Falkenhagener See & Spandauer\u00a0Forst",
   "walkers":13
  },
  {
@@ -4859,7 +4884,7 @@
    "Sophie",
    "Stefan"
   ],
-  "title":"Gatow \u2013 Staaken & Bullengrabenweg",
+  "title":"Gatow \u2013 Staaken &\u00a0Bullengrabenweg",
   "walkers":10
  },
  {
@@ -4962,7 +4987,7 @@
    "Sophie",
    "Stefan"
   ],
-  "title":"Potsdam: Castles and Gardens",
+  "title":"Potsdam: Castles and\u00a0Gardens",
   "walkers":9
  },
  {
@@ -4988,7 +5013,7 @@
    "Sara",
    "Sophie"
   ],
-  "title":"Wannsee \u2013 Klein Glienicke",
+  "title":"Wannsee \u2013 Klein\u00a0Glienicke",
   "walkers":13
  },
  {
@@ -5034,7 +5059,7 @@
    "Mario",
    "Richard"
   ],
-  "title":"Marienfelde \u2013 Heinersdorf \u2013 Lichterfelde",
+  "title":"Marienfelde \u2013 Heinersdorf \u2013\u00a0Lichterfelde",
   "walkers":4
  },
  {
@@ -5092,7 +5117,7 @@
    "Mario",
    "Nikolas"
   ],
-  "title":"H\u00f6nower Weiherkette & G\u00e4rten der Welt",
+  "title":"H\u00f6nower Weiherkette & G\u00e4rten der\u00a0Welt",
   "walkers":7
  },
  {
@@ -5202,7 +5227,7 @@
    "Salman",
    "Sophie"
   ],
-  "title":"From K\u00f6penick to Gr\u00fcnau via M\u00fcggelsee and M\u00fcggelberge",
+  "title":"From K\u00f6penick to Gr\u00fcnau via M\u00fcggelsee and\u00a0M\u00fcggelberge",
   "walkers":12
  },
  {
@@ -5227,7 +5252,7 @@
    "Roberto",
    "Volker"
   ],
-  "title":"Grunewald \u2013 walking with a horde of people",
+  "title":"Grunewald \u2013 walking with a horde of\u00a0people",
   "walkers":12
  },
  {
@@ -5252,7 +5277,7 @@
    "Ryme",
    "Sze"
   ],
-  "title":"Kiez Rallye: Tiergarten S\u00fcd",
+  "title":"Kiez Rallye: Tiergarten\u00a0S\u00fcd",
   "walkers":12
  },
  {
@@ -5339,7 +5364,7 @@
    "Robert",
    "Sze"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 3: Karow \u2013 Ahrensfelde",
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 3: Karow \u2013\u00a0Ahrensfelde",
   "walkers":7
  },
  {
@@ -5364,7 +5389,7 @@
    "Salman",
    "Sze"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 2: L\u00fcbars \u2013 Karow",
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 2: L\u00fcbars \u2013\u00a0Karow",
   "walkers":11
  },
  {
@@ -5392,7 +5417,7 @@
    "Robert",
    "Salman"
   ],
-  "title":"Barnimer D\u00f6rferweg \u2013 Part 1: Tegel \u2013 L\u00fcbars",
+  "title":"Barnimer D\u00f6rferweg \u2013 Part 1: Tegel \u2013\u00a0L\u00fcbars",
   "walkers":14
  },
  {
@@ -5420,7 +5445,7 @@
    "Tinn",
    "Toshimi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 18 (the last part)",
+  "title":"Berliner Mauerweg \u2013 Part 18 (the last\u00a0part)",
   "walkers":15
  },
  {
@@ -5444,7 +5469,7 @@
    "Nadja",
    "Sze"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 17",
+  "title":"Berliner Mauerweg \u2013 Part\u00a017",
   "walkers":11
  },
  {
@@ -5463,7 +5488,7 @@
    "Mario",
    "Mike"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 16",
+  "title":"Berliner Mauerweg \u2013 Part\u00a016",
   "walkers":6
  },
  {
@@ -5480,7 +5505,7 @@
    "Laura",
    "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 15",
+  "title":"Berliner Mauerweg \u2013 Part\u00a015",
   "walkers":4
  },
  {
@@ -5502,7 +5527,7 @@
    "Natalia",
    "Raunak"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 14 + Christmas Market",
+  "title":"Berliner Mauerweg \u2013 Part 14 + Christmas\u00a0Market",
   "walkers":9
  },
  {
@@ -5518,7 +5543,7 @@
    "Lisa",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 13",
+  "title":"Berliner Mauerweg \u2013 Part\u00a013",
   "walkers":3
  },
  {
@@ -5536,7 +5561,7 @@
    "Lisa",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 12",
+  "title":"Berliner Mauerweg \u2013 Part\u00a012",
   "walkers":5
  },
  {
@@ -5558,7 +5583,7 @@
    "Robert",
    "Roberto"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 11",
+  "title":"Berliner Mauerweg \u2013 Part\u00a011",
   "walkers":9
  },
  {
@@ -5575,7 +5600,7 @@
    "Mario",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 10",
+  "title":"Berliner Mauerweg \u2013 Part\u00a010",
   "walkers":4
  },
  {
@@ -5590,7 +5615,7 @@
    "Alice",
    "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 9",
+  "title":"Berliner Mauerweg \u2013 Part\u00a09",
   "walkers":2
  },
  {
@@ -5608,7 +5633,7 @@
    "Mario",
    "Markus"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 8",
+  "title":"Berliner Mauerweg \u2013 Part\u00a08",
   "walkers":5
  },
  {
@@ -5628,7 +5653,7 @@
    "Manuel",
    "Nejc"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 7",
+  "title":"Berliner Mauerweg \u2013 Part\u00a07",
   "walkers":7
  },
  {
@@ -5645,7 +5670,7 @@
    "Jieun",
    "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 6",
+  "title":"Berliner Mauerweg \u2013 Part\u00a06",
   "walkers":4
  },
  {
@@ -5669,7 +5694,7 @@
    "Nejc",
    "Romania"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 5",
+  "title":"Berliner Mauerweg \u2013 Part\u00a05",
   "walkers":11
  },
  {
@@ -5688,7 +5713,7 @@
    "Mario",
    "Steffi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 4",
+  "title":"Berliner Mauerweg \u2013 Part\u00a04",
   "walkers":6
  },
  {
@@ -5703,7 +5728,7 @@
    "Ernst",
    "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 3",
+  "title":"Berliner Mauerweg \u2013 Part\u00a03",
   "walkers":2
  },
  {
@@ -5719,7 +5744,7 @@
    "Gernot",
    "Lisa"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 2",
+  "title":"Berliner Mauerweg \u2013 Part\u00a02",
   "walkers":3
  },
  {
@@ -5737,7 +5762,7 @@
    "Martin",
    "Rafi"
   ],
-  "title":"Berliner Mauerweg \u2013 Part 1",
+  "title":"Berliner Mauerweg \u2013 Part\u00a01",
   "walkers":5
  },
  {
@@ -5751,7 +5776,7 @@
    "Leandro",
    "Lisa"
   ],
-  "title":"Berlin walks- how, when and where it all started",
+  "title":"Berlin walks- how, when and where it all\u00a0started",
   "walkers":2
  }
 ]
