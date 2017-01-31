@@ -47,7 +47,6 @@
 
 <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 <script src="js/util.js"></script>
-<script src="js/gpx.js"></script>
 <script src="js/wide-line.js"></script>
 <script src="js/summary.js"></script>
 <script src="js/gpxmap.js"></script>
@@ -71,8 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     GPXMAP.gpxmap('gpxmap', {
         'title': 'BerlinWalks',
         'tileLayers': TILE_LAYERS,
-        'index': 'gpx/index.json',
-        'gpx': 'gpx/',
+        'walks': 'gpx/walks.json',
     });
 });
 </script>

@@ -62,7 +62,7 @@ var Summary = (function () {
     /**
      * The summary pane reacts to changes in the visible year layers.
      */
-    function summaryPane(layers, onChange) {
+    function summaryPane(features, onChange) {
         var self = {};
         var m_visibleYears = {};
         var m_summary = summary();
@@ -70,9 +70,9 @@ var Summary = (function () {
         function handleVisible(year, visible) {
             if (visible != m_visibleYears[year]) {
                 m_visibleYears[year] = visible;
-                m_summary = layers.reduce(function (sum, layer) {
-                    if (m_visibleYears[layer.date.getFullYear()]) {
-                        return sum.accumulate(layer.distance);
+                m_summary = features.reduce(function (sum, layer) {
+                    if (m_visibleYears[layer.properties.date.substr(0, 4)]) {
+                        return sum.accumulate(layer.properties.distance);
                     } else {
                         return sum;
                     }
