@@ -68,36 +68,21 @@ function gpxmap(id, options) {
 
     var domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
 
-    UTIL.load(options.index).then(function (walks) {
-        /*
-         * Return a Promise that resolves to an array of GPX tracks once
-         * all tracks have been loaded.
-         */
-        return Promise.all(walks.flatMap(function (walk) {
-            // Load GPX file for each date.
-            return walk.dates.map(function (date) {
-                return UTIL.load(
-                    options.gpx + date.substr(0, 10) +'.gpx', 'document'
-                ).then(function (gpx) {
-                    // Turn segments into MultiPolylines.
-                    var lines = GPX.parse(gpx).map(function (line) {
-                        return line.map(L.latLng);
-                    });
-                    return {
-                        'date': new Date(date),
-                        'walk': walk,
-                        'lines': lines,
-                        'distance': GPX.distance(lines),
-                    };
-                });
-            });
-        }));
-    }).then(function (layers) {
+    UTIL.load(options.walks).then(function (walks) {
         var yearGpx = {}, year, lg;
 
         // Group GPX layers by year.
-        layers.forEach(function (layer) {
-            var year = layer.date.getFullYear();
+        walks.features.forEach(function (layer) {
+            var year = layer.properties.date.substr(0, 4);
+
+            if ('LineString' === layer.geometry.type) {
+                layer.lines = L.GeoJSON.coordsToLatLngs(layer.geometry.coordinates);
+            } else if ('MultiLineString' === layer.geometry.type) {
+                layer.lines = L.GeoJSON.coordsToLatLngs(layer.geometry.coordinates, 1);
+            } else {
+                throw new Error('unknown geometry type '+ layer.geometry.type);
+            }
+
             var line = wideline(layer.lines, {
                 'className': CSS.TRACK,
                 'color': 'currentColor',
@@ -108,15 +93,15 @@ function gpxmap(id, options) {
             var anchor = document.createElement('a');
 
             popup.textContent =
-                    [ layer.date.getDate()
-                    , layer.date.getMonth() + 1
-                    , layer.date.getFullYear()
+                    [ layer.properties.date.substr(8, 2)
+                    , layer.properties.date.substr(5, 2)
+                    , layer.properties.date.substr(0, 4)
                     ].join('/') + ' ';
-            anchor.setAttribute('href', layer.walk.link);
-            anchor.textContent = layer.walk.title;
+            anchor.setAttribute('href', layer.properties.link);
+            anchor.textContent = layer.properties.title;
             popup.appendChild(anchor);
             popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(GPX.distance(layer.lines) / 100) / 10) + 'km'
+                ' ' + (Math.round(layer.properties.distance / 100) / 10) + 'km'
             ));
             line.bindPopup(popup);
 
@@ -127,7 +112,7 @@ function gpxmap(id, options) {
         });
 
         // Set up a summary pane that reacts when years are toggled.
-        var sumPane = Summary.summaryPane(layers, function () {
+        var sumPane = Summary.summaryPane(walks.features, function () {
             var h3 = L.DomUtil.create('h3');
 
             h3.textContent = options.title;
@@ -145,7 +130,7 @@ function gpxmap(id, options) {
         }
 
         // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(layers.flatMap(function (layer) {
+        var bounds = L.latLngBounds(walks.features.flatMap(function (layer) {
             return layer.lines;
         }));
         gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
