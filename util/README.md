@@ -1,6 +1,18 @@
 Toolbox
 =======
 
+togj
+----
+
+This utility reads a number of GPX files and outputs a GeoJSON file
+containing all tracks. It also reads an `index.json` file with additional
+information which is stored along with each track. The format of the
+`index.json` file is documented below in [mkdb](#mkdb).
+
+The command expects as an argument the directory containing the GPX files
+and index.
+
+
 wpidx
 -----
 
