@@ -56,7 +56,7 @@ const L = require('leaflet');
  */
 function search(array, pred) {
     let le = -1, ri = array.length;
-    while (1 + le != ri) {
+    while (1 + le !== ri) {
         let mi = le + ((ri - le) >> 1);
         if (pred(array[mi])) {
             ri = mi;
@@ -73,6 +73,20 @@ Array.prototype.flatMap = function () {
         Array.prototype.map.apply(this, arguments)
     );
 };
+
+/**
+ * Invoke `func` with a start and end index into `array` for each range of
+ * elements that are equivalent according to `equal`.
+ */
+function forEachUniqueRange(array, equal, func) {
+    const res = [];
+    for (let lo = 0, hi; lo !== array.length; lo = hi) {
+        for (hi = 1 + lo; hi !== array.length && equal(array[lo], array[hi]); ++hi)
+            ;
+        res.push(func(lo, hi));
+    }
+    return res;
+}
 
 /**
  * Compute the length of a Polyline, in radians.
@@ -101,6 +115,106 @@ function distance(latLngs) {
     }, 0);
 }
 
+/**
+ * Load the named GPX file as GeoJSON and return an array of features. The
+ * file name is added to every feature's properties.
+ */
+function gpxToJson(gpxFileName) {
+    const gpx = tj.gpx(new DOMParser().parseFromString(
+        fs.readFileSync(gpxFileName, 'utf8')
+    ));
+    assert.equal(gpx.type, 'FeatureCollection');
+    gpx.features.forEach(function (feature) {
+        assert.equal(feature.type, 'Feature');
+        feature.properties = feature.properties || {};
+        feature.properties.gpxFileName =
+            gpxFileName.substr(1 + gpxFileName.lastIndexOf('/'));
+    });
+    return gpx.features;
+}
+
+/**
+ * If the feature is a MultiLine, split it up into an array of Lines while
+ * preserving properties. If there is a 'coordTimes' property, it is
+ * treated specially and the 'time' property is adjusted accordingly.
+ */
+function multiSplit(feature) {
+    assert.equal(feature.type, 'Feature');
+    if ('MultiLineString' !== feature.geometry.type) {
+        return [ feature ];
+    }
+
+    return feature.geometry.coordinates.map(function (coordinates, i) {
+        // Clone properties for each generated feature.
+        const properties = Object.assign({}, feature.properties);
+
+        // Select appropriate coordTimes.
+        if (properties.coordTimes) {
+            assert(i < properties.coordTimes.length);
+            assert.equal(properties.coordTimes[i].length, coordinates.length);
+            assert.equal(properties.time, properties.coordTimes[0][0]);
+            properties.coordTimes = properties.coordTimes[i];
+            properties.time = properties.coordTimes[0];
+        }
+
+        return {
+            'type': 'Feature',
+            properties,
+            'geometry': { 'type': 'LineString', coordinates },
+        };
+    });
+}
+
+/**
+ * If the Line feature has a 'coordTimes' property which spans several days,
+ * split the feature into one Line per day.
+ */
+function dateSplit(feature) {
+    assert.equal(feature.type, 'Feature');
+    if ('LineString' !== feature.geometry.type ||
+        !feature.properties || !feature.properties.coordTimes ||
+        feature.properties.coordTimes.length !== feature.geometry.coordinates.length)
+    {
+        return [ feature ];
+    }
+
+    assert.equal(
+        feature.properties.coordTimes.length,
+        feature.geometry.coordinates.length,
+        `${feature.properties.gpxFileName}: ${feature.properties.time}`
+    );
+    return forEachUniqueRange(
+        feature.properties.coordTimes,
+        (lhs, rhs) => lhs.substr(0, 10) === rhs.substr(0, 10),
+        function (lo, hi) {
+            // Clone properties for each generated feature.
+            const properties = Object.assign({}, feature.properties);
+
+            // Split up coordTimes and coordinates.
+            properties.coordTimes = properties.coordTimes.slice(lo, hi);
+            properties.time = properties.coordTimes[0];
+            const coordinates = feature.geometry.coordinates.slice(lo, hi);
+            return {
+                'type': 'Feature',
+                properties,
+                'geometry': { 'type': 'LineString', coordinates },
+            }
+        }
+    );
+}
+
+/**
+ * Compare two GeoJSON features according to their 'time' property, falling
+ * back to 'date'.
+ */
+function timeCompare(lhs, rhs) {
+    assert.equal(lhs.type, 'Feature');
+    assert.equal(rhs.type, 'Feature');
+    const time0 = lhs.properties.time || lhs.properties.date;
+    const time1 = rhs.properties.time || rhs.properties.date;
+    return time0 < time1 ? -1 : time1 < time0 ? 1 : 0;
+}
+
 
 if (process.argv.length < 3) {
     process.stderr.write(`usage: ${process.argv[1]} directory
@@ -121,62 +235,88 @@ index.sort(function (lhs, rhs) {
          : 0;
 });
 
-walks = {
+// An array of GeoJSON features, sorted by date.
+const walks = fs.readdirSync(GPXDIR).
+    filter(file => file.endsWith('.gpx')).
+    flatMap(file => gpxToJson(`${GPXDIR}/${file}`)).
+    flatMap(multiSplit).
+    filter(feature => 'LineString' === feature.geometry.type).
+    flatMap(dateSplit).
+    map(function (feature) {
+        // Add a date to each feature.
+        feature.properties.date =
+            (feature.properties && feature.properties.time ||
+             feature.properties.gpxFileName).
+            substr(0, 10);
+        return feature;
+    }).
+    sort(timeCompare);
+
+// Merge GeoJSON features for the same date by optionally creating MultiLines.
+const mergedWalks = {
     'type': 'FeatureCollection',
-    'features': fs.readdirSync(GPXDIR).
-        filter(file => file.endsWith('.gpx')).
-        flatMap(function (file) {
-            // Load the GPX file.
-            const gpx = tj.gpx(new DOMParser().parseFromString(
-                fs.readFileSync(`${GPXDIR}/${file}`, 'utf8')
-            ));
-            assert.equal(gpx.type, 'FeatureCollection');
+    'features': forEachUniqueRange(
+        walks,
+        (lhs, rhs) => lhs.properties.date === rhs.properties.date,
+        function (lo, hi) {
+            if (hi - lo <= 1) {
+                return walks[lo];
+            }
 
-            // Produce one GeoJSON feature per track inside the GPX.
-            return gpx.features.
-                filter(feature =>
-                        'LineString' === feature.geometry.type ||
-                        'MultiLineString' === feature.geometry.type
-                ).map(function (walk) {
-                    const properties = walk.properties || {};
-                    assert.equal(walk.type, 'Feature');
+            const slice = walks.slice(lo, hi);
 
-                    // If GPX has no time information, use file date.
-                    assert(
-                        !properties.coordTimes || properties.time,
-                        'coordTimes without time stamp'
+            // Merge coordTimes and coordinates into nested arrays.
+            const properties = { 'date': slice[0].properties.date };
+            if (slice[0].properties.coordTimes) {
+                properties.coordTimes = slice.map(function (walk, i) {
+                    assert.equal(
+                        walk.properties.coordTimes.length,
+                        walk.geometry.coordinates.length
                     );
-                    const date = properties.time
-                               ? properties.time.substr(0, 10)
-                               : file.substr(0, 10);
-
-                    // Find the index entry corresponding to the file.
-                    const idx = search(index,
-                        entry => date < entry.dates[0].substr(0, 10)
-                    ) - 1;
-                    assert(0 <= idx, `No matching index for ${file}.`);
-
-                    // Warn about unusually large discrepancy.
-                    const dateDiff = Date.parse(date) -
-                                     Date.parse(index[idx].dates[0].substr(0, 10));
-                    if (3 * DAYS < dateDiff) {
-                        throw new Error(['dateDiff', file, date, index[idx].dates[0]].join(': '));
-                    }
-
-                    // Transfer index properties to GeoJSON.
-                    let depth = 'LineString' === walk.geometry.type ? 0
-                                                                    : 1;
-                    const dist = distance(
-                        L.GeoJSON.coordsToLatLngs(walk.geometry.coordinates, depth)
-                    );
-                    walk.properties = { date, 'distance': Math.round(dist) };
-                    for (p of [ 'categories', 'link', 'people', 'title', 'walkers' ]) {
-                        walk.properties[p] = index[idx][p];
-                    }
-
-                    return walk;
+                    return walk.properties.coordTimes;
                 });
-        }),
+                properties.time = properties.coordTimes[0][0];
+            }
+            const coordinates = slice.map(walk => walk.geometry.coordinates);
+
+            return {
+                'type': 'Feature',
+                properties,
+                'geometry': { 'type': 'MultiLineString', coordinates },
+            };
+        }
+    ).map(function (walk) {
+        const properties = walk.properties;
+        const date = properties.date;
+
+        // Find the index entry corresponding to the date.
+        const idx = search(index,
+            entry => date < entry.dates[0].substr(0, 10)
+        ) - 1;
+        assert(0 <= idx, `No matching index for ${properties.gpxFileName}.`);
+
+        // Warn about unusually large discrepancy.
+        const dateDiff = Date.parse(date) -
+                         Date.parse(index[idx].dates[0].substr(0, 10));
+        if (3 * DAYS < dateDiff) {
+            throw new Error(['dateDiff', date, index[idx].dates[0]].join(': '));
+        }
+
+        // Transfer index properties to GeoJSON.
+        const depth = 'LineString' === walk.geometry.type ? 0 : 1;
+        walk.properties = {
+            //'coordTimes': properties.coordTimes,
+            date,
+            'distance': Math.round(distance(
+                    L.GeoJSON.coordsToLatLngs(walk.geometry.coordinates, depth)
+                )),
+        };
+        for (p of [ 'categories', 'link', 'people', 'title', 'walkers' ]) {
+            walk.properties[p] = index[idx][p];
+        }
+
+        return walk;
+    }),
 };
 
-console.log(JSON.stringify(walks, null, ' '));
+console.log(JSON.stringify(mergedWalks, null, ' '));
