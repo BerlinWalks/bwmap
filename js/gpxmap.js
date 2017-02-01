@@ -109,7 +109,7 @@ function gpxmap(id, options) {
             anchor.textContent = layer.properties.title;
             popup.appendChild(anchor);
             popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(layer.properties.distance / 100) / 10) + 'km'
+                ' '+ +(layer.properties.distance / 1000).toFixed(1) +'km'
             ));
             line.bindPopup(popup);
 
