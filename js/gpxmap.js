@@ -93,9 +93,9 @@ function gpxmap(id, options) {
             var anchor = document.createElement('a');
 
             popup.textContent =
-                    [ layer.properties.date.substr(8, 2)
-                    , layer.properties.date.substr(5, 2)
-                    , layer.properties.date.substr(0, 4)
+                    [ +layer.properties.date.substr(8, 2)
+                    , +layer.properties.date.substr(5, 2)
+                    , +layer.properties.date.substr(0, 4)
                     ].join('/') + ' ';
             anchor.setAttribute('href', layer.properties.link);
             anchor.textContent = layer.properties.title;
