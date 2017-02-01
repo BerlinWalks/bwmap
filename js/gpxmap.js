@@ -41,6 +41,14 @@ var CSS = {
     'VIEW': 'gpxmap-view',
 };
 
+function yearColour(idx) {
+    return ['hsl(',
+        170 + 45 * (idx >> 1), ',',
+        100, '%,',
+        27 * (1 + idx % 2), '%)'
+    ].join('');
+}
+
 function gpxmap(id, options) {
     // Create all configured tile layers.
     var tileLayers = options.tileLayers.map(function (layer) {
@@ -85,7 +93,7 @@ function gpxmap(id, options) {
 
             var line = wideline(layer.lines, {
                 'className': CSS.TRACK,
-                'color': 'currentColor',
+                'color': yearColour(year - 2011),
             });
 
             // Create a popup for each walk
