@@ -68,11 +68,15 @@ function search(array, pred) {
 }
 
 // Missing monadic operation.
-Array.prototype.flatMap = function () {
-    return Array.prototype.concat.apply([],
-        Array.prototype.map.apply(this, arguments)
-    );
-};
+if ('function' !== typeof Array.prototype.flatMap) {
+    Object.defineProperty(Array.prototype, 'flatMap', {
+        'value': function () {
+            return Array.prototype.concat.apply([],
+                Array.prototype.map.apply(this, arguments)
+            );
+        },
+    });
+}
 
 /**
  * Invoke `func` with a start and end index into `array` for each range of

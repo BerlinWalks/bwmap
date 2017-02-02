@@ -32,14 +32,18 @@
 var UTIL = {};
 
 // Missing monadic operation
-Array.prototype.flatMap = function () {
-    'use strict';
+if ('function' !== typeof Array.prototype.flatMap) {
+    Object.defineProperty(Array.prototype, 'flatMap', {
+        'value': function () {
+            'use strict';
 
-    // return [].concat(f(this[0]), f(this[1]), ...)
-    return Array.prototype.concat.apply([],
-        Array.prototype.map.apply(this, arguments)
-    );
-};
+            // return [].concat(f(this[0]), f(this[1]), ...)
+            return Array.prototype.concat.apply([],
+                Array.prototype.map.apply(this, arguments)
+            );
+        },
+    });
+}
 
 /**
  * Return a Promise that resolves to the response object on success. If
