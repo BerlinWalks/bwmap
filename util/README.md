@@ -59,8 +59,8 @@ Sample output looks like this:
 pbftiles
 --------
 
-This tool creates multi-resolution [vector tiles](VT) in [protocol
-buffer](PBF) format. It expects a GeoJSON file on standard input.
+This tool creates multi-resolution [vector tiles][VT] in [protocol
+buffer][PBF] format. It expects a GeoJSON file on standard input.
 
 ```sh
 $ ./togj.js gpx/ | ./pbftiles.js
