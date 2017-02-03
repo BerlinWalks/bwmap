@@ -32,6 +32,13 @@
 var Summary = (function () {
     'use strict';
 
+    function zip() {
+        var args = Array.prototype.slice.call(arguments);
+        return Object.keys(args[0]).map(function (i) {
+            return args.map(function (a) { return a[i]; });
+        });
+    }
+
     /**
      * An immutable value type for summaries.
      */
@@ -62,7 +69,7 @@ var Summary = (function () {
     /**
      * The summary pane reacts to changes in the visible year layers.
      */
-    function summaryPane(features, onChange) {
+    function summaryPane(walks, onChange) {
         var self = {};
         var m_visibleYears = {};
         var m_summary = summary();
@@ -70,13 +77,15 @@ var Summary = (function () {
         function handleVisible(year, visible) {
             if (visible != m_visibleYears[year]) {
                 m_visibleYears[year] = visible;
-                m_summary = features.reduce(function (sum, layer) {
-                    if (m_visibleYears[layer.properties.date.substr(0, 4)]) {
-                        return sum.accumulate(layer.properties.distance);
-                    } else {
-                        return sum;
-                    }
-                }, summary());
+                m_summary = walks.flatMap(function (walk) {
+                        return zip(walk.dates, walk.distances);
+                    }).reduce(function (sum, dateDistance) {
+                        if (m_visibleYears[dateDistance[0].substr(0, 4)]) {
+                            return sum.accumulate(dateDistance[1]);
+                        } else {
+                            return sum;
+                        }
+                    }, summary());
                 if (onChange) {
                     onChange.call(self);
                 }

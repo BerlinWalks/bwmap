@@ -46,8 +46,8 @@
 </style>
 
 <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.vectorgrid@1.2.0/dist/Leaflet.VectorGrid.bundled.js"></script>
 <script src="js/util.js"></script>
-<script src="js/wide-line.js"></script>
 <script src="js/summary.js"></script>
 <script src="js/gpxmap.js"></script>
 
@@ -70,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
     GPXMAP.gpxmap('gpxmap', {
         'title': 'BerlinWalks',
         'tileLayers': TILE_LAYERS,
-        'walks': 'gpx/walks.json',
+        'index': 'gpx/index.json',
+        'url': 'gpx/{z}/{x}/{y}.pbf',
     });
 });
 </script>
