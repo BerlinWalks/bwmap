@@ -54,7 +54,7 @@ UTIL.load = function (url, type) {
 
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', url, true);
+    xhr.open('GET', url);
     xhr.responseType = type || 'json';
 
     return new Promise(function (resolve, reject) {
