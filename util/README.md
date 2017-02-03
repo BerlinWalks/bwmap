@@ -56,6 +56,16 @@ Sample output looks like this:
 ```
 
 
+pbftiles
+--------
+
+This tool creates multi-resolution [vector tiles](VT) in [protocol
+buffer](PBF) format. It expects a GeoJSON file on standard input.
+
+```sh
+$ ./togj.js gpx/ | ./pbftiles.js
+```
+
 
 mkdb (obsolete)
 ----
@@ -88,3 +98,7 @@ Its intended use is as argument generator for `mkdb`, like so:
 ```sh
 $ ./bwfeeds.sh | xargs ./mkdb.py
 ```
+
+
+[PBF]:  https://developers.google.com/protocol-buffers/
+[VT]:   https://github.com/mapbox/vector-tile-spec/
