@@ -37,13 +37,13 @@ const DAYS = 24 * HOURS;
 
 const assert = require('assert');
 const fs = require('fs');
-const tj = require('@mapbox/togeojson');
+const togeojson = require('@mapbox/togeojson');
 const DOMParser = require('xmldom').DOMParser;
 
 // Fake browser environment to load leaflet.
 global.document = {
     createElement() { return {}; },
-    'documentElement': { 'style': {} }
+    'documentElement': { 'style': {} },
 };
 global.navigator = { 'platform': '', 'userAgent': '' };
 global.window = { 'devicePixelRatio': 1 };
@@ -124,17 +124,17 @@ function distance(latLngs) {
  * file name is added to every feature's properties.
  */
 function gpxToJson(gpxFileName) {
-    const gpx = tj.gpx(new DOMParser().parseFromString(
+    const gpx = togeojson.gpx(new DOMParser().parseFromString(
         fs.readFileSync(gpxFileName, 'utf8')
     ));
     assert.equal(gpx.type, 'FeatureCollection');
-    gpx.features.forEach(function (feature) {
+    return gpx.features.map(function (feature) {
         assert.equal(feature.type, 'Feature');
-        feature.properties = feature.properties || {};
-        feature.properties.gpxFileName =
-            gpxFileName.substr(1 + gpxFileName.lastIndexOf('/'));
+        const properties = Object.assign({}, feature.properties, {
+            'gpxFileName': gpxFileName.substr(1 + gpxFileName.lastIndexOf('/')),
+        });
+        return { 'type': 'Feature', properties, 'geometry': feature.geometry };
     });
-    return gpx.features;
 }
 
 /**
@@ -179,7 +179,14 @@ function dateSplit(feature) {
         !feature.properties || !feature.properties.coordTimes ||
         feature.properties.coordTimes.length !== feature.geometry.coordinates.length)
     {
-        return [ feature ];
+        const properties = Object.assign({}, feature.properties, {
+            'date': (feature.properties.time || feature.properties.gpxFileName).substr(0, 10),
+        });
+        return [ {
+            'type': 'Feature',
+            properties,
+            'geometry': feature.geometry,
+        } ];
     }
 
     assert.equal(
@@ -197,12 +204,13 @@ function dateSplit(feature) {
             // Split up coordTimes and coordinates.
             properties.coordTimes = properties.coordTimes.slice(lo, hi);
             properties.time = properties.coordTimes[0];
+            properties.date = properties.time.substr(0, 10);
             const coordinates = feature.geometry.coordinates.slice(lo, hi);
             return {
                 'type': 'Feature',
                 properties,
                 'geometry': { 'type': 'LineString', coordinates },
-            }
+            };
         }
     );
 }
@@ -246,18 +254,10 @@ const walks = fs.readdirSync(GPXDIR).
     flatMap(multiSplit).
     filter(feature => 'LineString' === feature.geometry.type).
     flatMap(dateSplit).
-    map(function (feature) {
-        // Add a date to each feature.
-        feature.properties.date =
-            (feature.properties && feature.properties.time ||
-             feature.properties.gpxFileName).
-            substr(0, 10);
-        return feature;
-    }).
     sort(timeCompare);
 
 // Merge GeoJSON features for the same date by optionally creating MultiLines.
-const mergedWalks = {
+const geojson = {
     'type': 'FeatureCollection',
     'features': forEachUniqueRange(
         walks,
@@ -323,4 +323,4 @@ const mergedWalks = {
     }),
 };
 
-console.log(JSON.stringify(mergedWalks, null, ' '));
+process.stdout.write(JSON.stringify(geojson, null, ' '));
