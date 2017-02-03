@@ -30,7 +30,7 @@
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 import html
 import json
@@ -87,14 +87,12 @@ def process_atom_entry(entry):
                 'title': html.unescape(entry.find(ATOM_TITLE + "[@type='html']").text),
                 'link': entry.find(ATOM_LINK + "[@rel='alternate']").get('href'),
                 'categories': [ entry.find(ATOM_CATEGORY).get('term') ],
-                'dates': [
-                        datetime.strptime(
+                'time': datetime.strptime(
                                 entry.find(ATOM_PUBLISHED).text,
                                 '%Y-%m-%dT%H:%M:%SZ'
                         ).
                         replace(tzinfo = timezone.utc).
-                        astimezone()
-                ],
+                        astimezone(),
                 'walkers': len(ppl),
                 'people': ppl,
         }
@@ -106,10 +104,8 @@ def process_rss_item(item):
         ))
         walk = {
                 'categories': [ item.find('category').text ],
-                'dates': [
-                        parsedate_to_datetime(item.find('pubDate').text).
-                                astimezone()
-                ],
+                'time': parsedate_to_datetime(item.find('pubDate').text).
+                                astimezone(),
                 'walkers': len(ppl),
                 'people': ppl,
         }
@@ -121,7 +117,7 @@ def process_rss_item(item):
 
 def json_datetime(obj):
         '''Utility function for JSON date formatting.'''
-        if not isinstance(obj, datetime):
+        if not (isinstance(obj, date) or isinstance(obj, datetime)):
                 raise TypeError("Object of type '%s' is not JSON serializable" % type(obj))
         return obj.isoformat()
 

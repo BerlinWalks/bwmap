@@ -49,24 +49,6 @@ global.navigator = { 'platform': '', 'userAgent': '' };
 global.window = { 'devicePixelRatio': 1 };
 const L = require('leaflet');
 
-/**
- * If this looks familiar that's because it's binary search. We find
- * 0 <= i <= array.length such that !pred(i - 1) && pred(i) under the
- * assumption !pred(-1) && pred(length).
- */
-function search(array, pred) {
-    let le = -1, ri = array.length;
-    while (1 + le !== ri) {
-        let mi = le + ((ri - le) >> 1);
-        if (pred(array[mi])) {
-            ri = mi;
-        } else {
-            le = mi;
-        }
-    }
-    return ri;
-}
-
 // Missing monadic operation.
 if ('function' !== typeof Array.prototype.flatMap) {
     Object.defineProperty(Array.prototype, 'flatMap', {
@@ -87,7 +69,7 @@ function forEachUniqueRange(array, equal, func) {
     for (let lo = 0, hi; lo !== array.length; lo = hi) {
         for (hi = 1 + lo; hi !== array.length && equal(array[lo], array[hi]); ++hi)
             ;
-        res.push(func(lo, hi));
+        res.push(func(lo, hi, array));
     }
     return res;
 }
@@ -227,25 +209,81 @@ function timeCompare(lhs, rhs) {
     return time0 < time1 ? -1 : time1 < time0 ? 1 : 0;
 }
 
+/**
+ * Merge a range of lines into a MultiLine.
+ */
+function mergeLines(lo, hi, features) {
+    if (hi - lo <= 1) {
+        return features[lo];
+    }
+
+    const slice = features.slice(lo, hi);
+    assert(slice.every(feature => 'LineString' === feature.geometry.type));
+
+    // Merge coordTimes and coordinates into nested arrays.
+    const properties = { 'date': slice[0].properties.date };
+    if (slice[0].properties.coordTimes) {
+        properties.coordTimes = slice.map(function (walk, i) {
+            assert.equal(
+                walk.properties.coordTimes.length,
+                walk.geometry.coordinates.length
+            );
+            return walk.properties.coordTimes;
+        });
+        properties.time = properties.coordTimes[0][0];
+    }
+    const coordinates = slice.map(walk => walk.geometry.coordinates);
+
+    return {
+        'type': 'Feature',
+        properties,
+        'geometry': { 'type': 'MultiLineString', coordinates },
+    };
+}
+
+/**
+ * Compute bounding box and distance for Lines and MultiLines.
+ */
+function addBbox(feature) {
+    assert.equal(feature.type, 'Feature');
+    if (!feature.geometry.type.endsWith('LineString')) {
+        return feature;
+    }
+
+    // Calculate bounds.
+    const geometry = feature.geometry;
+    const depth = 'LineString' === geometry.type ? 0 : 1;
+    const latLngs = L.GeoJSON.coordsToLatLngs(geometry.coordinates, depth)
+    const bounds = L.polyline(latLngs).getBounds();
+
+    // Convert to GeoJSON bounding box.
+    const bbox = [ bounds.getSouthWest().lng, bounds.getSouthWest().lat,
+                   bounds.getNorthEast().lng, bounds.getNorthEast().lat ];
+    if (3 === (depth ? geometry.coordinates[0][0] : geometry.coordinates[0]).length) {
+        bbox.splice(2, 0, bounds.getSouthWest().alt);
+        bbox.splice(5, 0, bounds.getNorthEast().alt);
+    } else {
+        assert.equal((depth ? geometry.coordinates[0][0] : geometry.coordinates[0]).length, 2);
+    }
+
+    // Calculate distance while we have latLngs.
+    const properties = {
+        'date': feature.properties.date,
+        'distance':  Math.round(distance(latLngs)),
+    };
+
+    return { 'type': 'Feature', bbox, properties, geometry };
+}
+
 
 if (process.argv.length < 3) {
     process.stderr.write(`usage: ${process.argv[1]} directory
-        directory       Should contain an index.json file and any number of
-                        .gpx files.
+        directory       Should contain any number of .gpx files.
 `);
     process.exit(1);
 }
 
 const GPXDIR = process.argv[2];
-
-const index = JSON.parse(fs.readFileSync(`${GPXDIR}/index.json`));
-index.sort(function (lhs, rhs) {
-    assert.equal(lhs.dates.length, 1, "Index must have exactly one date");
-    assert.equal(rhs.dates.length, 1, "Index must have exactly one date");
-    return lhs.dates[0] < rhs.dates[0] ? -1
-         : rhs.dates[0] < lhs.dates[0] ? 1
-         : 0;
-});
 
 // An array of GeoJSON features, sorted by date.
 const walks = fs.readdirSync(GPXDIR).
@@ -262,65 +300,8 @@ const geojson = {
     'features': forEachUniqueRange(
         walks,
         (lhs, rhs) => lhs.properties.date === rhs.properties.date,
-        function (lo, hi) {
-            if (hi - lo <= 1) {
-                return walks[lo];
-            }
-
-            const slice = walks.slice(lo, hi);
-
-            // Merge coordTimes and coordinates into nested arrays.
-            const properties = { 'date': slice[0].properties.date };
-            if (slice[0].properties.coordTimes) {
-                properties.coordTimes = slice.map(function (walk, i) {
-                    assert.equal(
-                        walk.properties.coordTimes.length,
-                        walk.geometry.coordinates.length
-                    );
-                    return walk.properties.coordTimes;
-                });
-                properties.time = properties.coordTimes[0][0];
-            }
-            const coordinates = slice.map(walk => walk.geometry.coordinates);
-
-            return {
-                'type': 'Feature',
-                properties,
-                'geometry': { 'type': 'MultiLineString', coordinates },
-            };
-        }
-    ).map(function (walk) {
-        const properties = walk.properties;
-        const date = properties.date;
-
-        // Find the index entry corresponding to the date.
-        const idx = search(index,
-            entry => date < entry.dates[0].substr(0, 10)
-        ) - 1;
-        assert(0 <= idx, `No matching index for ${properties.gpxFileName}.`);
-
-        // Warn about unusually large discrepancy.
-        const dateDiff = Date.parse(date) -
-                         Date.parse(index[idx].dates[0].substr(0, 10));
-        if (3 * DAYS < dateDiff) {
-            throw new Error(['dateDiff', date, index[idx].dates[0]].join(': '));
-        }
-
-        // Transfer index properties to GeoJSON.
-        const depth = 'LineString' === walk.geometry.type ? 0 : 1;
-        walk.properties = {
-            //'coordTimes': properties.coordTimes,
-            date,
-            'distance': Math.round(distance(
-                    L.GeoJSON.coordsToLatLngs(walk.geometry.coordinates, depth)
-                )),
-        };
-        for (p of [ 'categories', 'link', 'people', 'title', 'walkers' ]) {
-            walk.properties[p] = index[idx][p];
-        }
-
-        return walk;
-    }),
+        mergeLines
+    ).map(addBbox),
 };
 
 process.stdout.write(JSON.stringify(geojson, null, ' '));
