@@ -34,6 +34,9 @@
 .gpxmap-vbox                    { flex-direction: column; }
 .gpxmap-view                    { flex-grow: 1; }
 
+/* A pleasant shade of blue. */
+a                               { color: #17f; }
+
 /* GPX tracks */
 .gpxmap-track {
     transition: color .2s, stroke-width .2s;
@@ -49,6 +52,10 @@
     padding: 1ex;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
     z-index: 1000; /* ugly, Leaflet layers seem to reach up to 400. */
+}
+
+.gpxmap-details a {
+    text-decoration: none;
 }
 
 .gpxmap-details > * {
