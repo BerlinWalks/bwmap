@@ -134,6 +134,7 @@ function gpxmap(id, options) {
     // This layer shows walking tracks.
     var walkLayer = L.vectorGrid.protobuf(
         options.url, {
+            'pane': 'overlayPane',
             'getFeatureId': function (walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': trackStyle(false) },
         }
@@ -142,6 +143,7 @@ function gpxmap(id, options) {
     // This layer has invisible mouse-responsive tracks.
     var mouseLayer = L.vectorGrid.protobuf(
         options.url, {
+            'pane': 'overlayPane',
             'getFeatureId': function (walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': function (props) {
                 return hiddenYear[props.date.substr(0, 4)] ? [] : {
