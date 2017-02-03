@@ -41,12 +41,54 @@ var CSS = {
     'VIEW': 'gpxmap-view',
 };
 
+/**
+ * If this looks familiar that's because it's binary search. We find
+ * 0 <= i <= array.length such that !pred(i - 1) && pred(i) under the
+ * assumption !pred(-1) && pred(length).
+ */
+function search(array, pred) {
+    let le = -1, ri = array.length;
+    while (1 + le !== ri) {
+        let mi = le + ((ri - le) >> 1);
+        if (pred(array[mi])) {
+            ri = mi;
+        } else {
+            le = mi;
+        }
+    }
+    return ri;
+}
+
 function yearColour(idx) {
     return ['hsl(',
         170 + 45 * (idx >> 1), ',',
         100, '%,',
         27 * (1 + idx % 2), '%)'
     ].join('');
+}
+
+function walkPopup(date, walk) {
+    var popup = document.createElement('div');
+    var anchor = document.createElement('a');
+    var idx = search(walk.dates, d => date <= d);
+
+    if (walk.dates[idx] !== date) {
+        console.log('walkPopup', date, walk);
+        return;
+    }
+
+    popup.textContent =
+            [ +date.substr(8, 2)
+            , +date.substr(5, 2)
+            , +date.substr(0, 4)
+            ].join('/') + ' ';
+    anchor.setAttribute('href', walk.link);
+    anchor.textContent = walk.title;
+    popup.appendChild(anchor);
+    popup.appendChild(document.createTextNode(
+        ' '+ +(walk.distances[idx] / 1000).toFixed(1) +'km'
+    ));
+    return popup;
 }
 
 function gpxmap(id, options) {
@@ -76,51 +118,64 @@ function gpxmap(id, options) {
 
     var domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
 
-    UTIL.load(options.walks).then(function (walks) {
-        var yearGpx = {}, year, lg;
-
-        // Group GPX layers by year.
-        walks.features.forEach(function (layer) {
-            var year = layer.properties.date.substr(0, 4);
-
-            if ('LineString' === layer.geometry.type) {
-                layer.lines = L.GeoJSON.coordsToLatLngs(layer.geometry.coordinates);
-            } else if ('MultiLineString' === layer.geometry.type) {
-                layer.lines = L.GeoJSON.coordsToLatLngs(layer.geometry.coordinates, 1);
-            } else {
-                throw new Error('unknown geometry type '+ layer.geometry.type);
-            }
-
-            var line = wideline(layer.lines, {
+    var hiddenYear = {};
+    function trackStyle(hover) {
+        return function (props) {
+            var year = props.date.substr(0, 4);
+            return hiddenYear[year] ? [] : {
                 'className': CSS.TRACK,
                 'color': yearColour(year - 2011),
-            });
+                'opacity': hover ? 1 : .8,
+                'weight': hover ? 4 : 2,
+            };
+        };
+    }
 
-            // Create a popup for each walk
-            var popup = document.createElement('div');
-            var anchor = document.createElement('a');
+    // This layer shows walking tracks.
+    var walkLayer = L.vectorGrid.protobuf(
+        options.url, {
+            'getFeatureId': function (walk) { return walk.properties.date; },
+            'vectorTileLayerStyles': { '': trackStyle(false) },
+        }
+    ).addTo(gpxmap);
 
-            popup.textContent =
-                    [ +layer.properties.date.substr(8, 2)
-                    , +layer.properties.date.substr(5, 2)
-                    , +layer.properties.date.substr(0, 4)
-                    ].join('/') + ' ';
-            anchor.setAttribute('href', layer.properties.link);
-            anchor.textContent = layer.properties.title;
-            popup.appendChild(anchor);
-            popup.appendChild(document.createTextNode(
-                ' ' + (Math.round(layer.properties.distance / 100) / 10) + 'km'
-            ));
-            line.bindPopup(popup);
+    // This layer has invisible mouse-responsive tracks.
+    var mouseLayer = L.vectorGrid.protobuf(
+        options.url, {
+            'getFeatureId': function (walk) { return walk.properties.date; },
+            'vectorTileLayerStyles': { '': function (props) {
+                return hiddenYear[props.date.substr(0, 4)] ? [] : {
+                    'opacity': 0,
+                    'weight': 20,
+                };
+            } },
+            'interactive': true,
+        }
+    ).on('mouseover', function (evt) {
+        walkLayer.setFeatureStyle(evt.layer.properties.date, trackStyle(true));
+    }).on('mouseout', function (evt) {
+        walkLayer.resetFeatureStyle(evt.layer.properties.date);
+    }).addTo(gpxmap);
 
-            if (!yearGpx[year]) {
-                yearGpx[year] = [];
+    UTIL.load(options.index).then(function (walks) {
+        // Collect all years.
+        var years = {};
+        walks.flatMap(function (walk) { return walk.dates; }).
+            forEach(function (date) { years[date.substr(0, 4)] = true; });
+
+        // Build popup from matching index entry.
+        mouseLayer.on('click', function (evt) {
+            var date = evt.layer.properties.date;
+            var idx = search(walks, walk => date < walk.dates[0]) - 1;
+            var popup = walkPopup(date, walks[idx]);
+            this.closePopup().unbindPopup();
+            if (popup) {
+                this.bindPopup(popup).openPopup(evt.latlng);
             }
-            yearGpx[year].push(line);
         });
 
         // Set up a summary pane that reacts when years are toggled.
-        var sumPane = Summary.summaryPane(walks.features, function () {
+        var sumPane = Summary.summaryPane(walks, function () {
             var h3 = L.DomUtil.create('h3');
 
             h3.textContent = options.title;
@@ -130,16 +185,33 @@ function gpxmap(id, options) {
         });
 
         // Create one layer group per year and add to the map.
-        for (year in yearGpx) if (yearGpx.hasOwnProperty(year)) {
-            lg = L.layerGroup(yearGpx[year]);
+        Object.keys(years).forEach(function (year) {
+            var lg = L.layerGroup().on('add', function () {
+                if (hiddenYear[year]) {
+                    hiddenYear[year] = false;
+                    walkLayer.redraw();
+                    mouseLayer.redraw();
+                }
+            }).on('remove', function () {
+                if (!hiddenYear[year]) {
+                    hiddenYear[year] = true;
+                    walkLayer.redraw();
+                    mouseLayer.redraw();
+                }
+            });
             gpxmap.addLayer(lg);
             layersControl.addOverlay(lg, year);
             sumPane.addLayer(lg, year);
-        }
+        });
 
         // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(walks.features.flatMap(function (layer) {
-            return layer.lines;
+        var bounds = L.latLngBounds(walks.flatMap(function (walk) {
+            return walk.bboxes;
+        }).flatMap(function (bbox) {
+            var l = bbox.length >> 1;
+            return L.GeoJSON.coordsToLatLngs([
+                [ bbox[0], bbox[1] ], [ bbox[l], bbox[1 + l] ]
+            ]);
         }));
         gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
     });
