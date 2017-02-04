@@ -149,6 +149,7 @@ function gpxmap(id, options) {
     var walkLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
+            'maxNativeZoom': 13,
             'getFeatureId': function (walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': trackStyle(false) },
         }
@@ -159,6 +160,7 @@ function gpxmap(id, options) {
     var mouseLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
+            'maxNativeZoom': 13,
             'getFeatureId': function (walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': function (props) {
                 return hiddenYear[props.date.substr(0, 4)] ? [] : {
