@@ -47,9 +47,9 @@ var CSS = {
  * assumption !pred(-1) && pred(length).
  */
 function search(array, pred) {
-    let le = -1, ri = array.length;
+    var le = -1, ri = array.length;
     while (1 + le !== ri) {
-        let mi = le + ((ri - le) >> 1);
+        var mi = le + ((ri - le) >> 1);
         if (pred(array[mi])) {
             ri = mi;
         } else {
@@ -70,7 +70,7 @@ function yearColour(idx) {
 function walkPopup(date, walk) {
     var popup = document.createDocumentFragment();
     var anchor = document.createElement('a');
-    var idx = search(walk.dates, d => date <= d);
+    var idx = search(walk.dates, function (d) { return date <= d; });
 
     if (walk.dates[idx] !== date) {
         console.log('walkPopup', date, walk);
@@ -190,7 +190,9 @@ function gpxmap(id, options) {
         // Build popup from matching index entry.
         mouseLayer.on('click', function (evt) {
             var date = evt.layer.properties.date;
-            var idx = search(walks, walk => date < walk.dates[0]) - 1;
+            var idx = search(walks, function (walk) {
+                return date < walk.dates[0];
+            }) - 1;
             var popup = walkPopup(date, walks[idx]);
 
             L.DomEvent.stopPropagation(evt);
