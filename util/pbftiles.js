@@ -32,9 +32,10 @@
 
 const fs = require('fs');
 const geojsonVt = require('geojson-vt');
+const rw = require('rw');
 const vtpbf = require('vt-pbf');
 
-const gj = JSON.parse(fs.readFileSync(process.stdin.fd, 'utf8'));
+const gj = JSON.parse(rw.readFileSync('/dev/stdin', 'utf8'));
 const tileindex = geojsonVt(gj, { 'indexMaxZoom': 13, 'indexMaxPoints': 0 });
 
 for (let { z, x, y } of tileindex.tileCoords) {
