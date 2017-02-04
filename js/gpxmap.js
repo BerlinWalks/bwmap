@@ -29,10 +29,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var GPXMAP = (function () {
-'use strict';
+import { summaryPane } from './summary.js';
+import { load } from './util.js';
 
-var CSS = {
+export var CSS = {
     'DETAILS': 'gpxmap-details',
     'HBOX': 'gpxmap-hbox',
     'SELECT': 'gpxmap-select',
@@ -105,7 +105,7 @@ function walkPopup(date, walk) {
     return popup;
 }
 
-function gpxmap(id, options) {
+export function gpxmap(id, options) {
     // Create all configured tile layers.
     var tileLayers = options.tileLayers.map(function (layer) {
         return {
@@ -181,7 +181,7 @@ function gpxmap(id, options) {
         }
     }).addTo(gpxmap);
 
-    UTIL.load(options.index).then(function (walks) {
+    load(options.index).then(function (walks) {
         // Collect all years.
         var years = {};
         walks.flatMap(function (walk) { return walk.dates; }).
@@ -219,7 +219,7 @@ function gpxmap(id, options) {
             domDetails.appendChild(h3);
             domDetails.appendChild(this.render());
         }
-        var sumPane = Summary.summaryPane(walks, renderSummary);
+        var sumPane = summaryPane(walks, renderSummary);
         gpxmap.on('click', function () {
             if (selected) {
                 walkLayer.resetFeatureStyle(selected);
@@ -264,10 +264,3 @@ function gpxmap(id, options) {
 
     return gpxmap;
 }
-
-// Export public symbols
-return {
-    'CSS': CSS,
-    'gpxmap': gpxmap,
-};
-}());

@@ -29,9 +29,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var Summary = (function () {
-    'use strict';
-
     function zip() {
         var args = Array.prototype.slice.call(arguments);
         return Object.keys(args[0]).map(function (i) {
@@ -69,7 +66,7 @@ var Summary = (function () {
     /**
      * The summary pane reacts to changes in the visible year layers.
      */
-    function summaryPane(walks, onChange) {
+    export function summaryPane(walks, onChange) {
         var self = {};
         var m_visibleYears = {};
         var m_summary = summary();
@@ -106,17 +103,12 @@ var Summary = (function () {
         self.render = function () {
             var frag = document.createDocumentFragment(), div;
             if (m_summary.walks()) {
-                div = L.DomUtil.create('div', null, frag);
+                div = document.createElement('div');
                 div.textContent = ''+ m_summary;
+                frag.appendChild(div);
             }
             return frag;
         };
 
         return self;
     }
-
-    // Export public symbols
-    return {
-        'summaryPane': summaryPane,
-    };
-}());

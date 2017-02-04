@@ -29,8 +29,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-var UTIL = {};
-
 // Missing monadic operation
 if ('function' !== typeof Array.prototype.flatMap) {
     Object.defineProperty(Array.prototype, 'flatMap', {
@@ -49,7 +47,7 @@ if ('function' !== typeof Array.prototype.flatMap) {
  * Return a Promise that resolves to the response object on success. If
  * `type` is unspecified, JSON is assumed.
  */
-UTIL.load = function (url, type) {
+export function load(url, type) {
     'use strict';
 
     var xhr = new XMLHttpRequest();
@@ -67,4 +65,4 @@ UTIL.load = function (url, type) {
         };
         xhr.send();
     });
-};
+}
