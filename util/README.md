@@ -29,6 +29,13 @@ a list of names.
 $ ./togj.js gpx/ | ./wpidx.py 'https://public-api.wordpress.com/wp/v2/sites/berlinwalks.wordpress.com/'
 ```
 
+Or alternatively:
+
+```sh
+$ npm run build:index -- 'https://public-api.wordpress.com/wp/v2/sites/berlinwalks.wordpress.com/'
+```
+
+
 Sample output looks like this:
 
 ```json
@@ -64,6 +71,12 @@ buffer][PBF] format. It expects a GeoJSON file on standard input.
 
 ```sh
 $ ./togj.js gpx/ | ./pbftiles.js
+```
+
+Or alternatively:
+
+```sh
+$ npm run build:tiles
 ```
 
 

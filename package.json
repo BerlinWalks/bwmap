@@ -1,0 +1,38 @@
+{
+  "name": "bwmap",
+  "version": "0.1.0",
+  "description": "BerlinWalks interactive map",
+  "keywords": [
+    "berlin",
+    "hiking",
+    "leaflet",
+    "map",
+    "walking"
+  ],
+  "homepage": "https://github.com/berlinwalks/bwmap#readme",
+  "bugs": {
+    "url": "https://github.com/berlinwalks/bwmap/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Joachim Kuebart <joachim.kuebart@gmail.com>",
+  "files": [],
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berlinwalks/bwmap.git"
+  },
+  "scripts": {
+    "build:index": "util/togj.js gpx/ | util/wpidx.py > index.json",
+    "build:tiles": "util/togj.js gpx/ | util/pbftiles.js",
+    "clean:tiles": "rm -fr [0-9] 1[0-9]",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@mapbox/togeojson": "^0.16.0",
+    "geojson-vt": "^2.4.0",
+    "leaflet": "^1.0.3",
+    "rw": "^1.3.3",
+    "vt-pbf": "^2.1.2"
+  },
+  "private": true
+}
