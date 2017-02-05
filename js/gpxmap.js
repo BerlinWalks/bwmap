@@ -29,6 +29,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+import {} from './VectorGrid';
 import { summaryPane } from './summary.js';
 import { load } from './util.js';
 
