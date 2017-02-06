@@ -31,9 +31,7 @@
 
     function zip() {
         const args = Array.prototype.slice.call(arguments);
-        return Object.keys(args[0]).map(function (i) {
-            return args.map(function (a) { return a[i]; });
-        });
+        return Object.keys(args[0]).map(i => args.map(a => a[i]));
     }
 
     /**
@@ -46,8 +44,8 @@
         function summaryImp(m_walks, m_distance) {
             const self = {};
 
-            self.walks = function () { return m_walks; };
-            self.distance = function () { return m_distance; };
+            self.walks = () => m_walks;
+            self.distance = () => m_distance;
 
             self.toString = function () {
                 return [
@@ -74,9 +72,9 @@
         function handleVisible(year, visible) {
             if (visible != m_visibleYears[year]) {
                 m_visibleYears[year] = visible;
-                m_summary = walks.flatMap(function (walk) {
-                        return zip(walk.dates, walk.distances);
-                    }).reduce(function (sum, dateDistance) {
+                m_summary = walks.flatMap(
+                        walk => zip(walk.dates, walk.distances)
+                    ).reduce(function (sum, dateDistance) {
                         if (m_visibleYears[dateDistance[0].substr(0, 4)]) {
                             return sum.accumulate(dateDistance[1]);
                         } else {

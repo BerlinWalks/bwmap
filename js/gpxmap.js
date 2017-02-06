@@ -71,7 +71,7 @@ function yearColour(idx) {
 }
 
 function walkPopup(date, walk) {
-    const idx = search(walk.dates, function (d) { return date <= d; });
+    const idx = search(walk.dates, d => date <= d);
 
     if (walk.dates[idx] !== date) {
         console.log('walkPopup', date, walk);
@@ -153,7 +153,7 @@ export function gpxmap(id, options) {
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
-            'getFeatureId': function (walk) { return walk.properties.date; },
+            getFeatureId(walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': trackStyle(false) },
         }
     ).addTo(gpxmap);
@@ -164,7 +164,7 @@ export function gpxmap(id, options) {
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
-            'getFeatureId': function (walk) { return walk.properties.date; },
+            getFeatureId(walk) { return walk.properties.date; },
             'vectorTileLayerStyles': { '': function (props) {
                 return hiddenYear[props.date.substr(0, 4)] ? [] : {
                     'opacity': 0,
@@ -187,8 +187,8 @@ export function gpxmap(id, options) {
     require([ 'dA/json!'+ options.index ], function (walks) {
         // Collect all years.
         const years = {};
-        walks.flatMap(function (walk) { return walk.dates; }).
-            forEach(function (date) { years[date.substr(0, 4)] = true; });
+        walks.flatMap(walk => walk.dates).
+            forEach(date => years[date.substr(0, 4)] = true);
 
         // Build popup from matching index entry.
         mouseLayer.on('click', function (evt) {
@@ -202,9 +202,7 @@ export function gpxmap(id, options) {
                 walkLayer.resetFeatureStyle(selected);
             }
 
-            const idx = search(walks, function (walk) {
-                return date < walk.dates[0];
-            }) - 1;
+            const idx = search(walks, walk => date < walk.dates[0]) - 1;
             const popup = walkPopup(date, walks[idx]);
             if (popup) {
                 L.DomUtil.empty(domDetails);
@@ -255,14 +253,14 @@ export function gpxmap(id, options) {
         });
 
         // Adjust the map's viewport when all GPX tracks are loaded
-        const bounds = L.latLngBounds(walks.flatMap(function (walk) {
-            return walk.bboxes;
-        }).flatMap(function (bbox) {
-            const l = bbox.length >> 1;
-            return L.GeoJSON.coordsToLatLngs([
-                [ bbox[0], bbox[1] ], [ bbox[l], bbox[1 + l] ]
-            ]);
-        }));
+        const bounds = L.latLngBounds(walks.flatMap(walk => walk.bboxes).
+            flatMap(function (bbox) {
+                const l = bbox.length >> 1;
+                return L.GeoJSON.coordsToLatLngs([
+                    [ bbox[0], bbox[1] ], [ bbox[l], bbox[1 + l] ]
+                ]);
+            })
+        );
         gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
     });
 
