@@ -90,7 +90,7 @@ function walkPopup(date, walk) {
             , +date.substr(0, 4)
             ].join('/'),
             +(walk.distances[idx] / 1000).toFixed(1) +'km',
-            walk.walkers +' walkers',
+            `${walk.walkers} walkers`,
             walk.categories.join(' — '),
             '',
         ].join(' — ');
@@ -184,7 +184,7 @@ export function gpxmap(id, options) {
         }
     }).addTo(gpxmap);
 
-    require([ 'dA/json!'+ options.index ], function (walks) {
+    require([ `dA/json!${options.index}` ], function (walks) {
         // Collect all years.
         const years = {};
         walks.flatMap(walk => walk.dates).

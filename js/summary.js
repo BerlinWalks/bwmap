@@ -49,7 +49,7 @@
 
             self.toString = function () {
                 return [
-                    m_walks +' walks', (Math.round(m_distance / 100) / 10) +'km',
+                    `${m_walks} walks`, +(m_distance / 1000).toFixed(1) +'km',
                 ].join(' — ');
             };
 
