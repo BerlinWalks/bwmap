@@ -45,8 +45,7 @@
     html, body                          { height: 100%; }
 </style>
 
-<script src="//unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-<script src="dist/gpxmap.js"></script>
+<script src="//unpkg.com/diet-amd@0.6.2/dist/define.js"></script>
 
 <script>
 var TILE_LAYERS = [];
@@ -63,7 +62,13 @@ TILE_LAYERS.push({
     },
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+define.config({
+    'paths': {
+        'dA': '//unpkg.com/diet-amd@0.6.2/dist',
+        'leaflet': '//unpkg.com/leaflet@1.0.2/dist/leaflet',
+    },
+})
+([ 'dist/gpxmap', 'dA/domReady!' ], function (GPXMAP) {
     GPXMAP.gpxmap('gpxmap', {
         'title': 'BerlinWalks',
         'tileLayers': TILE_LAYERS,
