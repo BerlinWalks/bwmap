@@ -35,7 +35,7 @@ import require from 'require';
 import { summaryPane } from './summary.js';
 import {} from './util.js';
 
-export var CSS = {
+export const CSS = {
     'DETAILS': 'gpxmap-details',
     'HBOX': 'gpxmap-hbox',
     'SELECT': 'gpxmap-select',
@@ -50,9 +50,9 @@ export var CSS = {
  * assumption !pred(-1) && pred(length).
  */
 function search(array, pred) {
-    var le = -1, ri = array.length;
+    let le = -1, ri = array.length;
     while (1 + le !== ri) {
-        var mi = le + ((ri - le) >> 1);
+        const mi = le + ((ri - le) >> 1);
         if (pred(array[mi])) {
             ri = mi;
         } else {
@@ -71,16 +71,15 @@ function yearColour(idx) {
 }
 
 function walkPopup(date, walk) {
-    var popup = document.createDocumentFragment();
-    var anchor = document.createElement('a');
-    var idx = search(walk.dates, function (d) { return date <= d; });
+    const idx = search(walk.dates, function (d) { return date <= d; });
 
     if (walk.dates[idx] !== date) {
         console.log('walkPopup', date, walk);
         return;
     }
 
-    var elem0 = document.createElement('h3');
+    const popup = document.createDocumentFragment();
+    let elem0 = document.createElement('h3');
     elem0.textContent = walk.title;
     popup.appendChild(elem0);
 
@@ -96,6 +95,7 @@ function walkPopup(date, walk) {
             '',
         ].join(' — ');
 
+    const anchor = document.createElement('a');
     anchor.setAttribute('href', walk.link);
     anchor.textContent = 'blog';
     elem0.appendChild(anchor);
@@ -110,7 +110,7 @@ function walkPopup(date, walk) {
 
 export function gpxmap(id, options) {
     // Create all configured tile layers.
-    var tileLayers = options.tileLayers.map(function (layer) {
+    const tileLayers = options.tileLayers.map(function (layer) {
         return {
             'name': layer.name,
             'tileLayer': L.tileLayer(layer.url, layer.options),
@@ -118,27 +118,27 @@ export function gpxmap(id, options) {
     });
 
     // Create layers control.
-    var layersControl = L.control.layers(null, null, { 'hideSingleBase':true });
+    const layersControl = L.control.layers(null, null, { 'hideSingleBase':true });
     tileLayers.forEach(function (layer) {
         layersControl.addBaseLayer(layer.tileLayer, layer.name);
     });
 
     // Create the DOM structure for our map.
-    var domContainer = L.DomUtil.get(id);
+    const domContainer = L.DomUtil.get(id);
     L.DomUtil.addClass(domContainer, CSS.VBOX);
 
     // Create map with an initial tile layer and layers control.
-    var gpxmap = L.map(L.DomUtil.create('div', CSS.VIEW, domContainer)).
+    const gpxmap = L.map(L.DomUtil.create('div', CSS.VIEW, domContainer)).
         addControl(L.control.scale()).
         addControl(layersControl).
         addLayer(tileLayers[0].tileLayer);
 
-    var domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
+    const domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
 
-    var hiddenYear = {};
+    const hiddenYear = {};
     function trackStyle(hover, selected) {
         return function (props) {
-            var year = props.date.substr(0, 4);
+            const year = props.date.substr(0, 4);
             return hiddenYear[year] ? [] : {
                 'className': CSS.TRACK,
                 'color': yearColour(year - 2011),
@@ -149,7 +149,7 @@ export function gpxmap(id, options) {
     }
 
     // This layer shows walking tracks.
-    var walkLayer = L.vectorGrid.protobuf(
+    const walkLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
@@ -159,8 +159,8 @@ export function gpxmap(id, options) {
     ).addTo(gpxmap);
 
     // This layer has invisible mouse-responsive tracks.
-    var selected;
-    var mouseLayer = L.vectorGrid.protobuf(
+    let selected;
+    const mouseLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
@@ -176,7 +176,7 @@ export function gpxmap(id, options) {
     ).on('mouseover', function (evt) {
         walkLayer.setFeatureStyle(evt.layer.properties.date, trackStyle(true));
     }).on('mouseout', function (evt) {
-        var date = evt.layer.properties.date;
+        const date = evt.layer.properties.date;
         if (date === selected) {
             walkLayer.setFeatureStyle(date, trackStyle(false, true));
         } else {
@@ -186,17 +186,13 @@ export function gpxmap(id, options) {
 
     require([ 'dA/json!'+ options.index ], function (walks) {
         // Collect all years.
-        var years = {};
+        const years = {};
         walks.flatMap(function (walk) { return walk.dates; }).
             forEach(function (date) { years[date.substr(0, 4)] = true; });
 
         // Build popup from matching index entry.
         mouseLayer.on('click', function (evt) {
-            var date = evt.layer.properties.date;
-            var idx = search(walks, function (walk) {
-                return date < walk.dates[0];
-            }) - 1;
-            var popup = walkPopup(date, walks[idx]);
+            const date = evt.layer.properties.date;
 
             L.DomEvent.stopPropagation(evt);
             if (date === selected) {
@@ -205,6 +201,11 @@ export function gpxmap(id, options) {
             if (selected) {
                 walkLayer.resetFeatureStyle(selected);
             }
+
+            const idx = search(walks, function (walk) {
+                return date < walk.dates[0];
+            }) - 1;
+            const popup = walkPopup(date, walks[idx]);
             if (popup) {
                 L.DomUtil.empty(domDetails);
                 domDetails.appendChild(walkPopup(date, walks[idx]));
@@ -215,14 +216,14 @@ export function gpxmap(id, options) {
 
         // Set up a summary pane that reacts when years are toggled.
         function renderSummary() {
-            var h3 = L.DomUtil.create('h3');
+            const h3 = L.DomUtil.create('h3');
 
             h3.textContent = options.title;
             L.DomUtil.empty(domDetails);
             domDetails.appendChild(h3);
             domDetails.appendChild(this.render());
         }
-        var sumPane = summaryPane(walks, renderSummary);
+        const sumPane = summaryPane(walks, renderSummary);
         gpxmap.on('click', function () {
             if (selected) {
                 walkLayer.resetFeatureStyle(selected);
@@ -233,7 +234,7 @@ export function gpxmap(id, options) {
 
         // Create one layer group per year and add to the map.
         Object.keys(years).forEach(function (year) {
-            var lg = L.layerGroup().on('add', function () {
+            const lg = L.layerGroup().on('add', function () {
                 if (hiddenYear[year]) {
                     selected = void 0;
                     hiddenYear[year] = false;
@@ -254,10 +255,10 @@ export function gpxmap(id, options) {
         });
 
         // Adjust the map's viewport when all GPX tracks are loaded
-        var bounds = L.latLngBounds(walks.flatMap(function (walk) {
+        const bounds = L.latLngBounds(walks.flatMap(function (walk) {
             return walk.bboxes;
         }).flatMap(function (bbox) {
-            var l = bbox.length >> 1;
+            const l = bbox.length >> 1;
             return L.GeoJSON.coordsToLatLngs([
                 [ bbox[0], bbox[1] ], [ bbox[l], bbox[1 + l] ]
             ]);

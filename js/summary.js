@@ -30,7 +30,7 @@
  */
 
     function zip() {
-        var args = Array.prototype.slice.call(arguments);
+        const args = Array.prototype.slice.call(arguments);
         return Object.keys(args[0]).map(function (i) {
             return args.map(function (a) { return a[i]; });
         });
@@ -44,7 +44,7 @@
 
         // Private implementation
         function summaryImp(m_walks, m_distance) {
-            var self = {};
+            const self = {};
 
             self.walks = function () { return m_walks; };
             self.distance = function () { return m_distance; };
@@ -67,9 +67,9 @@
      * The summary pane reacts to changes in the visible year layers.
      */
     export function summaryPane(walks, onChange) {
-        var self = {};
-        var m_visibleYears = {};
-        var m_summary = summary();
+        const self = {};
+        const m_visibleYears = {};
+        let m_summary = summary();
 
         function handleVisible(year, visible) {
             if (visible != m_visibleYears[year]) {
@@ -101,9 +101,9 @@
         };
 
         self.render = function () {
-            var frag = document.createDocumentFragment(), div;
+            const frag = document.createDocumentFragment();
             if (m_summary.walks()) {
-                div = document.createElement('div');
+                const div = document.createElement('div');
                 div.textContent = ''+ m_summary;
                 frag.appendChild(div);
             }
