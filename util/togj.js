@@ -30,11 +30,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-const SECONDS = 1000;
-const MINUTES = 60 * SECONDS;
-const HOURS = 60 * MINUTES;
-const DAYS = 24 * HOURS;
-
 const assert = require('assert');
 const fs = require('fs');
 const togeojson = require('@mapbox/togeojson');
@@ -223,7 +218,7 @@ function mergeLines(lo, hi, features) {
     // Merge coordTimes and coordinates into nested arrays.
     const properties = { 'date': slice[0].properties.date };
     if (slice[0].properties.coordTimes) {
-        properties.coordTimes = slice.map(function (walk, i) {
+        properties.coordTimes = slice.map(function (walk) {
             assert.equal(
                 walk.properties.coordTimes.length,
                 walk.geometry.coordinates.length
@@ -253,7 +248,7 @@ function addBbox(feature) {
     // Calculate bounds.
     const geometry = feature.geometry;
     const depth = 'LineString' === geometry.type ? 0 : 1;
-    const latLngs = L.GeoJSON.coordsToLatLngs(geometry.coordinates, depth)
+    const latLngs = L.GeoJSON.coordsToLatLngs(geometry.coordinates, depth);
     const bounds = L.polyline(latLngs).getBounds();
 
     // Convert to GeoJSON bounding box.
