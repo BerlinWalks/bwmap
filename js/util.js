@@ -42,27 +42,3 @@ if ('function' !== typeof Array.prototype.flatMap) {
         },
     });
 }
-
-/**
- * Return a Promise that resolves to the response object on success. If
- * `type` is unspecified, JSON is assumed.
- */
-export function load(url, type) {
-    'use strict';
-
-    var xhr = new XMLHttpRequest();
-
-    xhr.open('GET', url);
-    xhr.responseType = type || 'json';
-
-    return new Promise(function (resolve, reject) {
-        xhr.onload = function () {
-            if (200 === this.status) {
-                resolve(this.response);
-            } else {
-                reject(new Error([url, this.status, this.statusText].join(': ')));
-            }
-        };
-        xhr.send();
-    });
-}

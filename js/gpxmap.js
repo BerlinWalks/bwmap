@@ -29,9 +29,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+import L from 'leaflet';
 import {} from './VectorGrid';
+import require from 'require';
 import { summaryPane } from './summary.js';
-import { load } from './util.js';
+import {} from './util.js';
 
 export var CSS = {
     'DETAILS': 'gpxmap-details',
@@ -182,7 +184,7 @@ export function gpxmap(id, options) {
         }
     }).addTo(gpxmap);
 
-    load(options.index).then(function (walks) {
+    require([ 'dA/json!'+ options.index ], function (walks) {
         // Collect all years.
         var years = {};
         walks.flatMap(function (walk) { return walk.dates; }).

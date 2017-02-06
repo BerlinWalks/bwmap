@@ -3,9 +3,12 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
         entry:                  'js/gpxmap.js',
-        format:                 'iife',
-        moduleName:             'GPXMAP',
+        format:                 'amd',
         dest:                   'dist/gpxmap.js',
+        external: [
+                                'leaflet',
+                                'require',
+        ],
         plugins: [
                                 commonJs(),
                                 nodeResolve(),
