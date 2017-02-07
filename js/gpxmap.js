@@ -108,6 +108,10 @@ function walkPopup(date, walk) {
     return popup;
 }
 
+function getFeatureId(walk) {
+    return walk.properties.date;
+}
+
 export function gpxmap(id, options) {
     // Create all configured tile layers.
     const tileLayers = options.tileLayers.map(function (layer) {
@@ -134,6 +138,14 @@ export function gpxmap(id, options) {
         addLayer(tileLayers[0].tileLayer);
 
     const domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
+    function renderSummary() {
+        const h3 = L.DomUtil.create('h3');
+
+        h3.textContent = options.title;
+        L.DomUtil.empty(domDetails);
+        domDetails.appendChild(h3);
+        domDetails.appendChild(this.render());
+    }
 
     const hiddenYear = {};
     function trackStyle(hover, selected) {
@@ -153,7 +165,7 @@ export function gpxmap(id, options) {
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
-            getFeatureId(walk) { return walk.properties.date; },
+            getFeatureId,
             'vectorTileLayerStyles': { '': trackStyle(false) },
         }
     ).addTo(gpxmap);
@@ -164,7 +176,7 @@ export function gpxmap(id, options) {
         options.url, {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
-            getFeatureId(walk) { return walk.properties.date; },
+            getFeatureId,
             'vectorTileLayerStyles': { '': function (props) {
                 return hiddenYear[props.date.substr(0, 4)] ? [] : {
                     'opacity': 0,
@@ -174,9 +186,10 @@ export function gpxmap(id, options) {
             'interactive': true,
         }
     ).on('mouseover', function (evt) {
-        walkLayer.setFeatureStyle(evt.layer.properties.date, trackStyle(true));
+        const date = getFeatureId(evt.layer);
+        walkLayer.setFeatureStyle(date, trackStyle(true));
     }).on('mouseout', function (evt) {
-        const date = evt.layer.properties.date;
+        const date = getFeatureId(evt.layer);
         if (date === selected) {
             walkLayer.setFeatureStyle(date, trackStyle(false, true));
         } else {
@@ -192,56 +205,45 @@ export function gpxmap(id, options) {
 
         // Build popup from matching index entry.
         mouseLayer.on('click', function (evt) {
-            const date = evt.layer.properties.date;
+            const date = getFeatureId(evt.layer);
 
             L.DomEvent.stopPropagation(evt);
             if (date === selected) {
                 return;
             }
-            if (selected) {
-                walkLayer.resetFeatureStyle(selected);
-            }
+            deselect();
 
             const idx = search(walks, walk => date < walk.dates[0]) - 1;
             const popup = walkPopup(date, walks[idx]);
             if (popup) {
                 L.DomUtil.empty(domDetails);
-                domDetails.appendChild(walkPopup(date, walks[idx]));
+                domDetails.appendChild(popup);
                 selected = date;
                 walkLayer.setFeatureStyle(selected, trackStyle(true, true));
             }
         });
 
         // Set up a summary pane that reacts when years are toggled.
-        function renderSummary() {
-            const h3 = L.DomUtil.create('h3');
-
-            h3.textContent = options.title;
-            L.DomUtil.empty(domDetails);
-            domDetails.appendChild(h3);
-            domDetails.appendChild(this.render());
-        }
         const sumPane = summaryPane(walks, renderSummary);
-        gpxmap.on('click', function () {
+        function deselect() {
             if (selected) {
                 walkLayer.resetFeatureStyle(selected);
                 selected = void 0;
                 renderSummary.call(sumPane);
             }
-        });
+        }
+        gpxmap.on('click', deselect);
 
         // Create one layer group per year and add to the map.
         Object.keys(years).forEach(function (year) {
             const lg = L.layerGroup().on('add', function () {
                 if (hiddenYear[year]) {
-                    selected = void 0;
                     hiddenYear[year] = false;
                     walkLayer.redraw();
                     mouseLayer.redraw();
                 }
             }).on('remove', function () {
                 if (!hiddenYear[year]) {
-                    selected = void 0;
                     hiddenYear[year] = true;
                     walkLayer.redraw();
                     mouseLayer.redraw();
