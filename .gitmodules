@@ -1,4 +1,0 @@
-[submodule "VectorGrid"]
-	path = Leaflet.VectorGrid
-	url = https://github.com/jkuebart/Leaflet.VectorGrid.git
-	branch = max-native-zoom

@@ -31,7 +31,7 @@
 
 import './flatMap.js';
 import L from 'leaflet';
-import {} from './VectorGrid';
+import vectorTileLayer from 'leaflet-vector-tile-layer';
 import require from 'require';
 import { summaryPane } from './summary.js';
 
@@ -206,20 +206,20 @@ export function gpxmap(id, options) {
     }
 
     // This layer shows walking tracks.
-    const walkLayer = L.vectorGrid.protobuf(
+    const walkLayer = vectorTileLayer(
         options.url, {
             'pane': 'overlayPane',
-            'maxNativeZoom': 13,
+            'maxDetailZoom': 13,
             getFeatureId,
             'vectorTileLayerStyles': { '': trackStyle() },
         }
     ).addTo(gpxmap);
 
     // This layer has invisible mouse-responsive tracks.
-    const mouseLayer = L.vectorGrid.protobuf(
+    const mouseLayer = vectorTileLayer(
         options.url, {
             'pane': 'overlayPane',
-            'maxNativeZoom': 13,
+            'maxDetailZoom': 13,
             getFeatureId,
             'vectorTileLayerStyles': { '': function (props) {
                 return hiddenYear(props.date.substr(0, 4)) ? [] : {
@@ -227,7 +227,7 @@ export function gpxmap(id, options) {
                     'weight': 20,
                 };
             } },
-            'interactive': true,
+            'interactive': true, // for Leaflet.VectorGrid
         }
     ).on('mouseover', function (evt) {
         const date = getFeatureId(evt.layer);
