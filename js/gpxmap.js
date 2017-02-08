@@ -156,6 +156,7 @@ export function gpxmap(id, options) {
                 'color': yearColour(year - 2011),
                 'opacity': hover ? 1 : .8,
                 'weight': hover ? 4 : selected ? 3.5 : 2,
+                'interactive': false,
             };
         };
     }
