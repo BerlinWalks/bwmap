@@ -191,17 +191,24 @@ export function gpxmap(id, options) {
         domDetails.appendChild(content);
     }
 
-    function trackStyle(hover) {
-        return function (props) {
-            const date = props.date;
-            const year = date.substr(0, 4);
-            return hiddenYear(year) ? [] : {
-                'className': CSS.TRACK,
-                'color': yearColour(year - 2011),
-                'opacity': hover ? 1 : .8,
-                'weight': hover ? 4 : date === selected() ? 3.5 : 2,
-                'interactive': false,
-            };
+    let hover;
+    function trackStyle(feature) {
+        const date = feature.properties.date;
+        const year = date.substr(0, 4);
+        return {
+            'className': CSS.TRACK,
+            'color': yearColour(year - 2011),
+            'opacity': hiddenYear(year) ? 0 : date === hover ? 1 : .8,
+            'weight': date === hover ? 4 : date === selected() ? 3.5 : 2,
+            'interactive': false,
+        };
+    }
+    function mouseStyle(feature) {
+        const year = feature.properties.date.substr(0, 4);
+        return {
+            'opacity': 0,
+            'weight': 20,
+            'interactive': !hiddenYear(year),
         };
     }
 
@@ -211,7 +218,7 @@ export function gpxmap(id, options) {
             'pane': 'overlayPane',
             'maxDetailZoom': 13,
             getFeatureId,
-            'vectorTileLayerStyles': { '': trackStyle() },
+            'style': trackStyle,
         }
     ).addTo(gpxmap);
 
@@ -221,24 +228,15 @@ export function gpxmap(id, options) {
             'pane': 'overlayPane',
             'maxDetailZoom': 13,
             getFeatureId,
-            'vectorTileLayerStyles': { '': function (props) {
-                return hiddenYear(props.date.substr(0, 4)) ? [] : {
-                    'opacity': 0,
-                    'weight': 20,
-                };
-            } },
+            'style': mouseStyle,
             'interactive': true, // for Leaflet.VectorGrid
         }
     ).on('mouseover', function (evt) {
-        const date = getFeatureId(evt.layer);
-        walkLayer.setFeatureStyle(date, trackStyle(true));
-    }).on('mouseout', function (evt) {
-        const date = getFeatureId(evt.layer);
-        if (date === selected()) {
-            walkLayer.setFeatureStyle(date, trackStyle());
-        } else {
-            walkLayer.resetFeatureStyle(date);
-        }
+        hover = getFeatureId(evt.layer);
+        walkLayer.setStyle(trackStyle);
+    }).on('mouseout', function () {
+        hover = void 0;
+        walkLayer.setStyle(trackStyle);
     }).addTo(gpxmap);
 
     require([ `dA/json!${options.index}` ], function (walks) {
@@ -257,7 +255,7 @@ export function gpxmap(id, options) {
             }
             deselect();
             selected(date);
-            walkLayer.setFeatureStyle(date, trackStyle(true));
+            walkLayer.setStyle(trackStyle);
 
             renderSummary();
         });
@@ -282,10 +280,9 @@ export function gpxmap(id, options) {
         }
 
         function deselect() {
-            const date = selected();
-            if (date) {
+            if (selected()) {
                 selected(void 0);
-                walkLayer.resetFeatureStyle(date);
+                walkLayer.setStyle(trackStyle);
                 renderSummary();
             }
         }
@@ -296,14 +293,14 @@ export function gpxmap(id, options) {
             const lg = L.layerGroup().on('add', function () {
                 if (hiddenYear(year)) {
                     hiddenYear(year, false);
-                    walkLayer.redraw();
-                    mouseLayer.redraw();
+                    walkLayer.setStyle(trackStyle);
+                    mouseLayer.setStyle(mouseStyle);
                 }
             }).on('remove', function () {
                 if (!hiddenYear(year)) {
                     hiddenYear(year, true);
-                    walkLayer.redraw();
-                    mouseLayer.redraw();
+                    walkLayer.setStyle(trackStyle);
+                    mouseLayer.setStyle(mouseStyle);
                 }
             });
             if (!hiddenYear(year)) {
