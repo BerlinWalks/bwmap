@@ -30,7 +30,16 @@
  */
 
 import './flatMap.js';
-import L from 'leaflet';
+import {
+        control,
+        DomEvent,
+        DomUtil,
+        GeoJSON,
+        latLngBounds,
+        layerGroup,
+        map,
+        tileLayer
+} from 'leaflet';
 import vectorTileLayer from 'leaflet-vector-tile-layer';
 import require from 'require';
 import { summaryPane } from './summary.js';
@@ -161,32 +170,32 @@ export function gpxmap(id, options) {
     const tileLayers = options.tileLayers.map(function (layer) {
         return {
             'name': layer.name,
-            'tileLayer': L.tileLayer(layer.url, layer.options),
+            'tileLayer': tileLayer(layer.url, layer.options),
         };
     });
 
     // Create layers control.
-    const layersControl = L.control.layers(null, null, { 'hideSingleBase':true });
+    const layersControl = control.layers(null, null, { 'hideSingleBase':true });
     tileLayers.forEach(function (layer) {
         layersControl.addBaseLayer(layer.tileLayer, layer.name);
     });
 
     // Create the DOM structure for our map.
-    const domContainer = L.DomUtil.get(id);
-    L.DomUtil.addClass(domContainer, CSS.VBOX);
+    const domContainer = DomUtil.get(id);
+    DomUtil.addClass(domContainer, CSS.VBOX);
 
     // Create map with an initial tile layer and layers control.
-    const gpxmap = L.map(L.DomUtil.create('div', CSS.VIEW, domContainer)).
-        addControl(L.control.scale()).
+    const gpxmap = map(DomUtil.create('div', CSS.VIEW, domContainer)).
+        addControl(control.scale()).
         addControl(layersControl).
         addLayer(tileLayers[0].tileLayer);
 
-    const domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
+    const domDetails = DomUtil.create('div', CSS.DETAILS, domContainer);
     function renderDetails({ title, content }) {
-        const h3 = L.DomUtil.create('h3');
+        const h3 = DomUtil.create('h3');
 
         h3.textContent = title;
-        L.DomUtil.empty(domDetails);
+        DomUtil.empty(domDetails);
         domDetails.appendChild(h3);
         domDetails.appendChild(content);
     }
@@ -249,7 +258,7 @@ export function gpxmap(id, options) {
         mouseLayer.on('click', function (evt) {
             const date = getFeatureId(evt.layer);
 
-            L.DomEvent.stopPropagation(evt);
+            DomEvent.stopPropagation(evt);
             if (date === selected()) {
                 return;
             }
@@ -290,7 +299,7 @@ export function gpxmap(id, options) {
 
         // Create one layer group per year and add to the map.
         Object.keys(years).forEach(function (year) {
-            const lg = L.layerGroup().on('add', function () {
+            const lg = layerGroup().on('add', function () {
                 if (hiddenYear(year)) {
                     hiddenYear(year, false);
                     walkLayer.setStyle(trackStyle);
@@ -311,10 +320,10 @@ export function gpxmap(id, options) {
         });
 
         // Adjust the map's viewport when all GPX tracks are loaded
-        const bounds = L.latLngBounds(walks.flatMap(walk => walk.bboxes).
+        const bounds = latLngBounds(walks.flatMap(walk => walk.bboxes).
             flatMap(function (bbox) {
                 const l = bbox.length >> 1;
-                return L.GeoJSON.coordsToLatLngs([
+                return GeoJSON.coordsToLatLngs([
                     [ bbox[0], bbox[1] ], [ bbox[l], bbox[1 + l] ]
                 ]);
             })
