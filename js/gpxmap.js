@@ -112,6 +112,40 @@ function getFeatureId(walk) {
     return walk.properties.date;
 }
 
+function locationState(obj) {
+    const state = window.history.state || {};
+
+    if (obj) {
+        Object.keys(obj).forEach(k => state[k] = obj[k]);
+        window.history.replaceState(state, window.document.title);
+    }
+
+    return state;
+}
+
+function locationItem(key) {
+    return function(value) {
+        if (!arguments.length) {
+            return locationState()[key];
+        }
+
+        locationState({ [key]: value });
+        return value;
+    }
+}
+
+function savedLocation(l) {
+    if (!arguments.length) {
+        return locationState()['@'];
+    }
+
+    const { lat, lng } = L.latLng(l);
+    locationState({ '@': [ lat, lng ].map(f => +f.toFixed(6)) });
+    return l;
+}
+
+const savedZoom = locationItem('z');
+
 export function gpxmap(id, options) {
     // Create all configured tile layers.
     const tileLayers = options.tileLayers.map(function (layer) {
@@ -264,7 +298,21 @@ export function gpxmap(id, options) {
                 ]);
             })
         );
-        gpxmap.setMaxBounds(bounds.pad(.05)).fitBounds(bounds);
+        gpxmap.setMaxBounds(bounds.pad(.05));
+        if (0 <= savedZoom()) {
+            try {
+                gpxmap.setView(savedLocation(), savedZoom());
+            } catch (exc) {
+                console.error(exc);
+                gpxmap.fitBounds(bounds);
+            }
+        } else {
+            gpxmap.fitBounds(bounds);
+        }
+        gpxmap.on('moveend', function () {
+            savedLocation(this.getCenter());
+            savedZoom(this.getZoom());
+        });
     });
 
     return gpxmap;
