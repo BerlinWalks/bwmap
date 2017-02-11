@@ -143,6 +143,19 @@ function savedLocation(l) {
 const savedZoom = locationItem('z');
 const selected = locationItem('s');
 
+function hiddenYear(year, hidden) {
+    const state = [].concat(locationState()['y'] || []);
+    if (arguments.length < 2) {
+        return 0 <= state.indexOf(`${year}`);
+    }
+
+    const years = state.reduce((h, k) => (h[k] = true, h), {});
+    years[year] = hidden;
+    const newState = Object.keys(years).filter(k => years[k]).sort();
+    locationState({ 'y': newState.length ? newState : void 0 });
+    return hidden;
+}
+
 export function gpxmap(id, options) {
     // Create all configured tile layers.
     const tileLayers = options.tileLayers.map(function (layer) {
@@ -178,12 +191,11 @@ export function gpxmap(id, options) {
         domDetails.appendChild(content);
     }
 
-    const hiddenYear = {};
     function trackStyle(hover) {
         return function (props) {
             const date = props.date;
             const year = date.substr(0, 4);
-            return hiddenYear[year] ? [] : {
+            return hiddenYear(year) ? [] : {
                 'className': CSS.TRACK,
                 'color': yearColour(year - 2011),
                 'opacity': hover ? 1 : .8,
@@ -210,7 +222,7 @@ export function gpxmap(id, options) {
             'maxNativeZoom': 13,
             getFeatureId,
             'vectorTileLayerStyles': { '': function (props) {
-                return hiddenYear[props.date.substr(0, 4)] ? [] : {
+                return hiddenYear(props.date.substr(0, 4)) ? [] : {
                     'opacity': 0,
                     'weight': 20,
                 };
@@ -282,19 +294,21 @@ export function gpxmap(id, options) {
         // Create one layer group per year and add to the map.
         Object.keys(years).forEach(function (year) {
             const lg = L.layerGroup().on('add', function () {
-                if (hiddenYear[year]) {
-                    hiddenYear[year] = false;
+                if (hiddenYear(year)) {
+                    hiddenYear(year, false);
                     walkLayer.redraw();
                     mouseLayer.redraw();
                 }
             }).on('remove', function () {
-                if (!hiddenYear[year]) {
-                    hiddenYear[year] = true;
+                if (!hiddenYear(year)) {
+                    hiddenYear(year, true);
                     walkLayer.redraw();
                     mouseLayer.redraw();
                 }
             });
-            gpxmap.addLayer(lg);
+            if (!hiddenYear(year)) {
+                gpxmap.addLayer(lg);
+            }
             layersControl.addOverlay(lg, year);
             sumPane.addLayer(lg, year);
         });
