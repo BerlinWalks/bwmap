@@ -79,11 +79,7 @@ function walkPopup(date, walk) {
     }
 
     const popup = document.createDocumentFragment();
-    let elem0 = document.createElement('h3');
-    elem0.textContent = walk.title;
-    popup.appendChild(elem0);
-
-    elem0 = document.createElement('div');
+    let elem0 = document.createElement('div');
     elem0.textContent = [
             [ +date.substr(8, 2)
             , +date.substr(5, 2)
@@ -105,7 +101,7 @@ function walkPopup(date, walk) {
     elem0.textContent = walk.people.sort().join(' • ');
     popup.appendChild(elem0);
 
-    return popup;
+    return { 'title': walk.title, 'content': popup };
 }
 
 function getFeatureId(walk) {
@@ -172,13 +168,19 @@ export function gpxmap(id, options) {
         addLayer(tileLayers[0].tileLayer);
 
     const domDetails = L.DomUtil.create('div', CSS.DETAILS, domContainer);
-    function renderSummary() {
+    function renderDetails({ title, content }) {
         const h3 = L.DomUtil.create('h3');
 
-        h3.textContent = options.title;
+        h3.textContent = title;
         L.DomUtil.empty(domDetails);
         domDetails.appendChild(h3);
-        domDetails.appendChild(this.render());
+        domDetails.appendChild(content);
+    }
+    function renderSummary() {
+        return renderDetails({
+            'title': options.title,
+            'content': this.render(),
+        });
     }
 
     const hiddenYear = {};
@@ -251,8 +253,7 @@ export function gpxmap(id, options) {
             const idx = search(walks, walk => date < walk.dates[0]) - 1;
             const popup = walkPopup(date, walks[idx]);
             if (popup) {
-                L.DomUtil.empty(domDetails);
-                domDetails.appendChild(popup);
+                renderDetails(popup);
                 selected = date;
                 walkLayer.setFeatureStyle(selected, trackStyle(true, true));
             }
