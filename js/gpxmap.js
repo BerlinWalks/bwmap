@@ -176,12 +176,6 @@ export function gpxmap(id, options) {
         domDetails.appendChild(h3);
         domDetails.appendChild(content);
     }
-    function renderSummary() {
-        return renderDetails({
-            'title': options.title,
-            'content': this.render(),
-        });
-    }
 
     const hiddenYear = {};
     function trackStyle(hover, selected) {
@@ -249,23 +243,36 @@ export function gpxmap(id, options) {
                 return;
             }
             deselect();
+            selected = date;
+            walkLayer.setFeatureStyle(selected, trackStyle(true, true));
 
-            const idx = search(walks, walk => date < walk.dates[0]) - 1;
-            const popup = walkPopup(date, walks[idx]);
-            if (popup) {
-                renderDetails(popup);
-                selected = date;
-                walkLayer.setFeatureStyle(selected, trackStyle(true, true));
-            }
+            renderSummary();
         });
 
         // Set up a summary pane that reacts when years are toggled.
         const sumPane = summaryPane(walks, renderSummary);
+        function renderSummary() {
+            const date = selected;
+
+            if (date) {
+                const idx = search(walks, walk => date < walk.dates[0]) - 1;
+                const popup = walkPopup(date, walks[idx]);
+                if (popup) {
+                    return renderDetails(popup);
+                }
+            }
+
+            return renderDetails({
+                'title': options.title,
+                'content': sumPane.render(),
+            });
+        }
+
         function deselect() {
             if (selected) {
                 walkLayer.resetFeatureStyle(selected);
                 selected = void 0;
-                renderSummary.call(sumPane);
+                renderSummary();
             }
         }
         gpxmap.on('click', deselect);
