@@ -29,6 +29,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+import './flatMap.js';
+
     function zip() {
         const args = Array.prototype.slice.call(arguments);
         return Object.keys(args[0]).map(i => args.map(a => a[i]));

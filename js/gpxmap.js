@@ -29,11 +29,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+import './flatMap.js';
 import L from 'leaflet';
 import {} from './VectorGrid';
 import require from 'require';
 import { summaryPane } from './summary.js';
-import {} from './util.js';
 
 export const CSS = {
     'DETAILS': 'gpxmap-details',
