@@ -141,6 +141,7 @@ function savedLocation(l) {
 }
 
 const savedZoom = locationItem('z');
+const selected = locationItem('s');
 
 export function gpxmap(id, options) {
     // Create all configured tile layers.
@@ -178,14 +179,15 @@ export function gpxmap(id, options) {
     }
 
     const hiddenYear = {};
-    function trackStyle(hover, selected) {
+    function trackStyle(hover) {
         return function (props) {
-            const year = props.date.substr(0, 4);
+            const date = props.date;
+            const year = date.substr(0, 4);
             return hiddenYear[year] ? [] : {
                 'className': CSS.TRACK,
                 'color': yearColour(year - 2011),
                 'opacity': hover ? 1 : .8,
-                'weight': hover ? 4 : selected ? 3.5 : 2,
+                'weight': hover ? 4 : date === selected() ? 3.5 : 2,
                 'interactive': false,
             };
         };
@@ -197,12 +199,11 @@ export function gpxmap(id, options) {
             'pane': 'overlayPane',
             'maxNativeZoom': 13,
             getFeatureId,
-            'vectorTileLayerStyles': { '': trackStyle(false) },
+            'vectorTileLayerStyles': { '': trackStyle() },
         }
     ).addTo(gpxmap);
 
     // This layer has invisible mouse-responsive tracks.
-    let selected;
     const mouseLayer = L.vectorGrid.protobuf(
         options.url, {
             'pane': 'overlayPane',
@@ -221,8 +222,8 @@ export function gpxmap(id, options) {
         walkLayer.setFeatureStyle(date, trackStyle(true));
     }).on('mouseout', function (evt) {
         const date = getFeatureId(evt.layer);
-        if (date === selected) {
-            walkLayer.setFeatureStyle(date, trackStyle(false, true));
+        if (date === selected()) {
+            walkLayer.setFeatureStyle(date, trackStyle());
         } else {
             walkLayer.resetFeatureStyle(date);
         }
@@ -239,12 +240,12 @@ export function gpxmap(id, options) {
             const date = getFeatureId(evt.layer);
 
             L.DomEvent.stopPropagation(evt);
-            if (date === selected) {
+            if (date === selected()) {
                 return;
             }
             deselect();
-            selected = date;
-            walkLayer.setFeatureStyle(selected, trackStyle(true, true));
+            selected(date);
+            walkLayer.setFeatureStyle(date, trackStyle(true));
 
             renderSummary();
         });
@@ -252,7 +253,7 @@ export function gpxmap(id, options) {
         // Set up a summary pane that reacts when years are toggled.
         const sumPane = summaryPane(walks, renderSummary);
         function renderSummary() {
-            const date = selected;
+            const date = selected();
 
             if (date) {
                 const idx = search(walks, walk => date < walk.dates[0]) - 1;
@@ -269,9 +270,10 @@ export function gpxmap(id, options) {
         }
 
         function deselect() {
-            if (selected) {
-                walkLayer.resetFeatureStyle(selected);
-                selected = void 0;
+            const date = selected();
+            if (date) {
+                selected(void 0);
+                walkLayer.resetFeatureStyle(date);
                 renderSummary();
             }
         }
