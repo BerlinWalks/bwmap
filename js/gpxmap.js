@@ -120,7 +120,7 @@ function locationState(obj) {
 }
 
 function locationItem(key) {
-    return function(value) {
+    return function (value) {
         if (!arguments.length) {
             return locationState()[key];
         }

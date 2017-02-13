@@ -49,13 +49,13 @@ import './flatMap.js';
             self.walks = () => m_walks;
             self.distance = () => m_distance;
 
-            self.toString = function () {
+            self.toString = function toString() {
                 return [
                     `${m_walks} walks`, +(m_distance / 1000).toFixed(1) +'km',
                 ].join(' — ');
             };
 
-            self.accumulate = function (dist) {
+            self.accumulate = function accumulate(dist) {
                 return summaryImp(1 + m_walks, dist + m_distance);
             };
 
@@ -89,18 +89,18 @@ import './flatMap.js';
             }
         }
 
-        self.addLayer = function (layer, year) {
+        self.addLayer = function addLayer(layer, year) {
             layer.on('add', handleVisible.bind(null, year, true)).
                 on('remove', handleVisible.bind(null, year, false));
             return self;
         };
 
-        self.removeLayer = function (layer) {
+        self.removeLayer = function removeLayer(layer) {
             layer.off('add').off('remove');
             return self;
         };
 
-        self.render = function () {
+        self.render = function render() {
             const frag = document.createDocumentFragment();
             if (m_summary.walks()) {
                 const div = document.createElement('div');

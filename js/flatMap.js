@@ -32,7 +32,7 @@
 // Missing monadic operation
 if ('function' !== typeof Array.prototype.flatMap) {
     Object.defineProperty(Array.prototype, 'flatMap', {
-        'value': function () {
+        'value': function flatMap() {
             'use strict';
 
             // return [].concat(f(this[0]), f(this[1]), ...)
