@@ -8765,7 +8765,7 @@
   ],
   "time":"2017-01-08T18:31:44+01:00",
   "title":"Sch\u00f6nflie\u00df \u2013 Rosenthal",
-  "walkers":18
+  "walkers":21
  },
  {
   "bboxes":[
@@ -8801,7 +8801,7 @@
   ],
   "time":"2017-01-15T21:10:07+01:00",
   "title":"Basdorf \u2013 Bernau",
-  "walkers":9
+  "walkers":16
  },
  {
   "bboxes":[
@@ -8840,6 +8840,96 @@
   ],
   "time":"2017-01-22T23:53:03+01:00",
   "title":"Bernau \u2013 Werneuchen",
-  "walkers":12
+  "walkers":14
+ },
+ {
+  "bboxes":[
+   [
+    14.0133465,
+    52.7338888,
+    null,
+    14.0859007,
+    52.7736798,
+    null
+   ]
+  ],
+  "categories":[
+   "North of the City"
+  ],
+  "dates":[
+   "2017-01-29"
+  ],
+  "distances":[
+   17614
+  ],
+  "link":"https://berlinwalks.wordpress.com/2017/01/29/altranft/",
+  "people":[
+   "Ali",
+   "Armando",
+   "Bernardo",
+   "Christian",
+   "Fredi",
+   "Helge",
+   "Joachim",
+   "Judith",
+   "Katrin",
+   "Lisa",
+   "Mariana",
+   "Marit",
+   "Martina",
+   "Mia",
+   "Robert",
+   "Sebastian",
+   "Sylvia",
+   "Thomas"
+  ],
+  "time":"2017-01-29T17:28:24+01:00",
+  "title":"Altranft",
+  "walkers":21
+ },
+ {
+  "bboxes":[
+   [
+    13.42859,
+    52.54262,
+    13.49507,
+    52.59128
+   ]
+  ],
+  "categories":[
+   "North of the City"
+  ],
+  "dates":[
+   "2017-02-05"
+  ],
+  "distances":[
+   18657
+  ],
+  "link":"https://berlinwalks.wordpress.com/2017/02/05/pankow/",
+  "people":[
+   "Alex",
+   "Andi",
+   "Angel",
+   "Armando",
+   "Ata",
+   "Coni",
+   "Dominik",
+   "Enrique",
+   "Fredi",
+   "Helge",
+   "Joachim",
+   "Johannes",
+   "Laura",
+   "Leire",
+   "Lisa",
+   "Martina",
+   "Mattheo",
+   "Patrick",
+   "Sylvi",
+   "Tritan"
+  ],
+  "time":"2017-02-05T00:04:09+01:00",
+  "title":"Pankow",
+  "walkers":20
  }
 ]
